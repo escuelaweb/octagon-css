@@ -1,7 +1,7 @@
 @import "functions";
 
 .container {
-  width: ($column_width * $column_number) + (20px * $column_number) - 20px;
+  width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
   margin: 0 auto;
   position: relative;
 }
