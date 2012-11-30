@@ -252,6 +252,12 @@ table {
   border-right: #f4f4f4 solid 1px;
   border-left: #e0e0e0 solid 1px; }
 
+aside .menu li {
+  float: none;
+  display: block; }
+  aside .menu li a {
+    display: block; }
+
 form {
   margin-top: 40px; }
   form label {
@@ -479,8 +485,7 @@ table {
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
-  font-weight: 300;
-  text-size: 13px;
+  font-size: 13px;
   background-color: #fcfcfc;
   color: #282828; }
 
@@ -502,41 +507,28 @@ body {
 .menu_oscuro {
   color: #eaeaea; }
 
-h1 {
-  font-size: 2.5em;
+h1, h2, h3, h4, h5, h6 {
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
+
+h1 {
+  font-size: 2.5em; }
 
 h2 {
-  font-size: 2.2em;
-  font-weight: 400;
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 20px; }
+  font-size: 2.2em; }
 
 h3 {
-  font-size: 1.9em;
-  font-weight: 400;
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 20px; }
+  font-size: 1.9em; }
 
 h4 {
-  font-size: 1.6em;
-  font-weight: 400;
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 20px; }
+  font-size: 1.6em; }
 
 h5 {
-  font-size: 1.3em;
-  font-weight: 400;
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 20px; }
+  font-size: 1.3em; }
 
 h6 {
-  font-size: 1em;
-  font-weight: 400;
-  font-family: "Dosis", sans-serif;
-  margin-bottom: 20px; }
+  font-size: 1em; }
 
 .slogan {
   font-size: 2.5em;
@@ -548,7 +540,8 @@ h6 {
   margin-top: 0px; }
 
 p {
-  margin: 10px 0; }
+  margin: 10px 0;
+  line-height: 1.4em; }
 
 a {
   color: #4b4d4b;

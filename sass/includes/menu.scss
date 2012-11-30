@@ -105,3 +105,13 @@
 	border-right: lighten($gris_oscuro,80%) solid 1px;
 	border-left: $gris_sombra solid 1px;
 }
+
+aside .menu {
+	li {
+		float: none;
+		display: block;
+		a {
+			display: block;
+		}
+	}
+}

@@ -4,8 +4,7 @@
 body {
 	font-family: $ubuntu;
 	font-weight: $font_normal;
-	font-weight: $font_light;
-	text-size: $font_base;
+	font-size: $font_base;
 	background-color: $white;
 	color: $gris_oscuro;
 }
@@ -20,12 +19,15 @@ body {
 
 // Genera la proporcion de los Headline
 
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font_normal;
+  font-family: $open_sans;
+  margin-bottom: 20px;
+}
+
 @for $i from 1 through 6 {
   h#{$i} { 
   	@include text-proportion($i);
-  	font-weight: $font_normal;
-  	font-family: $open_sans;
-  	margin-bottom:20px;
   }
 }
 .slogan {
@@ -39,6 +41,7 @@ body {
 }
 p {
 	margin:10px 0; 
+	line-height: 1.4em;
 }
 a {
 	color: $gris;
