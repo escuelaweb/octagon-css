@@ -59,7 +59,7 @@
   -o-transition:      $property $duration $function;
   transition:         $property $duration $function;
 }
-/* Recibe numero del 0 - 1 */
+// Recibe numero del 0 - 1 
 @mixin opacity($value) {
   filter:  alpha(opacity=$value*100);
   opacity: $value;

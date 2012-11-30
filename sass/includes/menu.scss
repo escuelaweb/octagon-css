@@ -3,7 +3,8 @@
 .menu{
 	height: $menu_height;
 	li {
-		display:inline-block;
+		position: relative;
+		display: inline-block;
 		height: $menu_height;
 		&:first-child {
 
@@ -11,6 +12,11 @@
 		&:last-child {
 			
 		}
+	}
+	.arrow-down-medium {
+		position: relative;
+		top: -3px;
+		margin-left: 10px;	
 	}
 	a {
 		font-family: $open_sans;
@@ -20,12 +26,82 @@
 		line-height: $menu_height;// en caso que sea arriba - $border_thin;
 		padding:0 10px;
 		color: #000;
-		border-bottom: transparent $border_thin solid;
+		font-size: 1.1em;
+		text-decoration: none;
 		&:hover {
 			color:$link_hover;
 			border-bottom: $link_hover $border_thin solid;
 			@include box-shadow(0,2px,0px,0px,$link_hover);
 		}
+		.icons {
+			font-size: 18px;
+		}
 	}
+	.submenu {
+		display: none;
+		position: absolute;
+		top: $menu_height;
+		left: 0;
+		border:1px solid rgba($azul,0.5);
+		margin-top: 4px;
+		width: 200px;
+		background-color: black;
+		background-color: rgba(black,0.8);
+		@include border-radius(5px);
+		@include box-shadow(0,0px,2px,0,$gris_claro);
+		.submenu-arrow {
+			position: absolute;
+			top: -8px;
+			left: 10px;
+			@include arrow('top', 8px, rgba(black,0.8));
+		}
+		li {
+			float:none;
+			display: block;
+			a {
+				font-weight: normal;
+				color: white;
+				display: block;
+				text-decoration: none;
 
+				@include box-shadow(0,0px,0px,0px,white);
+				&:hover {
+					background-color: #666;
+					border:none;
+					border-left:4px solid $azul;
+					@include box-shadow(0,0px,0px,0px,white);
+				}
+			}
+		}
+		&.last {
+			left: auto;
+			right: 0px;
+			.submenu-arrow {
+				left:auto;
+				right:10px;
+			}
+		}
+	}
+	&.right {
+		.submenu {
+			left: auto;
+			right: 0;
+			a:hover {
+				border:none;
+				border-right:4px solid $azul;
+			}
+			.submenu-arrow {
+				left: auto;
+				right: 10px;
+			}
+		}
+	}
+}
+
+.divisor {
+	display: block;
+	float: left;
+	height: $menu_height;
+	border-right: lighten($gris_oscuro,80%) solid 1px;
+	border-left: $gris_sombra solid 1px;
 }

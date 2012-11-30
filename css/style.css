@@ -46,10 +46,6 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Definicion del Grid */
-/* Menu */
-/* Slider */
-/* Recibe numero del 0 - 1 */
 .container {
   width: 940px;
   margin: 0 auto;
@@ -158,15 +154,16 @@ table {
 .center {
   text-align: center; }
 
-/* Definicion del Grid */
-/* Menu */
-/* Slider */
-/* Recibe numero del 0 - 1 */
 .menu {
   height: 42px; }
   .menu li {
+    position: relative;
     display: inline-block;
     height: 42px; }
+  .menu .arrow-down-medium {
+    position: relative;
+    top: -3px;
+    margin-left: 10px; }
   .menu a {
     font-family: "Dosis", sans-serif;
     font-weight: 400;
@@ -175,18 +172,86 @@ table {
     line-height: 42px;
     padding: 0 10px;
     color: #000;
-    border-bottom: transparent 1px solid; }
+    font-size: 1.1em;
+    text-decoration: none; }
     .menu a:hover {
       color: #4bb0da;
       border-bottom: #4bb0da 1px solid;
       -moz-box-shadow: 0 2px 0px 0px #4bb0da "";
       -webkit-box-shadow: 0 2px 0px 0px #4bb0da "";
       box-shadow: 0 2px 0px 0px #4bb0da ""; }
+    .menu a .icons {
+      font-size: 18px; }
+  .menu .submenu {
+    display: none;
+    position: absolute;
+    top: 42px;
+    left: 0;
+    border: 1px solid rgba(75, 176, 218, 0.5);
+    margin-top: 4px;
+    width: 200px;
+    background-color: black;
+    background-color: rgba(0, 0, 0, 0.8);
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: 0 0px 2px 0 #b1b3b1 "";
+    -webkit-box-shadow: 0 0px 2px 0 #b1b3b1 "";
+    box-shadow: 0 0px 2px 0 #b1b3b1 ""; }
+    .menu .submenu .submenu-arrow {
+      position: absolute;
+      top: -8px;
+      left: 10px;
+      display: inline-block;
+      width: 0;
+      height: 0;
+      min-width: 0;
+      border-left: 8px solid transparent;
+      border-right: 8px solid transparent;
+      border-bottom: 8px solid rgba(0, 0, 0, 0.8); }
+    .menu .submenu li {
+      float: none;
+      display: block; }
+      .menu .submenu li a {
+        font-weight: normal;
+        color: white;
+        display: block;
+        text-decoration: none;
+        -moz-box-shadow: 0 0px 0px 0px white "";
+        -webkit-box-shadow: 0 0px 0px 0px white "";
+        box-shadow: 0 0px 0px 0px white ""; }
+        .menu .submenu li a:hover {
+          background-color: #666;
+          border: none;
+          border-left: 4px solid #4bb0da;
+          -moz-box-shadow: 0 0px 0px 0px white "";
+          -webkit-box-shadow: 0 0px 0px 0px white "";
+          box-shadow: 0 0px 0px 0px white ""; }
+    .menu .submenu.last {
+      left: auto;
+      right: 0px; }
+      .menu .submenu.last .submenu-arrow {
+        left: auto;
+        right: 10px; }
+  .menu.right .submenu {
+    left: auto;
+    right: 0; }
+    .menu.right .submenu a:hover {
+      border: none;
+      border-right: 4px solid #4bb0da; }
+    .menu.right .submenu .submenu-arrow {
+      left: auto;
+      right: 10px; }
 
-/* Definicion del Grid */
-/* Menu */
-/* Slider */
-/* Recibe numero del 0 - 1 */
+.divisor {
+  display: block;
+  float: left;
+  height: 42px;
+  border-right: #f4f4f4 solid 1px;
+  border-left: #e0e0e0 solid 1px; }
+
 form {
   margin-top: 40px; }
   form label {
@@ -336,10 +401,6 @@ table {
 .table tbody tr:hover th {
   background-color: #f5f5f5; }
 
-/* Definicion del Grid */
-/* Menu */
-/* Slider */
-/* Recibe numero del 0 - 1 */
 #slider {
   margin-top: 42px;
   overflow: hidden; }
@@ -415,10 +476,6 @@ table {
     opacity: 1;
     visibility: visible; }
 
-/* Definicion del Grid */
-/* Menu */
-/* Slider */
-/* Recibe numero del 0 - 1 */
 body {
   font-family: "Ubuntu", sans-serif;
   font-weight: 400;
