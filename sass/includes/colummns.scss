@@ -1,7 +1,7 @@
 @import "functions";
 
 .container {
-  width: ($column_width * $column_number) + (20px * $column_number) - 20px;
+  width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
   margin: 0 auto;
   position: relative;
 }
@@ -20,20 +20,25 @@
   margin-left: $column_gutter * -1;
   @include clearfix;
 }
+
 .clear {
   clear: both;
 }
+
 .right {
   float:right;
   text-align:right;
 }
+
 .left {
   float:left;
   text-align:left;
 }
+
 .inline {
   display:inline-block;
 }
+
 .center {
   text-align:center;
 }
