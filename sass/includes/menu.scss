@@ -1,0 +1,31 @@
+@import "functions";
+
+#main_menu .menu{
+	height: $menu_height;
+	li {
+		display:inline-block;
+		height: $menu_height;
+		&:first-child {
+
+		}
+		&:last-child {
+			
+		}
+	}
+	a {
+		font-family: $open_sans;
+		font-weight: $font_normal ;
+		display:inline-block;
+		height:  $menu_height; // en caso que sea arriba - $border_thin;
+		line-height: $menu_height;// en caso que sea arriba - $border_thin;
+		padding:0 10px;
+		color: #000;
+		border-bottom: transparent $border_thin solid;
+		&:hover {
+			color:$link_hover;
+			border-bottom: $link_hover $border_thin solid;
+			@include box-shadow(0,2px,0px,0px,$link_hover);
+		}
+	}
+
+}

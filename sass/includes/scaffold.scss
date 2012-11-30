@@ -1,0 +1,80 @@
+@import "functions";
+
+// Estilos del Body
+body {
+	font-family:$ubuntu;
+	font-weight: $font_normal;
+	font-weight:$font_light;
+	text-size: $font_base;
+	background-color: $white;
+	color: $gris_oscuro;
+}
+
+.azul        { color: $azul; }
+.gris        { color: $azul; }
+.gris_oscuro { color: $azul; }
+.gris_sombra { color: $azul; }
+.menu_claro  { color: $menu_claro; }
+.menu_oscuro { color: $menu_oscuro; }
+
+/*
+	Genera la proporcion de los Headline
+*/
+@for $i from 1 through 6 {
+  h#{$i} { 
+  	@include text-proportion($i);
+  	font-weight: $font_normal;
+  	font-family: $open_sans;
+  	margin-bottom:20px;
+  }
+}
+.slogan {
+	font-size:2.5em;
+	margin-bottom:0;
+}
+.subtitle {
+	font-size:1.5em;
+	color:$azul;
+	margin-top:0px;
+}
+p {
+	margin:10px 0; 
+}
+a {
+	color: $gris;
+	text-decoration: none;
+	font-weight:$font_normal;
+	@include transition(all, 600ms, ease);
+	&:hover {
+		text-decoration:none;
+		color:$link_hover;
+	}
+}
+.fixed.header {
+	position: fixed;
+	left:0;
+	top:0;
+	width:100%;
+	z-index: 2000;
+	height:50px;
+	border-bottom: 1px solid #CACACA;
+	@include background-gradient($menu_claro,$menu_oscuro);
+	@include box-shadow(0px,0px,1px,0px,darken($menu_oscuro,50%));
+	#main_menu {
+		.sitename {
+			margin-bottom:0;
+			font-size:1.4em;
+			line-height: $menu_height;
+			@include text-shadow(0px,1px,0, #FFFFFF);
+			a {
+				&:link {
+					color: $gris_oscuro;
+				}
+			}
+		}
+	}
+}
+
+#header {
+	margin-top:65px;
+}

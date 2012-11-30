@@ -1,0 +1,66 @@
+@import "vars";
+
+@mixin text-proportion($size) {
+	font-size:1em*$text_proportion*(6-$size)+1em;
+}
+
+@mixin column-calc($number) {
+  width: $column-width * $number + (20 * ($number - 1));
+}
+
+@mixin offset-calc($number) {
+  margin-left: $column-width * $number + (20 * ($number - 1)) + 20;
+}
+
+@mixin clearfix {
+  *zoom: 1;
+  &:before,
+  &:after {
+    display: table;
+    content: "";
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+@mixin background-gradient($start,$finish){
+  background: $start;
+  background: -moz-linear-gradient(top,  $start 0%, $finish 100%);
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$finish));
+  background: -webkit-linear-gradient(top,  $start 0%,$finish 100%);
+  background: -o-linear-gradient(top,  $start 0%,$finish 100%);
+  background: -ms-linear-gradient(top,  $start 0%,$finish 100%);
+  background: linear-gradient(to bottom,  $start 0%,$finish 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$finish',GradientType=0 );
+}
+/* 
+  $x        Posicion en X
+  $y        Posicion en X
+  $blur     Distancia de difuminacion
+  $spread   Sobre borde
+  $color    Color en Hexa
+  $alpha:1  Alfa del 0-1
+*/
+@mixin box-shadow($x, $y, $blur, $spread, $color, $alpha:1) {
+  -moz-box-shadow:      $x $y $blur $spread rgba($color, $alpha);
+  -webkit-box-shadow:   $x $y $blur $spread rgba($color, $alpha);
+  box-shadow:           $x $y $blur $spread rgba($color, $alpha);
+}
+@mixin text-shadow($x, $y, $blur, $color) {
+  text-shadow: $x $y $blur $color;
+  filter: dropshadow(color=$color, offx=$x, offy=$y);
+}
+
+@mixin transition($property, $duration, $function){
+  -webkit-transition: $property $duration $function;
+  -moz-transition:    $property $duration $function;
+  -ms-transition:     $property $duration $function;
+  -o-transition:      $property $duration $function;
+  transition:         $property $duration $function;
+}
+/* Recibe numero del 0 - 1 */
+@mixin opacity($value) {
+  filter:  alpha(opacity=$value*100);
+  opacity: $value;
+}
