@@ -1,0 +1,58 @@
+@import "functions";
+
+form {
+  margin-top: 40px;
+  label {
+    font-family: $ubuntu;
+    .validation-error {
+      display: none;
+    }
+  }
+  input, select {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid $azul;
+    @include border-radius(5px);
+    @include box-shadow(-1px, -1px, 2px, 0, $gris_claro, 1, inset);
+  }
+  .field {
+    margin-bottom: 10px;
+  }
+  .select_field {
+    display: inline-block;
+    width: 90%;
+    padding:5px 10px;
+    margin: 10px 0 5px 0;
+  }
+  input[type="text"], 
+  input[type="password"], 
+  input[type="email"], 
+  input[type="url"], 
+  input[type="tel"], 
+  textarea {
+    width: 85%;
+  }
+  .grid3 {
+    input[type="text"], 
+    input[type="password"], 
+    input[type="email"], 
+    input[type="url"], 
+    input[type="tel"], 
+    textarea {
+      width: 69%;
+    }
+  }
+  .hasDatepicker {
+    background: white url("/assets/active_admin/datepicker/datepicker-input-icon.png") no-repeat 100% 7px;
+    padding-right: 27px;
+  }
+  .validation-error {
+    display: block;
+    margin-bottom: 15px;
+    background-color: $rojo;
+    width: 88%;
+    padding: 5px;
+    color: white;
+    margin-top: -16px;
+  }
+}
