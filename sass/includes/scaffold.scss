@@ -2,9 +2,9 @@
 
 // Estilos del Body
 body {
-	font-family:$ubuntu;
+	font-family: $ubuntu;
 	font-weight: $font_normal;
-	font-weight:$font_light;
+	font-weight: $font_light;
 	text-size: $font_base;
 	background-color: $white;
 	color: $gris_oscuro;
@@ -17,9 +17,9 @@ body {
 .menu_claro  { color: $menu_claro; }
 .menu_oscuro { color: $menu_oscuro; }
 
-/*
-	Genera la proporcion de los Headline
-*/
+
+// Genera la proporcion de los Headline
+
 @for $i from 1 through 6 {
   h#{$i} { 
   	@include text-proportion($i);

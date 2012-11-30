@@ -1,15 +1,4 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic|Open+Sans+Condensed:300,300italic,700);
-/* 
-	Escuela Web Bootstrap
-	Bootstrap desarrollado para todos los nuevos servicios de la escuela, hecho en sass.
-	URL: https://github.com/escuelaweb/bootstrap
-
-	Estilos:
-		Todas las variables estaran escritas "$hola_separador", es decir, se separan con espacio
-		Las funciones (mixins) se escriben "border-radius"
-		Para la indentacion se usa la tabulacion.
-		Solo se usaran caracteres basicos a-z, A-Z,0-9, -, _. Y no caracateres especiales (incluso en los comentarios).
-*/
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -57,23 +46,9 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* Colors */
-/* Fonts 
-	Las familias disponibles desde Google Webfonts son:;
-		font-family: 'Ubuntu', sans-serif;
-		font-family: 'Open Sans Condensed', sans-serif;
-*/
 /* Definicion del Grid */
 /* Menu */
 /* Slider */
-/* 
-  $x        Posicion en X
-  $y        Posicion en X
-  $blur     Distancia de difuminacion
-  $spread   Sobre borde
-  $color    Color en Hexa
-  $alpha:1  Alfa del 0-1
-*/
 /* Recibe numero del 0 - 1 */
 .container {
   width: 940px;
@@ -183,64 +158,188 @@ table {
 .center {
   text-align: center; }
 
-/* Colors */
-/* Fonts 
-	Las familias disponibles desde Google Webfonts son:;
-		font-family: 'Ubuntu', sans-serif;
-		font-family: 'Open Sans Condensed', sans-serif;
-*/
 /* Definicion del Grid */
 /* Menu */
 /* Slider */
-/* 
-  $x        Posicion en X
-  $y        Posicion en X
-  $blur     Distancia de difuminacion
-  $spread   Sobre borde
-  $color    Color en Hexa
-  $alpha:1  Alfa del 0-1
-*/
 /* Recibe numero del 0 - 1 */
 .menu {
-  height: 50px; }
+  height: 42px; }
   .menu li {
     display: inline-block;
-    height: 50px; }
+    height: 42px; }
   .menu a {
-    font-family: "Open Sans Condensed", sans-serif;
-    font-weight: 500;
+    font-family: "Dosis", sans-serif;
+    font-weight: 400;
     display: inline-block;
-    height: 50px;
-    line-height: 50px;
+    height: 42px;
+    line-height: 42px;
     padding: 0 10px;
     color: #000;
     border-bottom: transparent 1px solid; }
     .menu a:hover {
-      color: #24acda;
-      border-bottom: #24acda 1px solid;
-      -moz-box-shadow: 0 2px 0px 0px #24acda "";
-      -webkit-box-shadow: 0 2px 0px 0px #24acda "";
-      box-shadow: 0 2px 0px 0px #24acda ""; }
+      color: #4bb0da;
+      border-bottom: #4bb0da 1px solid;
+      -moz-box-shadow: 0 2px 0px 0px #4bb0da "";
+      -webkit-box-shadow: 0 2px 0px 0px #4bb0da "";
+      box-shadow: 0 2px 0px 0px #4bb0da ""; }
 
-/* Colors */
-/* Fonts 
-	Las familias disponibles desde Google Webfonts son:;
-		font-family: 'Ubuntu', sans-serif;
-		font-family: 'Open Sans Condensed', sans-serif;
-*/
 /* Definicion del Grid */
 /* Menu */
 /* Slider */
-/* 
-  $x        Posicion en X
-  $y        Posicion en X
-  $blur     Distancia de difuminacion
-  $spread   Sobre borde
-  $color    Color en Hexa
-  $alpha:1  Alfa del 0-1
-*/
 /* Recibe numero del 0 - 1 */
-/* Slider Styles */
+form {
+  margin-top: 40px; }
+  form label {
+    font-family: "Ubuntu", sans-serif; }
+    form label .validation-error {
+      display: none; }
+  form input, form select {
+    display: inline-block;
+    padding: 5px 10px;
+    border: 1px solid #4bb0da;
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    -ms-border-radius: 5px;
+    -o-border-radius: 5px;
+    border-radius: 5px;
+    -moz-box-shadow: -1px -1px 2px 0 #b1b3b1 inset;
+    -webkit-box-shadow: -1px -1px 2px 0 #b1b3b1 inset;
+    box-shadow: -1px -1px 2px 0 #b1b3b1 inset; }
+  form .field {
+    margin-bottom: 10px; }
+  form .select_field {
+    display: inline-block;
+    width: 90%;
+    padding: 5px 10px;
+    margin: 10px 0 5px 0; }
+  form input[type="text"],
+  form input[type="password"],
+  form input[type="email"],
+  form input[type="url"],
+  form input[type="tel"],
+  form textarea {
+    width: 85%; }
+  form .grid3 input[type="text"],
+  form .grid3 input[type="password"],
+  form .grid3 input[type="email"],
+  form .grid3 input[type="url"],
+  form .grid3 input[type="tel"],
+  form .grid3 textarea {
+    width: 69%; }
+  form .hasDatepicker {
+    background: white url("/assets/active_admin/datepicker/datepicker-input-icon.png") no-repeat 100% 7px;
+    padding-right: 27px; }
+  form .validation-error {
+    display: block;
+    margin-bottom: 15px;
+    background-color: #dd4646;
+    width: 88%;
+    padding: 5px;
+    color: white;
+    margin-top: -16px; }
+
+table {
+  max-width: 100%;
+  background-color: transparent;
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+.table {
+  width: 100%;
+  margin-bottom: 18px; }
+
+.table th,
+.table td {
+  padding: 8px;
+  line-height: 18px;
+  text-align: left;
+  vertical-align: top;
+  border-top: 1px solid #dddddd; }
+
+.table th {
+  font-weight: bold; }
+
+.table thead th {
+  vertical-align: bottom; }
+
+.table caption + thead tr:first-child th,
+.table caption + thead tr:first-child td,
+.table colgroup + thead tr:first-child th,
+.table colgroup + thead tr:first-child td,
+.table thead:first-child tr:first-child th,
+.table thead:first-child tr:first-child td {
+  border-top: 0; }
+
+.table tbody + tbody {
+  border-top: 2px solid #dddddd; }
+
+.table-condensed th,
+.table-condensed td {
+  padding: 4px 5px; }
+
+.table-bordered {
+  border: 1px solid #dddddd;
+  border-collapse: separate;
+  *border-collapse: collapsed;
+  border-left: 0;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  border-radius: 4px; }
+
+.table-bordered th,
+.table-bordered td {
+  border-left: 1px solid #dddddd; }
+
+.table-bordered caption + thead tr:first-child th,
+.table-bordered caption + tbody tr:first-child th,
+.table-bordered caption + tbody tr:first-child td,
+.table-bordered colgroup + thead tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child th,
+.table-bordered colgroup + tbody tr:first-child td,
+.table-bordered thead:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child th,
+.table-bordered tbody:first-child tr:first-child td {
+  border-top: 0; }
+
+.table-bordered thead:first-child tr:first-child th:first-child,
+.table-bordered tbody:first-child tr:first-child td:first-child {
+  -webkit-border-top-left-radius: 4px;
+  border-top-left-radius: 4px;
+  -moz-border-radius-topleft: 4px; }
+
+.table-bordered thead:first-child tr:first-child th:last-child,
+.table-bordered tbody:first-child tr:first-child td:last-child {
+  -webkit-border-top-right-radius: 4px;
+  border-top-right-radius: 4px;
+  -moz-border-radius-topright: 4px; }
+
+.table-bordered thead:last-child tr:last-child th:first-child,
+.table-bordered tbody:last-child tr:last-child td:first-child {
+  -webkit-border-radius: 0 0 0 4px;
+  -moz-border-radius: 0 0 0 4px;
+  border-radius: 0 0 0 4px;
+  -webkit-border-bottom-left-radius: 4px;
+  border-bottom-left-radius: 4px;
+  -moz-border-radius-bottomleft: 4px; }
+
+.table-bordered thead:last-child tr:last-child th:last-child,
+.table-bordered tbody:last-child tr:last-child td:last-child {
+  -webkit-border-bottom-right-radius: 4px;
+  border-bottom-right-radius: 4px;
+  -moz-border-radius-bottomright: 4px; }
+
+.table-striped tbody tr:nth-child(odd) td,
+.table-striped tbody tr:nth-child(odd) th {
+  background-color: #f9f9f9; }
+
+.table tbody tr:hover td,
+.table tbody tr:hover th {
+  background-color: #f5f5f5; }
+
+/* Definicion del Grid */
+/* Menu */
+/* Slider */
+/* Recibe numero del 0 - 1 */
 #slider {
   margin-top: 42px;
   overflow: hidden; }
@@ -310,49 +409,35 @@ table {
       box-shadow: 0 0 4px 0px #90b5ff ""; }
       #slider .tabs .tab h3 {
         font-size: 2.4em;
-        color: #24acda; }
+        color: #4bb0da; }
   #slider .tabs.show {
     filter: alpha(opacity=100);
     opacity: 1;
     visibility: visible; }
 
-/* Colors */
-/* Fonts 
-	Las familias disponibles desde Google Webfonts son:;
-		font-family: 'Ubuntu', sans-serif;
-		font-family: 'Open Sans Condensed', sans-serif;
-*/
 /* Definicion del Grid */
 /* Menu */
 /* Slider */
-/* 
-  $x        Posicion en X
-  $y        Posicion en X
-  $blur     Distancia de difuminacion
-  $spread   Sobre borde
-  $color    Color en Hexa
-  $alpha:1  Alfa del 0-1
-*/
 /* Recibe numero del 0 - 1 */
 body {
   font-family: "Ubuntu", sans-serif;
-  font-weight: 500;
+  font-weight: 400;
   font-weight: 300;
-  text-size: 12px;
+  text-size: 13px;
   background-color: #fcfcfc;
   color: #282828; }
 
 .azul {
-  color: #24acda; }
+  color: #4bb0da; }
 
 .gris {
-  color: #24acda; }
+  color: #4bb0da; }
 
 .gris_oscuro {
-  color: #24acda; }
+  color: #4bb0da; }
 
 .gris_sombra {
-  color: #24acda; }
+  color: #4bb0da; }
 
 .menu_claro {
   color: #fafafa; }
@@ -360,43 +445,40 @@ body {
 .menu_oscuro {
   color: #eaeaea; }
 
-/*
-	Genera la proporcion de los Headline
-*/
 h1 {
   font-size: 2.5em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 h2 {
   font-size: 2.2em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 h3 {
   font-size: 1.9em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 h4 {
   font-size: 1.6em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 h5 {
   font-size: 1.3em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 h6 {
   font-size: 1em;
-  font-weight: 500;
-  font-family: "Open Sans Condensed", sans-serif;
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
 .slogan {
@@ -405,16 +487,16 @@ h6 {
 
 .subtitle {
   font-size: 1.5em;
-  color: #24acda;
+  color: #4bb0da;
   margin-top: 0px; }
 
 p {
   margin: 10px 0; }
 
 a {
-  color: #4e4e4e;
+  color: #4b4d4b;
   text-decoration: none;
-  font-weight: 500;
+  font-weight: 400;
   -webkit-transition: all 600ms ease;
   -moz-transition: all 600ms ease;
   -ms-transition: all 600ms ease;
@@ -422,7 +504,7 @@ a {
   transition: all 600ms ease; }
   a:hover {
     text-decoration: none;
-    color: #24acda; }
+    color: #4bb0da; }
 
 .fixed.header {
   position: fixed;
@@ -432,13 +514,13 @@ a {
   z-index: 2000;
   height: 50px;
   border-bottom: 1px solid #CACACA;
-  background: #fafafa;
-  background: -moz-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
-  background: -webkit-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
-  background: -o-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
-  background: -ms-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
-  background: linear-gradient(to bottom, #fafafa 0%, #eaeaea 100%);
+  background-image: #fafafa;
+  background-image: -moz-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
+  background-image: -webkit-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -o-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -ms-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: linear-gradient(to bottom, #fafafa 0%, #eaeaea 100%);
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='$start', endColorstr='$finish',GradientType=0 );
   -moz-box-shadow: 0px 0px 1px 0px #6b6b6b "";
   -webkit-box-shadow: 0px 0px 1px 0px #6b6b6b "";
@@ -446,7 +528,7 @@ a {
   .fixed.header #main_menu .sitename {
     margin-bottom: 0;
     font-size: 1.4em;
-    line-height: 50px;
+    line-height: 42px;
     text-shadow: 0px 1px 0 white;
     filter: dropshadow(color=white, offx=0px, offy=1px); }
     .fixed.header #main_menu .sitename a:link {

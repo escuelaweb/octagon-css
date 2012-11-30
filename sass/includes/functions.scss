@@ -25,23 +25,23 @@
 }
 
 @mixin background-gradient($start,$finish){
-  background: $start;
-  background: -moz-linear-gradient(top,  $start 0%, $finish 100%);
-  background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$finish));
-  background: -webkit-linear-gradient(top,  $start 0%,$finish 100%);
-  background: -o-linear-gradient(top,  $start 0%,$finish 100%);
-  background: -ms-linear-gradient(top,  $start 0%,$finish 100%);
-  background: linear-gradient(to bottom,  $start 0%,$finish 100%);
+  background-image: $start;
+  background-image: -moz-linear-gradient(top,  $start 0%, $finish 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$finish));
+  background-image: -webkit-linear-gradient(top,  $start 0%,$finish 100%);
+  background-image: -o-linear-gradient(top,  $start 0%,$finish 100%);
+  background-image: -ms-linear-gradient(top,  $start 0%,$finish 100%);
+  background-image: linear-gradient(to bottom,  $start 0%,$finish 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$finish',GradientType=0 );
 }
-/* 
-  $x        Posicion en X
-  $y        Posicion en X
-  $blur     Distancia de difuminacion
-  $spread   Sobre borde
-  $color    Color en Hexa
-  $alpha:1  Alfa del 0-1
-*/
+
+  // $x        Posicion en X
+  // $y        Posicion en X
+  // $blur     Distancia de difuminacion
+  // $spread   Sobre borde
+  // $color    Color en Hexa
+  // $alpha:1  Alfa del 0-1
+
 @mixin box-shadow($x, $y, $blur, $spread, $color, $alpha:1, $inset:"") {
   -moz-box-shadow:      $x $y $blur $spread rgba($color, $alpha) $inset;
   -webkit-box-shadow:   $x $y $blur $spread rgba($color, $alpha) $inset;
@@ -93,4 +93,70 @@
     -o-border-radius: $topL $topR $bottomR $bottomL;
     border-radius: $topL $topR $bottomR $bottomL; 
  }
+}
+
+
+@mixin arrow($direction,$size,$color) {
+  display: inline-block;
+  width: 0; 
+  height: 0;
+  min-width:0;
+  @if $direction == 'top' {
+    border-left:    $size solid transparent;
+    border-right:   $size solid transparent;
+    border-bottom:  $size solid $color;
+  } @else if $direction == 'down' {
+    border-left:    $size solid transparent;
+    border-right:   $size solid transparent;
+    border-top:     $size solid $color;
+  } @else if $direction == 'right' {
+    border-bottom:  $size solid transparent;
+    border-top:     $size solid transparent;
+    border-left:    $size solid $color;
+  } @else {
+    border-top:     $size solid transparent;
+    border-bottom:  $size solid transparent; 
+    border-right:   $size solid $color;
+  }
+}
+
+@mixin boton($color:white,$bg:$azul,$shadow:$gris_claro) {
+  -moz-box-shadow:    none;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border: none;
+  background: none;
+  text-decoration: none;
+  display: inline-block;
+  padding: 8px 15px;
+  background-color: $bg;
+  color: $color;
+  margin-right: 10px;
+  @include border-radius(5px);
+  @include text-shadow(0,1px,0,#3c3c3c);
+  @include box-shadow(0,1px,1px,0,$shadow);
+  @include transition(all,400ms,ease);
+  &:hover {
+    -moz-box-shadow:    none;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+    border: none;
+    background: none;
+    background-color: darken($bg,20%);
+  }
+}
+
+@mixin icono-calendario($color: white, $bg:$gris_claro, $shadow:$gris_claro, $size:40px) {
+  $radius: ($size/10) + ($size/2);
+  background-color: $bg;
+  height:     $size;
+  line-height: $size;
+  width:      $size;
+  color: $color; 
+  font-size: $size/2;
+  margin-left: auto;
+  margin-right: auto;
+  border: $color $size/10 solid;
+  @include box-shadow(0,0,$size/10,0,$shadow);
+  @include border-radius($radius);
 }
