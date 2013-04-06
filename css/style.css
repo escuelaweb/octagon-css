@@ -1,4 +1,6 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu:300,400,700,300italic,400italic,700italic|Open+Sans+Condensed:300,300italic,700);
+@import url(./includes/default-hightlights.css);
+@import url(./fonts/escuela/style.css);
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
@@ -160,6 +162,8 @@ table {
     position: relative;
     display: inline-block;
     height: 42px; }
+  .menu .dropdown-toggle:before {
+    content: "<i class='arrow-down-medium'></i>"; }
   .menu .arrow-down-medium {
     position: relative;
     top: -3px;
@@ -200,7 +204,8 @@ table {
     -moz-box-shadow: 0 0px 2px 0 #b1b3b1 "";
     -webkit-box-shadow: 0 0px 2px 0 #b1b3b1 "";
     box-shadow: 0 0px 2px 0 #b1b3b1 ""; }
-    .menu .submenu .submenu-arrow {
+    .menu .submenu:after, .menu .submenu .submenu-arrow {
+      content: "";
       position: absolute;
       top: -8px;
       left: 10px;
