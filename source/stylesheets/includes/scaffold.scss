@@ -1,0 +1,275 @@
+@import "functions";
+
+// Estilos del Body
+body {
+	font-family: $ubuntu;
+	font-weight: $font_normal;
+	font-size: $font_base;
+	background-color: $white;
+	color: $gris_oscuro;
+}
+
+.azul        { color: $azul; }
+.gris        { color: $azul; }
+.gris_oscuro { color: $azul; }
+.gris_sombra { color: $azul; }
+.menu_claro  { color: $menu_claro; }
+.menu_oscuro { color: $menu_oscuro; }
+
+
+// Genera la proporcion de los Headline
+
+h1, h2, h3, h4, h5, h6 {
+	font-weight: $font_normal;
+  font-family: $open_sans;
+  margin-bottom: 20px;
+}
+
+@for $i from 1 through 6 {
+  h#{$i} { 
+  	@include text-proportion($i);
+  }
+}
+.slogan {
+	font-size: 2.5em;
+	margin-bottom: 0;
+	color: $white;
+}
+
+.subtitle {
+	font-size: 1.5em;
+	color: $azul;
+	margin-top: 0px;
+}
+
+p {
+	margin:10px 0; 
+	line-height: 1.4em;
+}
+
+a {
+	color: $gris;
+	text-decoration: none;
+	font-weight: $font_normal;
+	@include transition(all, 600ms, ease);
+	&:hover {
+		text-decoration: none;
+		color: $link_hover;
+	}
+}
+
+.fixed.header {
+	position: fixed;
+	left: 0;
+	top: 0;
+	width: 100%;
+	z-index: 2000;
+	height: $menu_height;
+	border-bottom: 1px solid #CACACA;
+	@include background-gradient($menu_claro,$menu_oscuro);
+	@include box-shadow(0px,0px,1px,0px,darken($menu_oscuro,50%));
+	#logo {
+		margin-top: 6px;
+	}
+	#main_menu {
+		.sitename {
+			margin-bottom: 0;
+			font-size: 1.4em;
+			line-height: $menu_height;
+			@include text-shadow(0px,1px,0, #FFFFFF);
+			a {
+				&:link {
+					color: $gris_oscuro;
+				}
+			}
+		}
+	}
+}
+
+#header {
+	margin-top:65px;
+}
+
+.hero-unit {
+	padding: 40px 0;
+}
+
+/* Content */
+/* ---------------------------------------------------------------- */
+
+#content {
+	position: relative;
+}
+
+.over_content {
+	margin-top:30px;
+	width: 100%;
+	background-color: #E7E7E7;
+	/*background-image: image-url("FondoOscuro.png");*/
+	background: rgb(69,69,69);
+	background: -moz-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%, rgba(34,34,34,1) 90%);
+	background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(69,69,69,1)), color-stop(90%,rgba(34,34,34,1)));
+	background: -webkit-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+	background: -o-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+	background: -ms-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+	background: radial-gradient(ellipse at center,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#222222',GradientType=1 );
+	color: #212121;
+	box-shadow: 0 5px  0 0 $azul,
+							0 10px 0 0 $gris_oscuro;
+	.container {
+		padding-top: 40px;
+		padding-bottom: 40px;
+	}
+}
+
+#content {
+	margin-top: 10px;
+	padding: 5px 10px 40px 10px;
+	background-color: white;
+	padding-top: 60px;
+	@include box-shadow(0,0,5px,0,$gris,0.5);
+	&.contents.show {
+
+	}
+	&.contents.index {
+		padding-top:0;
+	}
+}
+
+.titulo_cinta {
+	background-color: $gris;
+	color: white;
+	padding: 10px 25px;
+	position: relative;
+	left: -25px;
+	@include box-shadow(0,4px,0,0,$azul,1);
+	&:before, .arrow-cinta-left {
+		@include arrow('left', 15px, $gris_claro);
+		border-bottom: 0px solid transparent;
+		position: absolute;
+		top: -15px;
+		left: 0;
+		z-index: -1;
+	}
+	&:after, .arrow-cinta-right {
+		@include arrow('right', 15px, $gris_claro);
+		border-bottom: 0px solid transparent;
+		position: absolute;
+		top: -15px;
+		right: 0;
+		z-index: -1;
+	}
+}
+
+.direfencias {
+	font-size: 42px;
+	text-align: center;
+	margin-bottom: 70px;
+	padding-top: 60px;
+}
+
+/* Forms */
+/* --------------------------------------------------------------- */
+#error_explanation {
+	margin-bottom: 20px;
+	h2 {
+		display: none;
+	}
+	ul {
+		margin-left: 10px;
+		list-style-type: disc;
+		li {
+			list-style-type: disc;
+		}
+	}
+}
+.session_form, .register_form, .edit_form {
+	margin-top: 0px;
+	padding: 20px 20px 40px;
+	@include background-gradient(#ececec,#fff);
+	@include box-shadow(0,0,3px,0,#cacaca);
+}
+.edit_form {
+	.edit_user {
+		
+	}
+}
+
+/* Footer */
+/* ---------------------------------------------------------------- */
+#footer {
+	padding: 0;
+	p {
+		font-size: 1em;
+	}
+	.contacto {
+		p {
+			margin-top: 0;
+		}
+	}
+	.upperfooter {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		position: relative;
+		z-index: 1;
+		margin-top: -5px;
+		min-height: 160px;
+		border-top: 1px solid #E0E0E0;
+		border-bottom: 1px solid #E0E0E0;
+		box-shadow: inset 0 -1px 0 white;
+		background-color: #F8F8F8;
+		ul {
+			li {
+				margin-bottom: 5px;
+				a{
+					font-size: 0.9em;
+					text-decoration: none;
+				}
+			}
+		}
+		.twtr-hd {
+			display: none;
+		}
+		.twtr-ft {
+			display: none;
+		}
+		.twtr-tweet-wrap {
+			padding: 10px 0 0 0;
+		}
+		.twtr-tweet-text {
+			padding-bottom: 10px;
+		}
+		.twtr-bd {
+			font-family: $ubuntu;
+			a {
+				font-family: $ubuntu;
+			}
+		}
+	}
+	.downfooter {
+		padding: 10px 0;
+		font-size: 0.9em;
+		color: darken($gris_claro, 30%);
+	}
+  .color-row li {
+	  margin-left: 0 !important;
+	  float: left;
+	  position: relative;
+	  list-style-type: none;
+	  width: 50px;
+	  height: 10px;
+	  display: block;
+	  -webkit-box-flex: 1;
+	  -moz-box-flex: 1;
+	  box-flex: 1;
+	}
+	.logofooter {
+		width: 180px;
+		margin-top: 40px;
+		margin-left: 45px;
+		img {
+			width: 120px;
+		}
+	}
+}

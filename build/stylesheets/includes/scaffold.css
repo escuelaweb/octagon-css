@@ -1,0 +1,327 @@
+/* line 4, scaffold.scss */
+body {
+  font-family: "Ubuntu", sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  background-color: #fcfcfc;
+  color: #282828; }
+
+/* line 12, scaffold.scss */
+.azul {
+  color: #4bb0da; }
+
+/* line 13, scaffold.scss */
+.gris {
+  color: #4bb0da; }
+
+/* line 14, scaffold.scss */
+.gris_oscuro {
+  color: #4bb0da; }
+
+/* line 15, scaffold.scss */
+.gris_sombra {
+  color: #4bb0da; }
+
+/* line 16, scaffold.scss */
+.menu_claro {
+  color: #fafafa; }
+
+/* line 17, scaffold.scss */
+.menu_oscuro {
+  color: #eaeaea; }
+
+/* line 22, scaffold.scss */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 400;
+  font-family: "Dosis", sans-serif;
+  margin-bottom: 20px; }
+
+/* line 29, scaffold.scss */
+h1 {
+  font-size: 2.5em; }
+
+/* line 29, scaffold.scss */
+h2 {
+  font-size: 2.2em; }
+
+/* line 29, scaffold.scss */
+h3 {
+  font-size: 1.9em; }
+
+/* line 29, scaffold.scss */
+h4 {
+  font-size: 1.6em; }
+
+/* line 29, scaffold.scss */
+h5 {
+  font-size: 1.3em; }
+
+/* line 29, scaffold.scss */
+h6 {
+  font-size: 1em; }
+
+/* line 33, scaffold.scss */
+.slogan {
+  font-size: 2.5em;
+  margin-bottom: 0;
+  color: #fcfcfc; }
+
+/* line 39, scaffold.scss */
+.subtitle {
+  font-size: 1.5em;
+  color: #4bb0da;
+  margin-top: 0px; }
+
+/* line 45, scaffold.scss */
+p {
+  margin: 10px 0;
+  line-height: 1.4em; }
+
+/* line 50, scaffold.scss */
+a {
+  color: #4b4d4b;
+  text-decoration: none;
+  font-weight: 400;
+  -webkit-transition: all 600ms ease;
+  -moz-transition: all 600ms ease;
+  -ms-transition: all 600ms ease;
+  -o-transition: all 600ms ease;
+  transition: all 600ms ease; }
+  /* line 55, scaffold.scss */
+  a:hover {
+    text-decoration: none;
+    color: #4bb0da; }
+
+/* line 61, scaffold.scss */
+.fixed.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  height: 42px;
+  border-bottom: 1px solid #CACACA;
+  background-color: #fafafa;
+  background-image: -moz-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #fafafa), color-stop(100%, #eaeaea));
+  background-image: -webkit-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -o-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: -ms-linear-gradient(top, #fafafa 0%, #eaeaea 100%);
+  background-image: linear-gradient(to bottom, #fafafa 0%, #eaeaea 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#fafafa', endColorstr='#eaeaea',GradientType=0 );
+  -moz-box-shadow: 0px 0px 1px 0px #6b6b6b ;
+  -webkit-box-shadow: 0px 0px 1px 0px #6b6b6b ;
+  box-shadow: 0px 0px 1px 0px #6b6b6b ; }
+  /* line 71, scaffold.scss */
+  .fixed.header #logo {
+    margin-top: 6px; }
+  /* line 75, scaffold.scss */
+  .fixed.header #main_menu .sitename {
+    margin-bottom: 0;
+    font-size: 1.4em;
+    line-height: 42px;
+    text-shadow: 0px 1px 0 white;
+    /* filter: dropshadow(color=$color, offx=$x, offy=$y); */ }
+    /* line 81, scaffold.scss */
+    .fixed.header #main_menu .sitename a:link {
+      color: #282828; }
+
+/* line 89, scaffold.scss */
+#header {
+  margin-top: 65px; }
+
+/* line 93, scaffold.scss */
+.hero-unit {
+  padding: 40px 0; }
+
+/* Content */
+/* ---------------------------------------------------------------- */
+/* line 100, scaffold.scss */
+#content {
+  position: relative; }
+
+/* line 104, scaffold.scss */
+.over_content {
+  margin-top: 30px;
+  width: 100%;
+  background-color: #E7E7E7;
+  /*background-image: image-url("FondoOscuro.png");*/
+  background: #454545;
+  background: -moz-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #454545), color-stop(90%, #222222));
+  background: -webkit-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
+  background: -o-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
+  background: -ms-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
+  background: radial-gradient(ellipse at center, #454545 0%, #222222 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#222222',GradientType=1 );
+  color: #212121;
+  box-shadow: 0 5px 0 0 #4bb0da, 0 10px 0 0 #282828; }
+  /* line 120, scaffold.scss */
+  .over_content .container {
+    padding-top: 40px;
+    padding-bottom: 40px; }
+
+/* line 126, scaffold.scss */
+#content {
+  margin-top: 10px;
+  padding: 5px 10px 40px 10px;
+  background-color: white;
+  padding-top: 60px;
+  -moz-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
+  -webkit-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
+  box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ; }
+  /* line 135, scaffold.scss */
+  #content.contents.index {
+    padding-top: 0; }
+
+/* line 140, scaffold.scss */
+.titulo_cinta {
+  background-color: #4b4d4b;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -25px;
+  -moz-box-shadow: 0 4px 0 0 #4bb0da ;
+  -webkit-box-shadow: 0 4px 0 0 #4bb0da ;
+  box-shadow: 0 4px 0 0 #4bb0da ; }
+  /* line 147, scaffold.scss */
+  .titulo_cinta:before, .titulo_cinta .arrow-cinta-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    min-width: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #b1b3b1;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1; }
+  /* line 155, scaffold.scss */
+  .titulo_cinta:after, .titulo_cinta .arrow-cinta-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    min-width: 0;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #b1b3b1;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1; }
+
+/* line 165, scaffold.scss */
+.direfencias {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 70px;
+  padding-top: 60px; }
+
+/* Forms */
+/* --------------------------------------------------------------- */
+/* line 174, scaffold.scss */
+#error_explanation {
+  margin-bottom: 20px; }
+  /* line 176, scaffold.scss */
+  #error_explanation h2 {
+    display: none; }
+  /* line 179, scaffold.scss */
+  #error_explanation ul {
+    margin-left: 10px;
+    list-style-type: disc; }
+    /* line 182, scaffold.scss */
+    #error_explanation ul li {
+      list-style-type: disc; }
+
+/* line 187, scaffold.scss */
+.session_form, .register_form, .edit_form {
+  margin-top: 0px;
+  padding: 20px 20px 40px;
+  background-color: #ececec;
+  background-image: -moz-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -o-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -ms-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: linear-gradient(to bottom, #ececec 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='white',GradientType=0 );
+  -moz-box-shadow: 0 0 3px 0 #cacaca ;
+  -webkit-box-shadow: 0 0 3px 0 #cacaca ;
+  box-shadow: 0 0 3px 0 #cacaca ; }
+
+/* Footer */
+/* ---------------------------------------------------------------- */
+/* line 201, scaffold.scss */
+#footer {
+  padding: 0; }
+  /* line 203, scaffold.scss */
+  #footer p {
+    font-size: 1em; }
+  /* line 207, scaffold.scss */
+  #footer .contacto p {
+    margin-top: 0; }
+  /* line 211, scaffold.scss */
+  #footer .upperfooter {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    position: relative;
+    z-index: 1;
+    margin-top: -5px;
+    min-height: 160px;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+    box-shadow: inset 0 -1px 0 white;
+    background-color: #F8F8F8; }
+    /* line 223, scaffold.scss */
+    #footer .upperfooter ul li {
+      margin-bottom: 5px; }
+      /* line 225, scaffold.scss */
+      #footer .upperfooter ul li a {
+        font-size: 0.9em;
+        text-decoration: none; }
+    /* line 231, scaffold.scss */
+    #footer .upperfooter .twtr-hd {
+      display: none; }
+    /* line 234, scaffold.scss */
+    #footer .upperfooter .twtr-ft {
+      display: none; }
+    /* line 237, scaffold.scss */
+    #footer .upperfooter .twtr-tweet-wrap {
+      padding: 10px 0 0 0; }
+    /* line 240, scaffold.scss */
+    #footer .upperfooter .twtr-tweet-text {
+      padding-bottom: 10px; }
+    /* line 243, scaffold.scss */
+    #footer .upperfooter .twtr-bd {
+      font-family: "Ubuntu", sans-serif; }
+      /* line 245, scaffold.scss */
+      #footer .upperfooter .twtr-bd a {
+        font-family: "Ubuntu", sans-serif; }
+  /* line 250, scaffold.scss */
+  #footer .downfooter {
+    padding: 10px 0;
+    font-size: 0.9em;
+    color: #646764; }
+  /* line 255, scaffold.scss */
+  #footer .color-row li {
+    margin-left: 0 !important;
+    float: left;
+    position: relative;
+    list-style-type: none;
+    width: 50px;
+    height: 10px;
+    display: block;
+    -webkit-box-flex: 1;
+    -moz-box-flex: 1;
+    box-flex: 1; }
+  /* line 267, scaffold.scss */
+  #footer .logofooter {
+    width: 180px;
+    margin-top: 40px;
+    margin-left: 45px; }
+    /* line 271, scaffold.scss */
+    #footer .logofooter img {
+      width: 120px; }
