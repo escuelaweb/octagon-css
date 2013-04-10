@@ -1,21 +1,22 @@
 
 // Colors 
 
-$morado    : #9966C8;
-$verde     : #ACE44A;
-$azul_wp   : #68A8E0;
-$naranja   : #EEBA43;
-$rojo      : #dd4646;
-$gris        : #4B4D4B;
-$azul        : #4BB0DA;
-$azul_claro  : lighten($azul,40%);
-$gris_claro  : lighten($gris,40%);
-$gris_oscuro : #282828;
-$gris_sombra : #E0E0E0;
-$white       : #fcfcfc;
-$menu_claro  : #FAFAFA;
-$menu_oscuro : #EAEAEA;
-$link_hover  : $azul;
+$morado           : #9966C8;
+$verde            : #ACE44A;
+$azul_wp          : #68A8E0;
+$naranja          : #EEBA43;
+$rojo             : #dd4646;
+$gris             : #4B4D4B;
+$azul             : #4BB0DA;
+$azul_claro       : lighten($azul,40%);
+$gris_claro       : lighten($gris,40%);
+$gris_oscuro      : #282828;
+$gris_sombra      : #E0E0E0;
+$menu_claro       : #FAFAFA;
+$menu_oscuro      : #EAEAEA;
+$white            : #fcfcfc;
+$link_hover       : $azul;
+$footer_background: lighten($gris_claro,50%);
 
 // Las familias disponibles desde Google Webfonts son:;
 // font-family: 'Ubuntu', sans-serif;
@@ -40,6 +41,7 @@ $column_number: 12;
 $column_gutter: 20px;
 // Menu 
 $menu_height   : 42px;
+$submenu_height: $menu_height - 10px;
 $border_medium : 4px;
 $border_thin   : 1px;
 
@@ -51,3 +53,6 @@ $ymove: 140px;
 $innerpadding: 10px;
 $modal_width: 740px;
 $modal_left: -1*($modal_width/2);
+// Redes Sociales
+$alto_red_social: 45px;
+$ancho_red_social: 245px;

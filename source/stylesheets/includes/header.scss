@@ -1,0 +1,67 @@
+@import "functions";
+
+.fixed.header {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  z-index: 2000;
+  height: $menu_height;
+  border-bottom: 1px solid #CACACA;
+  @include background-gradient($menu_claro,$menu_oscuro);
+  @include box-shadow(0px,0px,1px,0px,darken($menu_oscuro,50%));
+  #logo {
+    margin-top: 6px;
+  }
+  #main_menu {
+    .sitename {
+      margin-bottom: 0;
+      font-size: 1.4em;
+      line-height: $menu_height;
+      @include text-shadow(0px,1px,0, #FFFFFF);
+      a {
+        &:link {
+          color: $gris_oscuro;
+        }
+      }
+    }
+  }
+}
+
+#header {
+  margin-top:65px;
+}
+
+.hero-unit {
+  padding: 40px 0;
+}
+
+.over_content {
+  margin-top:30px;
+  width: 100%;
+  color: white;
+  background-color: #E7E7E7;
+  background: rgb(69,69,69);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%, rgba(34,34,34,1) 90%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(69,69,69,1)), color-stop(90%,rgba(34,34,34,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: radial-gradient(ellipse at center,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  box-shadow: 0 5px  0 0 $azul,
+              0 10px 0 0 $gris_oscuro;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+  .slogan {
+    font-size: 2.5em;
+    margin-bottom: 0;
+    color: $white;
+  }
+  .subtitle {
+    font-size: 1.5em;
+    color: $azul;
+    margin-top: 0px;
+  }
+}

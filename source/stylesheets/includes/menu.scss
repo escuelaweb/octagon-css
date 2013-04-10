@@ -13,10 +13,12 @@
 			
 		}
 	}
-	.arrow-down-medium {
+	.dropdown-toggle:after {
+		content: "";
 		position: relative;
 		top: -3px;
 		margin-left: 10px;	
+		@include arrow('down', 4px, rgba(black,0.8));
 	}
 	a {
 		font-family: $open_sans;
@@ -30,7 +32,7 @@
 		text-decoration: none;
 		&:hover {
 			color:$link_hover;
-			border-bottom: $link_hover $border_thin solid;
+			border-bottom: $link_hover $border_medium solid;
 			@include box-shadow(0,2px,0px,0px,$link_hover);
 		}
 		.icons {
@@ -49,7 +51,8 @@
 		background-color: rgba(black,0.8);
 		@include border-radius(5px);
 		@include box-shadow(0,0px,2px,0,$gris_claro);
-		.submenu-arrow {
+		&:after,.submenu-arrow {
+			content: "";
 			position: absolute;
 			top: -8px;
 			left: 10px;
@@ -59,6 +62,8 @@
 			float:none;
 			display: block;
 			a {
+				height: $submenu_height;
+				line-height: $submenu_height;
 				font-weight: normal;
 				color: white;
 				display: block;
