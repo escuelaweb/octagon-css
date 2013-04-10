@@ -682,179 +682,179 @@ h6 {
   margin-bottom: 20px; }
 
 /* line 30, includes/generals.scss */
-mt0 {
+.mt0 {
   margin-top: 0px; }
 
 /* line 31, includes/generals.scss */
-mr0 {
+.mr0 {
   margin-right: 0px; }
 
 /* line 32, includes/generals.scss */
-mb0 {
+.mb0 {
   margin-bottom: 0px; }
 
 /* line 33, includes/generals.scss */
-ml0 {
+.ml0 {
   margin-left: 0px; }
 
 /* line 30, includes/generals.scss */
-mt1 {
+.mt10 {
   margin-top: 10px; }
 
 /* line 31, includes/generals.scss */
-mr1 {
+.mr10 {
   margin-right: 10px; }
 
 /* line 32, includes/generals.scss */
-mb1 {
+.mb10 {
   margin-bottom: 10px; }
 
 /* line 33, includes/generals.scss */
-ml1 {
+.ml10 {
   margin-left: 10px; }
 
 /* line 30, includes/generals.scss */
-mt2 {
+.mt20 {
   margin-top: 20px; }
 
 /* line 31, includes/generals.scss */
-mr2 {
+.mr20 {
   margin-right: 20px; }
 
 /* line 32, includes/generals.scss */
-mb2 {
+.mb20 {
   margin-bottom: 20px; }
 
 /* line 33, includes/generals.scss */
-ml2 {
+.ml20 {
   margin-left: 20px; }
 
 /* line 30, includes/generals.scss */
-mt3 {
+.mt30 {
   margin-top: 30px; }
 
 /* line 31, includes/generals.scss */
-mr3 {
+.mr30 {
   margin-right: 30px; }
 
 /* line 32, includes/generals.scss */
-mb3 {
+.mb30 {
   margin-bottom: 30px; }
 
 /* line 33, includes/generals.scss */
-ml3 {
+.ml30 {
   margin-left: 30px; }
 
 /* line 30, includes/generals.scss */
-mt4 {
+.mt40 {
   margin-top: 40px; }
 
 /* line 31, includes/generals.scss */
-mr4 {
+.mr40 {
   margin-right: 40px; }
 
 /* line 32, includes/generals.scss */
-mb4 {
+.mb40 {
   margin-bottom: 40px; }
 
 /* line 33, includes/generals.scss */
-ml4 {
+.ml40 {
   margin-left: 40px; }
 
 /* line 30, includes/generals.scss */
-mt5 {
+.mt50 {
   margin-top: 50px; }
 
 /* line 31, includes/generals.scss */
-mr5 {
+.mr50 {
   margin-right: 50px; }
 
 /* line 32, includes/generals.scss */
-mb5 {
+.mb50 {
   margin-bottom: 50px; }
 
 /* line 33, includes/generals.scss */
-ml5 {
+.ml50 {
   margin-left: 50px; }
 
 /* line 30, includes/generals.scss */
-mt6 {
+.mt60 {
   margin-top: 60px; }
 
 /* line 31, includes/generals.scss */
-mr6 {
+.mr60 {
   margin-right: 60px; }
 
 /* line 32, includes/generals.scss */
-mb6 {
+.mb60 {
   margin-bottom: 60px; }
 
 /* line 33, includes/generals.scss */
-ml6 {
+.ml60 {
   margin-left: 60px; }
 
 /* line 30, includes/generals.scss */
-mt7 {
+.mt70 {
   margin-top: 70px; }
 
 /* line 31, includes/generals.scss */
-mr7 {
+.mr70 {
   margin-right: 70px; }
 
 /* line 32, includes/generals.scss */
-mb7 {
+.mb70 {
   margin-bottom: 70px; }
 
 /* line 33, includes/generals.scss */
-ml7 {
+.ml70 {
   margin-left: 70px; }
 
 /* line 30, includes/generals.scss */
-mt8 {
+.mt80 {
   margin-top: 80px; }
 
 /* line 31, includes/generals.scss */
-mr8 {
+.mr80 {
   margin-right: 80px; }
 
 /* line 32, includes/generals.scss */
-mb8 {
+.mb80 {
   margin-bottom: 80px; }
 
 /* line 33, includes/generals.scss */
-ml8 {
+.ml80 {
   margin-left: 80px; }
 
 /* line 30, includes/generals.scss */
-mt9 {
+.mt90 {
   margin-top: 90px; }
 
 /* line 31, includes/generals.scss */
-mr9 {
+.mr90 {
   margin-right: 90px; }
 
 /* line 32, includes/generals.scss */
-mb9 {
+.mb90 {
   margin-bottom: 90px; }
 
 /* line 33, includes/generals.scss */
-ml9 {
+.ml90 {
   margin-left: 90px; }
 
 /* line 30, includes/generals.scss */
-mt10 {
+.mt100 {
   margin-top: 100px; }
 
 /* line 31, includes/generals.scss */
-mr10 {
+.mr100 {
   margin-right: 100px; }
 
 /* line 32, includes/generals.scss */
-mb10 {
+.mb100 {
   margin-bottom: 100px; }
 
 /* line 33, includes/generals.scss */
-ml10 {
+.ml100 {
   margin-left: 100px; }
 
 /* Generals */
@@ -1737,6 +1737,100 @@ blockquote {
 /* line 295, includes/generals.scss */
 .collapse.in {
   height: auto; }
+
+/* line 3, includes/buttons.scss */
+.boton {
+  position: relative;
+  display: inline-block;
+  background-color: #4bb0da;
+  color: #fcfcfc;
+  text-align: left;
+  font-family: "Chivo", sans-serif;
+  padding: 1em 2em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 1px 0 #b1b3b1 ;
+  -webkit-box-shadow: 0 1px 1px 0 #b1b3b1 ;
+  box-shadow: 0 1px 1px 0 #b1b3b1 ; }
+  /* line 14, includes/buttons.scss */
+  .boton:hover {
+    color: #fcfcfc;
+    background-color: #258ab4; }
+  /* line 18, includes/buttons.scss */
+  .boton.anchor {
+    display: block; }
+  /* line 21, includes/buttons.scss */
+  .boton.boton-g {
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center; }
+  /* line 26, includes/buttons.scss */
+  .boton.boton-wicon.anchor {
+    text-align: left;
+    padding-right: 50px; }
+    /* line 29, includes/buttons.scss */
+    .boton.boton-wicon.anchor .boton-wicon-icon {
+      font-size: 25px;
+      display: block;
+      line-height: 2.5em;
+      position: absolute;
+      right: 0.5em;
+      top: 0; }
+    /* line 37, includes/buttons.scss */
+    .boton.boton-wicon.anchor:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 50px;
+      top: 0;
+      border-right: #75c3e3 1px solid;
+      border-left: #299ac9 1px solid; }
+
+/* line 51, includes/buttons.scss */
+.boton.boton-morado {
+  background-color: #9966c8; }
+  /* line 53, includes/buttons.scss */
+  .boton.boton-morado:hover {
+    background-color: #733ca6; }
+  /* line 57, includes/buttons.scss */
+  .boton.boton-morado.boton-wicon.anchor:after {
+    border-right: #b28cd5 1px solid;
+    border-left: #8042b9 1px solid; }
+/* line 63, includes/buttons.scss */
+.boton.boton-verde {
+  background-color: #ace44a; }
+  /* line 65, includes/buttons.scss */
+  .boton.boton-verde:hover {
+    background-color: #88c41d; }
+  /* line 69, includes/buttons.scss */
+  .boton.boton-verde.boton-wicon.anchor:after {
+    border-right: #c0eb76 1px solid;
+    border-left: #97da21 1px solid; }
+/* line 75, includes/buttons.scss */
+.boton.boton-naranja {
+  background-color: #eeba43; }
+  /* line 77, includes/buttons.scss */
+  .boton.boton-naranja:hover {
+    background-color: #d29813; }
+  /* line 81, includes/buttons.scss */
+  .boton.boton-naranja.boton-wicon.anchor:after {
+    border-right: #f2cb72 1px solid;
+    border-left: #e9a915 1px solid; }
+/* line 87, includes/buttons.scss */
+.boton.boton-rojo {
+  background-color: #dd4646; }
+  /* line 89, includes/buttons.scss */
+  .boton.boton-rojo:hover {
+    background-color: #b52121; }
+  /* line 93, includes/buttons.scss */
+  .boton.boton-rojo.boton-wicon.anchor:after {
+    border-right: #e57171 1px solid;
+    border-left: #cb2525 1px solid; }
 
 /* line 4, includes/scaffold.scss */
 body {
