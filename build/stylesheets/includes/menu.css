@@ -78,6 +78,8 @@
       display: block; }
       /* line 64, menu.scss */
       .menu .submenu li a {
+        height: 32px;
+        line-height: 32px;
         font-weight: normal;
         color: white;
         display: block;
@@ -85,7 +87,7 @@
         -moz-box-shadow: 0 0px 0px 0px white ;
         -webkit-box-shadow: 0 0px 0px 0px white ;
         box-shadow: 0 0px 0px 0px white ; }
-        /* line 71, menu.scss */
+        /* line 73, menu.scss */
         .menu .submenu li a:hover {
           background-color: #666;
           border: none;
@@ -93,28 +95,28 @@
           -moz-box-shadow: 0 0px 0px 0px white ;
           -webkit-box-shadow: 0 0px 0px 0px white ;
           box-shadow: 0 0px 0px 0px white ; }
-    /* line 79, menu.scss */
+    /* line 81, menu.scss */
     .menu .submenu.last {
       left: auto;
       right: 0px; }
-      /* line 82, menu.scss */
+      /* line 84, menu.scss */
       .menu .submenu.last .submenu-arrow {
         left: auto;
         right: 10px; }
-  /* line 89, menu.scss */
+  /* line 91, menu.scss */
   .menu.right .submenu {
     left: auto;
     right: 0; }
-    /* line 92, menu.scss */
+    /* line 94, menu.scss */
     .menu.right .submenu a:hover {
       border: none;
       border-right: 4px solid #4bb0da; }
-    /* line 96, menu.scss */
+    /* line 98, menu.scss */
     .menu.right .submenu .submenu-arrow {
       left: auto;
       right: 10px; }
 
-/* line 104, menu.scss */
+/* line 106, menu.scss */
 .divisor {
   display: block;
   float: left;
@@ -122,10 +124,10 @@
   border-right: #f4f4f4 solid 1px;
   border-left: #e0e0e0 solid 1px; }
 
-/* line 113, menu.scss */
+/* line 115, menu.scss */
 aside .menu li {
   float: none;
   display: block; }
-  /* line 116, menu.scss */
+  /* line 118, menu.scss */
   aside .menu li a {
     display: block; }
