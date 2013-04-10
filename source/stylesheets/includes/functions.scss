@@ -1,15 +1,23 @@
 @import "vars";
 
-@mixin text-proportion($size) {
-	font-size:1em*$text_proportion*(6-$size)+1em;
+@mixin text-proportion($size, $proportion:$text_proportion, $base: 1em) {
+  font-size:$base*$proportion*(6-$size)+1em;
 }
 
 @mixin column-calc($number) {
-  width: ($column-width * $number) + ($column_gutter * ($number - 1));
+  width: $column-width * $number + ($column_gutter * ($number - 1));
 }
 
 @mixin offset-calc($number) {
-  margin-left: ($column-width * $number) + ($column_gutter * $number) ;
+  margin-left: $column-width * $number + ($column_gutter * $number);
+}
+
+@mixin margin-creation($direction, $time) {
+  margin-#{$direction}: 10px * $time;
+}
+
+@mixin padding-creation($direction, $time) {
+  padding-#{$direction}: 10px * $time;
 }
 
 @mixin clearfix {
@@ -25,14 +33,14 @@
 }
 
 @mixin background-gradient($start,$finish){
-  background-image: $start;
+  background-color: $start;
   background-image: -moz-linear-gradient(top,  $start 0%, $finish 100%);
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%,$start), color-stop(100%,$finish));
   background-image: -webkit-linear-gradient(top,  $start 0%,$finish 100%);
   background-image: -o-linear-gradient(top,  $start 0%,$finish 100%);
   background-image: -ms-linear-gradient(top,  $start 0%,$finish 100%);
   background-image: linear-gradient(to bottom,  $start 0%,$finish 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='$start', endColorstr='$finish',GradientType=0 );
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$finish}',GradientType=0 );
 }
 
   // $x        Posicion en X
@@ -42,14 +50,35 @@
   // $color    Color en Hexa
   // $alpha:1  Alfa del 0-1
 
-@mixin box-shadow($x, $y, $blur, $spread, $color, $alpha:1, $inset:"") {
-  -moz-box-shadow:      $x $y $blur $spread rgba($color, $alpha) $inset;
-  -webkit-box-shadow:   $x $y $blur $spread rgba($color, $alpha) $inset;
-  box-shadow:           $x $y $blur $spread rgba($color, $alpha) $inset;
+@mixin box-shadow($x, $y:"false", $blur:"false", $spread:"false", $color:"false", $alpha:1, $inset:"") {
+  @if $y=="false" and $blur=="false" and $spread=="false" and $color=="false" 
+  {
+    -moz-box-shadow:      $x;
+    -webkit-box-shadow:   $x;
+    box-shadow:           $x;
+  } 
+  @else {
+    -moz-box-shadow:      $x $y $blur $spread rgba($color, $alpha) #{$inset};
+    -webkit-box-shadow:   $x $y $blur $spread rgba($color, $alpha) #{$inset};
+    box-shadow:           $x $y $blur $spread rgba($color, $alpha) #{$inset};
+  }
 }
-@mixin text-shadow($x, $y, $blur, $color) {
-  text-shadow: $x $y $blur $color;
-  filter: dropshadow(color=$color, offx=$x, offy=$y);
+
+@mixin inner-box-shadow ($x, $y, $blur, $spread, $color, $alpha:1) {
+  -moz-box-shadow:      inset $x $y $blur $spread rgba($color, $alpha);
+  -webkit-box-shadow:   inset $x $y $blur $spread rgba($color, $alpha);
+  box-shadow:           inset $x $y $blur $spread rgba($color, $alpha);
+}
+
+@mixin text-shadow($x, $y:"false", $blur:"false", $color:"false") {
+  @if $y=="false" and $blur=="false" and $color=="false" 
+  {
+    text-shadow: $x;
+  }
+  @else {
+    text-shadow: $x $y $blur $color;
+  }
+
 }
 
 @mixin transition($property, $duration, $function){
@@ -63,6 +92,13 @@
 @mixin opacity($value) {
   filter:  alpha(opacity=$value*100);
   opacity: $value;
+}
+
+@mixin box-sizing($params) {
+  -webkit-box-sizing: $params;
+  -moz-box-sizing: $params;
+  -ms-box-sizing: $params;
+  box-sizing: $params;
 }
 
 @mixin border-radius ($topL , $topR:"false" , $bottomR:"false" , $bottomL:"false") {
@@ -94,7 +130,6 @@
     border-radius: $topL $topR $bottomR $bottomL; 
  }
 }
-
 
 @mixin arrow($direction,$size,$color) {
   display: inline-block;

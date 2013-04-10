@@ -1,0 +1,99 @@
+@import "functions";
+
+.boton {
+  position: relative;
+  display: inline-block;
+  background-color: $azul;
+  color: $white;
+  text-align: left;
+  font-family: $chivo;
+  padding: 1em 2em;
+  text-decoration: none;
+  @include border-radius(5px);
+  @include box-shadow(0,1px,1px,0,$gris_claro);
+  &:hover {
+    color: $white;
+    background-color: darken($azul,15%);
+  }
+  &.anchor {
+    display: block;
+  }
+  &.boton-g {
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center;
+  }
+  &.boton-wicon.anchor {
+    text-align: left;
+    padding-right: 50px;
+    .boton-wicon-icon {
+      font-size: 25px;
+      display: block;
+      line-height: 2.5em;
+      position: absolute;
+      right: 0.5em;
+      top: 0;
+    }
+    &:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 50px;
+      top: 0;
+      border-right: lighten($azul, 10%) $border-thin solid;
+      border-left: darken($azul, 10%) $border-thin solid;
+    }
+  }
+}
+// Variaciones de color
+.boton {
+  &.boton-morado {
+    background-color: $morado;
+    &:hover {
+      background-color: darken($morado,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($morado, 10%) $border-thin solid;
+        border-left: darken($morado, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-verde {
+    background-color: $verde;
+    &:hover {
+      background-color: darken($verde,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($verde, 10%) $border-thin solid;
+        border-left: darken($verde, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-naranja {
+    background-color: $naranja;
+    &:hover {
+      background-color: darken($naranja,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($naranja, 10%) $border-thin solid;
+        border-left: darken($naranja, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-rojo {
+    background-color: $rojo;
+    &:hover {
+      background-color: darken($rojo,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($rojo, 10%) $border-thin solid;
+        border-left: darken($rojo, 10%) $border-thin solid;
+      }
+    }
+  }
+}
