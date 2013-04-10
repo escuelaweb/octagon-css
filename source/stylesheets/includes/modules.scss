@@ -42,5 +42,29 @@
 }
 
 // Module center
-
+.module-c {
+  text-align: center;
+  .module-c-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: $azul;
+  }
+  .module-c-icon {
+    font-size: 40px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: $morado;
+    margin: 0 auto;
+    //border: $white $border_medium solid;
+    // @include text-shadow(-1px -1px 0 darken($azul,20%));
+    @include border-radius(50px);
+  }
+  .module-c-content {
+    p {
+      margin-top: 0;
+    }
+  }
+}
 // Module with thumbnail
