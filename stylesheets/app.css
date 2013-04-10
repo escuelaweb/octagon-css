@@ -274,6 +274,8 @@ table {
       display: block; }
       /* line 64, includes/menu.scss */
       .menu .submenu li a {
+        height: 32px;
+        line-height: 32px;
         font-weight: normal;
         color: white;
         display: block;
@@ -281,7 +283,7 @@ table {
         -moz-box-shadow: 0 0px 0px 0px white ;
         -webkit-box-shadow: 0 0px 0px 0px white ;
         box-shadow: 0 0px 0px 0px white ; }
-        /* line 71, includes/menu.scss */
+        /* line 73, includes/menu.scss */
         .menu .submenu li a:hover {
           background-color: #666;
           border: none;
@@ -289,28 +291,28 @@ table {
           -moz-box-shadow: 0 0px 0px 0px white ;
           -webkit-box-shadow: 0 0px 0px 0px white ;
           box-shadow: 0 0px 0px 0px white ; }
-    /* line 79, includes/menu.scss */
+    /* line 81, includes/menu.scss */
     .menu .submenu.last {
       left: auto;
       right: 0px; }
-      /* line 82, includes/menu.scss */
+      /* line 84, includes/menu.scss */
       .menu .submenu.last .submenu-arrow {
         left: auto;
         right: 10px; }
-  /* line 89, includes/menu.scss */
+  /* line 91, includes/menu.scss */
   .menu.right .submenu {
     left: auto;
     right: 0; }
-    /* line 92, includes/menu.scss */
+    /* line 94, includes/menu.scss */
     .menu.right .submenu a:hover {
       border: none;
       border-right: 4px solid #4bb0da; }
-    /* line 96, includes/menu.scss */
+    /* line 98, includes/menu.scss */
     .menu.right .submenu .submenu-arrow {
       left: auto;
       right: 10px; }
 
-/* line 104, includes/menu.scss */
+/* line 106, includes/menu.scss */
 .divisor {
   display: block;
   float: left;
@@ -318,11 +320,11 @@ table {
   border-right: #f4f4f4 solid 1px;
   border-left: #e0e0e0 solid 1px; }
 
-/* line 113, includes/menu.scss */
+/* line 115, includes/menu.scss */
 aside .menu li {
   float: none;
   display: block; }
-  /* line 116, includes/menu.scss */
+  /* line 118, includes/menu.scss */
   aside .menu li a {
     display: block; }
 
@@ -1888,14 +1890,12 @@ Estilos de modulos de contenido
 -----------------------------------------------------------------*/
 /* line 4, includes/modules.scss */
 .module-f {
+  margin-bottom: 20px;
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   -ms-box-sizing: border-box;
-  box-sizing: border-box;
-  -moz-box-shadow: 2px 0 0 0 rgba(224, 224, 224, 0.4) ;
-  -webkit-box-shadow: 2px 0 0 0 rgba(224, 224, 224, 0.4) ;
-  box-shadow: 2px 0 0 0 rgba(224, 224, 224, 0.4) ; }
-  /* line 7, includes/modules.scss */
+  box-sizing: border-box; }
+  /* line 10, includes/modules.scss */
   .module-f .module-f-icon {
     float: left;
     width: 60px;
@@ -1903,17 +1903,22 @@ Estilos de modulos de contenido
     margin-top: 15px;
     color: #282828;
     text-shadow: 0 -1px 0 #e0e0e0; }
-  /* line 15, includes/modules.scss */
+  /* line 18, includes/modules.scss */
   .module-f .module-f-text {
     float: left;
     width: 220px; }
-  /* line 19, includes/modules.scss */
+    /* line 21, includes/modules.scss */
+    .module-f .module-f-text p {
+      margin-top: 0; }
+  /* line 25, includes/modules.scss */
   .module-f .module-f-title {
-    color: #4bb0da;
-    margin-bottom: 0;
-    text-shadow: 0 -1px 0 #299ac9; }
-  /* line 27, includes/modules.scss */
-  .module-f:nth-child(3n) {
+    display: inline;
+    color: #dd4646;
+    font-size: 14px;
+    margin: 0;
+    font-weight: bold; }
+  /* line 38, includes/modules.scss */
+  .module-f:nth-child(3n+3) {
     -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ; }
