@@ -54,3 +54,33 @@ form {
     padding: 5px;
     color: white;
     margin-top: -16px; }
+
+/* line 56, forms.scss */
+#error_explanation {
+  margin-bottom: 20px; }
+  /* line 58, forms.scss */
+  #error_explanation h2 {
+    display: none; }
+  /* line 61, forms.scss */
+  #error_explanation ul {
+    margin-left: 10px;
+    list-style-type: disc; }
+    /* line 64, forms.scss */
+    #error_explanation ul li {
+      list-style-type: disc; }
+
+/* line 69, forms.scss */
+.session_form, .register_form, .edit_form {
+  margin-top: 0px;
+  padding: 20px 20px 40px;
+  background-color: #ececec;
+  background-image: -moz-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, #ececec), color-stop(100%, white));
+  background-image: -webkit-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -o-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: -ms-linear-gradient(top, #ececec 0%, white 100%);
+  background-image: linear-gradient(to bottom, #ececec 0%, #ffffff 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ececec', endColorstr='white',GradientType=0 );
+  -moz-box-shadow: 0 0 3px 0 #cacaca ;
+  -webkit-box-shadow: 0 0 3px 0 #cacaca ;
+  box-shadow: 0 0 3px 0 #cacaca ; }
