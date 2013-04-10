@@ -1,0 +1,93 @@
+/* line 3, buttons.scss */
+.boton {
+  position: relative;
+  display: inline-block;
+  background-color: #4bb0da;
+  color: #fcfcfc;
+  text-align: left;
+  font-family: "Chivo", sans-serif;
+  padding: 1em 2em;
+  text-decoration: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  -ms-border-radius: 5px;
+  -o-border-radius: 5px;
+  border-radius: 5px;
+  -moz-box-shadow: 0 1px 1px 0 #b1b3b1 ;
+  -webkit-box-shadow: 0 1px 1px 0 #b1b3b1 ;
+  box-shadow: 0 1px 1px 0 #b1b3b1 ; }
+  /* line 14, buttons.scss */
+  .boton:hover {
+    color: #fcfcfc;
+    background-color: #258ab4; }
+  /* line 18, buttons.scss */
+  .boton.anchor {
+    display: block; }
+  /* line 21, buttons.scss */
+  .boton.boton-g {
+    padding: 20px;
+    font-size: 1.3em;
+    text-align: center; }
+  /* line 26, buttons.scss */
+  .boton.boton-wicon.anchor {
+    text-align: left;
+    padding-right: 50px; }
+    /* line 29, buttons.scss */
+    .boton.boton-wicon.anchor .boton-wicon-icon {
+      font-size: 25px;
+      display: block;
+      line-height: 2.5em;
+      position: absolute;
+      right: 0.5em;
+      top: 0; }
+    /* line 37, buttons.scss */
+    .boton.boton-wicon.anchor:after {
+      content: "";
+      display: block;
+      height: 100%;
+      position: absolute;
+      right: 50px;
+      top: 0;
+      border-right: #75c3e3 1px solid;
+      border-left: #299ac9 1px solid; }
+
+/* line 51, buttons.scss */
+.boton.boton-morado {
+  background-color: #9966c8; }
+  /* line 53, buttons.scss */
+  .boton.boton-morado:hover {
+    background-color: #733ca6; }
+  /* line 57, buttons.scss */
+  .boton.boton-morado.boton-wicon.anchor:after {
+    border-right: #b28cd5 1px solid;
+    border-left: #8042b9 1px solid; }
+/* line 63, buttons.scss */
+.boton.boton-verde {
+  background-color: #ace44a; }
+  /* line 65, buttons.scss */
+  .boton.boton-verde:hover {
+    background-color: #88c41d; }
+  /* line 69, buttons.scss */
+  .boton.boton-verde.boton-wicon.anchor:after {
+    border-right: #c0eb76 1px solid;
+    border-left: #97da21 1px solid; }
+/* line 75, buttons.scss */
+.boton.boton-naranja {
+  background-color: #eeba43; }
+  /* line 77, buttons.scss */
+  .boton.boton-naranja:hover {
+    background-color: #d29813; }
+  /* line 81, buttons.scss */
+  .boton.boton-naranja.boton-wicon.anchor:after {
+    border-right: #f2cb72 1px solid;
+    border-left: #e9a915 1px solid; }
+/* line 87, buttons.scss */
+.boton.boton-rojo {
+  background-color: #dd4646; }
+  /* line 89, buttons.scss */
+  .boton.boton-rojo:hover {
+    background-color: #b52121; }
+  /* line 93, buttons.scss */
+  .boton.boton-rojo.boton-wicon.anchor:after {
+    border-right: #e57171 1px solid;
+    border-left: #cb2525 1px solid; }

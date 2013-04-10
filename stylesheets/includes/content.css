@@ -1,0 +1,59 @@
+/* line 3, content.scss */
+#content {
+  position: relative;
+  margin-top: 10px;
+  padding: 5px 10px 40px 10px;
+  background-color: white;
+  padding-top: 60px;
+  -moz-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
+  -webkit-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
+  box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ; }
+  /* line 13, content.scss */
+  #content.contents.index {
+    padding-top: 0; }
+
+/* line 18, content.scss */
+.titulo_cinta {
+  background-color: #4b4d4b;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -25px;
+  -moz-box-shadow: 0 4px 0 0 #4bb0da ;
+  -webkit-box-shadow: 0 4px 0 0 #4bb0da ;
+  box-shadow: 0 4px 0 0 #4bb0da ; }
+  /* line 25, content.scss */
+  .titulo_cinta:before, .titulo_cinta .arrow-cinta-left {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    min-width: 0;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid #b1b3b1;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1; }
+  /* line 33, content.scss */
+  .titulo_cinta:after, .titulo_cinta .arrow-cinta-right {
+    display: inline-block;
+    width: 0;
+    height: 0;
+    min-width: 0;
+    border-bottom: 15px solid transparent;
+    border-top: 15px solid transparent;
+    border-left: 15px solid #b1b3b1;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1; }
+
+/* line 43, content.scss */
+.content-main-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 0px; }
