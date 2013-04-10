@@ -1,0 +1,73 @@
+@import "functions";
+
+#content {
+  position: relative;
+}
+
+.over_content {
+  margin-top:30px;
+  width: 100%;
+  background-color: #E7E7E7;
+  /*background-image: image-url("FondoOscuro.png");*/
+  background: rgb(69,69,69);
+  background: -moz-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%, rgba(34,34,34,1) 90%);
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,rgba(69,69,69,1)), color-stop(90%,rgba(34,34,34,1)));
+  background: -webkit-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: -o-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: -ms-radial-gradient(center, ellipse cover,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  background: radial-gradient(ellipse at center,  rgba(69,69,69,1) 0%,rgba(34,34,34,1) 90%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#454545', endColorstr='#222222',GradientType=1 );
+  color: #212121;
+  box-shadow: 0 5px  0 0 $azul,
+              0 10px 0 0 $gris_oscuro;
+  .container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+}
+
+#content {
+  margin-top: 10px;
+  padding: 5px 10px 40px 10px;
+  background-color: white;
+  padding-top: 60px;
+  @include box-shadow(0,0,5px,0,$gris,0.5);
+  &.contents.show {
+
+  }
+  &.contents.index {
+    padding-top:0;
+  }
+}
+
+.titulo_cinta {
+  background-color: $gris;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -25px;
+  @include box-shadow(0,4px,0,0,$azul,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $gris_claro);
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1;
+  }
+  &:after, .arrow-cinta-right {
+    @include arrow('right', 15px, $gris_claro);
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.content-main-title {
+  font-size: 42px;
+  text-align: center;
+  margin-bottom: 40px;
+  padding-top: 0px;
+}

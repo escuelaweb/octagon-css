@@ -1,0 +1,34 @@
+@import "functions";
+
+// Features Module
+.module-f {
+  @include box-sizing(border-box);
+  @include box-shadow(2px,0,0,0,$gris_sombra,0.4);
+  .module-f-icon {
+    float: left;
+    width: 60px;
+    font-size: 40px;
+    margin-top: 15px;
+    color: $gris_oscuro;
+    @include text-shadow(0,-1px,0,$gris_sombra);
+  }
+  .module-f-text {
+    float: left;
+    width: 220px;
+  }
+  .module-f-title {
+    color: $azul;
+    margin-bottom: 0;
+    // margin-right: 15px;
+    // padding-bottom: 10px;
+    // @include box-shadow( 0 -1px 1px 0 $gris_claro inset);
+    @include text-shadow(0 -1px 0 darken($azul, 10%));
+  }
+  &:nth-child(3n) {
+    @include box-shadow(0,0,0,0,#ffffff,0);
+  }
+}
+
+// Module center
+
+// Module with thumbnail

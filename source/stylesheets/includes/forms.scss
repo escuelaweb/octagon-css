@@ -52,3 +52,28 @@ form {
     margin-top: -16px;
   }
 }
+
+#error_explanation {
+  margin-bottom: 20px;
+  h2 {
+    display: none;
+  }
+  ul {
+    margin-left: 10px;
+    list-style-type: disc;
+    li {
+      list-style-type: disc;
+    }
+  }
+}
+.session_form, .register_form, .edit_form {
+  margin-top: 0px;
+  padding: 20px 20px 40px;
+  @include background-gradient(#ececec,#fff);
+  @include box-shadow(0,0,3px,0,#cacaca);
+}
+.edit_form {
+  .edit_user {
+    
+  }
+}

@@ -1,9 +1,9 @@
-Bootstrap Escuela de Diseno Web
+Octagon Framework css
 ===============================================
 
 Autor: Sergio A. Marin Z. [@highercomve](http://twitter.com/highercomve) // [Blog](http://sergiomarin.co.cc)
 
-Bootstrap desarrollado para todos los nuevos servicios de la [EscuelaWeb](http://escuelaweb.co), hecho con sass.
+Guia de estilos desarrollada para todos los nuevos servicios de la [EscuelaWeb](http://escuelaweb.co), hecho con sass.
 
 	Estilos:
 		Todas las variables estaran escritas "$hola_separador", es decir, se separan con espacio
