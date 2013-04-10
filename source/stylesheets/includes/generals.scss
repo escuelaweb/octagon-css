@@ -27,10 +27,10 @@ html {
 }
 
 @for $i from 0 through 10 {
-  mt#{$i} { margin-top: $i * 10px; }
-  mr#{$i} { margin-right: $i * 10px; }
-  mb#{$i} { margin-bottom: $i * 10px; }
-  ml#{$i} { margin-left: $i * 10px; }
+  .mt#{$i*10} { margin-top: $i * 10px; }
+  .mr#{$i*10} { margin-right: $i * 10px; }
+  .mb#{$i*10} { margin-bottom: $i * 10px; }
+  .ml#{$i*10} { margin-left: $i * 10px; }
 }
 
 /* Generals */
