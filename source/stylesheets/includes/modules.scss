@@ -2,8 +2,11 @@
 
 // Features Module
 .module-f {
+  margin-bottom: 20px;
+  //border-bottom-width: $border_thin;
+  //border-bottom-style: solid;
   @include box-sizing(border-box);
-  @include box-shadow(2px,0,0,0,$gris_sombra,0.4);
+  //@include box-shadow(2px,0,0,0,$gris_sombra,0.4);
   .module-f-icon {
     float: left;
     width: 60px;
@@ -15,17 +18,26 @@
   .module-f-text {
     float: left;
     width: 220px;
+    p {
+      margin-top: 0;
+    }
   }
   .module-f-title {
-    color: $azul;
-    margin-bottom: 0;
-    // margin-right: 15px;
-    // padding-bottom: 10px;
-    // @include box-shadow( 0 -1px 1px 0 $gris_claro inset);
-    @include text-shadow(0 -1px 0 darken($azul, 10%));
+    display: inline;
+    color: $rojo;
+    font-size: $font_base + 1;
+    margin: 0;
+    font-weight: bold;
   }
-  &:nth-child(3n) {
+  &:nth-child(1n) {
+    //border-bottom-color: $morado;
+  }
+  &:nth-child(3n+2) {
+    //border-bottom-color: $verde;
+  }
+  &:nth-child(3n+3) {
     @include box-shadow(0,0,0,0,#ffffff,0);
+    //border-bottom-color: $rojo;
   }
 }
 
