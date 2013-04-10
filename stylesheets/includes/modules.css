@@ -32,3 +32,29 @@
     -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ; }
+
+/* line 45, modules.scss */
+.module-c {
+  text-align: center; }
+  /* line 47, modules.scss */
+  .module-c .module-c-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: #4bb0da; }
+  /* line 52, modules.scss */
+  .module-c .module-c-icon {
+    font-size: 40px;
+    line-height: 100px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: #9966c8;
+    margin: 0 auto;
+    -webkit-border-radius: 50px;
+    -moz-border-radius: 50px;
+    -ms-border-radius: 50px;
+    -o-border-radius: 50px;
+    border-radius: 50px; }
+  /* line 65, modules.scss */
+  .module-c .module-c-content p {
+    margin-top: 0; }
