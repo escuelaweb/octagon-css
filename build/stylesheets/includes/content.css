@@ -1,30 +1,6 @@
 /* line 3, content.scss */
 #content {
-  position: relative; }
-
-/* line 7, content.scss */
-.over_content {
-  margin-top: 30px;
-  width: 100%;
-  background-color: #E7E7E7;
-  /*background-image: image-url("FondoOscuro.png");*/
-  background: #454545;
-  background: -moz-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
-  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%, #454545), color-stop(90%, #222222));
-  background: -webkit-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
-  background: -o-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
-  background: -ms-radial-gradient(center, ellipse cover, #454545 0%, #222222 90%);
-  background: radial-gradient(ellipse at center, #454545 0%, #222222 90%);
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#454545', endColorstr='#222222',GradientType=1 );
-  color: #212121;
-  box-shadow: 0 5px 0 0 #4bb0da, 0 10px 0 0 #282828; }
-  /* line 23, content.scss */
-  .over_content .container {
-    padding-top: 40px;
-    padding-bottom: 40px; }
-
-/* line 29, content.scss */
-#content {
+  position: relative;
   margin-top: 10px;
   padding: 5px 10px 40px 10px;
   background-color: white;
@@ -32,11 +8,11 @@
   -moz-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
   -webkit-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
   box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ; }
-  /* line 38, content.scss */
+  /* line 13, content.scss */
   #content.contents.index {
     padding-top: 0; }
 
-/* line 43, content.scss */
+/* line 18, content.scss */
 .titulo_cinta {
   background-color: #4b4d4b;
   color: white;
@@ -46,7 +22,7 @@
   -moz-box-shadow: 0 4px 0 0 #4bb0da ;
   -webkit-box-shadow: 0 4px 0 0 #4bb0da ;
   box-shadow: 0 4px 0 0 #4bb0da ; }
-  /* line 50, content.scss */
+  /* line 25, content.scss */
   .titulo_cinta:before, .titulo_cinta .arrow-cinta-left {
     display: inline-block;
     width: 0;
@@ -60,7 +36,7 @@
     top: -15px;
     left: 0;
     z-index: -1; }
-  /* line 58, content.scss */
+  /* line 33, content.scss */
   .titulo_cinta:after, .titulo_cinta .arrow-cinta-right {
     display: inline-block;
     width: 0;
@@ -75,7 +51,7 @@
     right: 0;
     z-index: -1; }
 
-/* line 68, content.scss */
+/* line 43, content.scss */
 .content-main-title {
   font-size: 42px;
   text-align: center;

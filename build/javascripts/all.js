@@ -108,6 +108,8 @@ n();return d?d.promise(g):g}})(jQuery);
   
   $(function() {
     $('pre.codehighlight').each(function(i, e) { hljs.highlightBlock(e) });
+    $(".menu.scroller a").smoothscrolling();
+    $(".site-name").smoothscrolling();
   })
 
 })(window.jQuery, window, document);
