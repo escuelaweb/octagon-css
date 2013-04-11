@@ -19,7 +19,7 @@
     display: block;
   }
   &.boton-g {
-    padding: 20px;
+    padding: 1.6em;
     font-size: 1.3em;
     text-align: center;
   }
@@ -27,7 +27,7 @@
     text-align: left;
     padding-right: 50px;
     .boton-wicon-icon {
-      font-size: 25px;
+      font-size: 30px;
       display: block;
       line-height: 2.5em;
       position: absolute;
@@ -39,7 +39,7 @@
       display: block;
       height: 100%;
       position: absolute;
-      right: 50px;
+      right: 60px;
       top: 0;
       border-right: lighten($azul, 10%) $border-thin solid;
       border-left: darken($azul, 10%) $border-thin solid;
@@ -93,6 +93,43 @@
       &:after {
         border-right: lighten($rojo, 10%) $border-thin solid;
         border-left: darken($rojo, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-white {
+    color: $gris_oscuro;
+    background-color: $white;
+    &:hover {
+      background-color: darken($white,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($white, 10%) $border-thin solid;
+        border-left: darken($white, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-gris {
+    background-color: $gris_claro;
+    &:hover {
+      background-color: darken($gris_claro,15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten($gris_claro, 10%) $border-thin solid;
+        border-left: darken($gris_claro, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.boton-gris-oscuro {
+    background-color: darken($gris_claro,15%);
+    &:hover {
+      background-color: darken(darken($gris_claro,15%),15%);
+    }
+    &.boton-wicon.anchor {
+      &:after {
+        border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
+        border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
       }
     }
   }

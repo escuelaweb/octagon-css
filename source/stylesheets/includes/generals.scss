@@ -61,6 +61,10 @@ img {
 	margin-right: 5px;
 }
 
+.img-rounded {
+	@include border-radius(50%);
+}
+
 .innerpadding {
 	padding-left: $innerpadding;
 	padding-right: $innerpadding;
