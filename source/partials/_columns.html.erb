@@ -11,7 +11,18 @@
   <div class="row">
     <div class="grid12 visible-grid">
       <div class="row">
-        <div class="grid12">12 Columnas (.grid12)</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
       </div>
     </div>
     <div class="grid12 visible-grid">
@@ -40,6 +51,36 @@
         <div class="grid9">9 Columnas (.grid9)</div>
         <div class="grid3">3 Columnas (.grid3)</div>
       </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid12">12 Columnas (.grid12)</div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt30">
+    <div class="grid4">
+      <h4>¿Como usar el sistema de columnas?</h4>
+      <p>
+        El sistema de columna de octogon esta basado en 12 columnas y un ancho de total de 940px en estado normal, es decir, sin aplicar estilos Responsive.
+      </p>
+      <p>
+        Las clases para el manejo del grid son:
+      </p>
+      <ul class="mt0 pt0">
+        <li>
+          <b>.container</b>: que es la clase que centra el contenido y le coloca el ancho a 940px
+        </li>
+        <li>
+          <b>.row</b>: se encarga de iniciar la el sistema anidado de columnas
+        </li>
+        <li>
+          <b>.grid[x]</b>: define el ancho en columnas de un div, section, article, etc.
+        </li>
+      </ul>
+    </div>
+    <div class="grid8">
+      <%= partial "examples/columns" %>
     </div>
   </div>
 </section>

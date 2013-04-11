@@ -1,6 +1,6 @@
 @import "functions";
 
-.boton {
+.btn {
   position: relative;
   display: inline-block;
   background-color: $azul;
@@ -18,15 +18,15 @@
   &.anchor {
     display: block;
   }
-  &.boton-g {
+  &.btn-g {
     padding: 1.6em;
     font-size: 1.3em;
     text-align: center;
   }
-  &.boton-wicon.anchor {
+  &.btn-wicon.anchor {
     text-align: left;
     padding-right: 50px;
-    .boton-wicon-icon {
+    .btn-wicon-icon {
       font-size: 30px;
       display: block;
       line-height: 2.5em;
@@ -47,86 +47,86 @@
   }
 }
 // Variaciones de color
-.boton {
-  &.boton-morado {
+.btn {
+  &.btn-morado {
     background-color: $morado;
     &:hover {
       background-color: darken($morado,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($morado, 10%) $border-thin solid;
         border-left: darken($morado, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-verde {
+  &.btn-verde {
     background-color: $verde;
     &:hover {
       background-color: darken($verde,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($verde, 10%) $border-thin solid;
         border-left: darken($verde, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-naranja {
+  &.btn-naranja {
     background-color: $naranja;
     &:hover {
       background-color: darken($naranja,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($naranja, 10%) $border-thin solid;
         border-left: darken($naranja, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-rojo {
+  &.btn-rojo {
     background-color: $rojo;
     &:hover {
       background-color: darken($rojo,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($rojo, 10%) $border-thin solid;
         border-left: darken($rojo, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-white {
+  &.btn-white {
     color: $gris_oscuro;
     background-color: $white;
     &:hover {
       background-color: darken($white,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($white, 10%) $border-thin solid;
         border-left: darken($white, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-gris {
+  &.btn-gris {
     background-color: $gris_claro;
     &:hover {
       background-color: darken($gris_claro,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($gris_claro, 10%) $border-thin solid;
         border-left: darken($gris_claro, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-gris-oscuro {
+  &.btn-gris-oscuro {
     background-color: darken($gris_claro,15%);
     &:hover {
       background-color: darken(darken($gris_claro,15%),15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
         border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;

@@ -7,6 +7,7 @@
 # require 'susy'
 
 require 'sass'
+require "maruku"
 
 # # Set slim-lang output style
 # Slim::Engine.set_default_options :pretty => true

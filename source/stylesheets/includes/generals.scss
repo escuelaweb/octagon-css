@@ -42,6 +42,13 @@ div, section, article, footer, header {
   .ml#{$i*10} { margin-left: $i * 10px; }
 }
 
+@for $i from 0 through 10 {
+  .pt#{$i*10} { padding-top: $i * 10px; }
+  .pr#{$i*10} { padding-right: $i * 10px; }
+  .pb#{$i*10} { padding-bottom: $i * 10px; }
+  .pl#{$i*10} { padding-left: $i * 10px; }
+}
+
 /* Generals */
 /* ---------------------------------------------------------------- */
 img {
@@ -87,6 +94,12 @@ img {
 }
 
 ol, ul {
+  list-style: disc;
+  margin-left: 0;
+  padding-left: 20px;
+  li {
+    margin: 1.5em 0;
+  }
 }
 
 p {
