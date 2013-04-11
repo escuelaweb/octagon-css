@@ -51,8 +51,8 @@
     color: $azul;
   }
   .module-c-icon {
-    font-size: 40px;
-    line-height: 100px;
+    font-size: 44px;
+    line-height: 104px;
     height: 100px;
     width: 100px;
     position: relative;
@@ -69,3 +69,26 @@
   }
 }
 // Module with thumbnail
+
+.module-t {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include clearfix;
+  .module-t-image {
+    width: 30%;
+    float: left;
+  }
+  .module-t-detail {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+  }
+  .module-t-title {
+  }
+  .module-t-excerpt {
+    .module-t-et {
+    }
+  }
+  &:hover {
+  }
+}

@@ -93,12 +93,23 @@ window.onload = function() {
 			'icon-uniF013' : '&#xf013;',
 			'icon-faq' : '&#xf099;',
 			'icon-firstaid' : '&#xf2ba;',
-			'icon-student' : '&#xf288;'
+			'icon-student' : '&#xf288;',
+			'icon-html5' : '&#xe000;',
+			'icon-html5-2' : '&#xe001;',
+			'icon-css3' : '&#xe002;',
+			'icon-chrome' : '&#xe003;',
+			'icon-firefox' : '&#xe004;',
+			'icon-IE' : '&#xe005;',
+			'icon-wordpress' : '&#xe006;',
+			'icon-git' : '&#xe007;'
 		},
 		els = document.getElementsByTagName('*'),
 		i, attr, html, c, el;
-	for (i = 0; i < els.length; i += 1) {
+	for (i = 0; ; i += 1) {
 		el = els[i];
+		if(!el) {
+			break;
+		}
 		attr = el.getAttribute('data-icon');
 		if (attr) {
 			addIcon(el, attr);

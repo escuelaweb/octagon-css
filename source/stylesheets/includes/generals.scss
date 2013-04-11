@@ -20,6 +20,10 @@ html {
 	text-align: right;
 }
 
+div, section, article, footer, header {
+  @include box-sizing(border-box);
+}
+
 /* Headlines Font-size definition */
 /* ---------------------------------------------------------------- */
 @for $i from 1 through 6 {
@@ -41,10 +45,17 @@ html {
 /* Generals */
 /* ---------------------------------------------------------------- */
 img {
+  max-width: 100%;
 	image-rendering: optimizeQuality;
 	-ms-interpolation-mode: bicubic;
 }
 .icons {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision;
 	&.icons-medium {
 		font-size: 16px;
 		line-height: 1.2em;
@@ -219,6 +230,77 @@ a.btn, .btn {
 			}
 		}
 	}
+}
+
+.titulo-cinta, .titulo_cinta {
+	width: 100%;
+  background-color: $gris;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -25px;
+  @include box-shadow(0,4px,0,0,$azul,1);
+  &:before, .arrow-cinta-left {
+  	@include arrow('left', 15px, $azul);
+  	content: "";
+  	display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1;
+  }
+  &:after, .arrow-cinta-right {
+    @include arrow('right', 15px, $azul);
+    content: "";
+    display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+section.grid12 > header {
+  padding-top: 70px;
+}
+
+.titulo-cinta.morado, .titulo_cinta {
+	@include box-shadow(0,4px,0,0,$morado,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $morado);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $morado);
+  }
+}
+.titulo-cinta.verde, .titulo_cinta {
+  @include box-shadow(0,4px,0,0,$verde,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $verde);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $verde);
+  }
+}
+.titulo-cinta.naranja, .titulo_cinta {
+  @include box-shadow(0,4px,0,0,$naranja,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $naranja);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $naranja);
+  }
+}
+.titulo-cinta.rojo, .titulo_cinta {
+  @include box-shadow(0,4px,0,0,$rojo,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $rojo);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $rojo);
+  }
 }
 
 blockquote {
