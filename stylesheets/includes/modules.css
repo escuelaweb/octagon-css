@@ -44,8 +44,8 @@
     color: #4bb0da; }
   /* line 53, modules.scss */
   .module-c .module-c-icon {
-    font-size: 40px;
-    line-height: 100px;
+    font-size: 44px;
+    line-height: 104px;
     height: 100px;
     width: 100px;
     position: relative;
@@ -59,3 +59,25 @@
   /* line 66, modules.scss */
   .module-c .module-c-content p {
     margin-top: 0; }
+
+/* line 73, modules.scss */
+.module-t {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  *zoom: 1; }
+  /* line 26, functions.scss */
+  .module-t:before, .module-t:after {
+    display: table;
+    content: ""; }
+  /* line 30, functions.scss */
+  .module-t:after {
+    clear: both; }
+  /* line 77, modules.scss */
+  .module-t .module-t-image {
+    width: 30%;
+    float: left; }
+  /* line 81, modules.scss */
+  .module-t .module-t-detail {
+    width: 70%;
+    float: left;
+    padding-left: 10px; }

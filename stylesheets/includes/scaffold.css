@@ -82,60 +82,24 @@ body {
 #content {
   position: relative;
   margin-top: 10px;
-  padding: 5px 10px 40px 10px;
+  padding: 0px 10px 60px 10px;
   background-color: white;
-  padding-top: 60px;
   -moz-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
   -webkit-box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
-  box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ; }
+  box-shadow: 0 0 5px 0 rgba(75, 77, 75, 0.5) ;
+  -webkit-box-sizing: content-box;
+  -moz-box-sizing: content-box;
+  -ms-box-sizing: content-box;
+  box-sizing: content-box; }
   /* line 13, content.scss */
   #content.contents.index {
     padding-top: 0; }
 
 /* line 18, content.scss */
-.titulo_cinta {
-  background-color: #4b4d4b;
-  color: white;
-  padding: 10px 25px;
-  position: relative;
-  left: -25px;
-  -moz-box-shadow: 0 4px 0 0 #4bb0da ;
-  -webkit-box-shadow: 0 4px 0 0 #4bb0da ;
-  box-shadow: 0 4px 0 0 #4bb0da ; }
-  /* line 25, content.scss */
-  .titulo_cinta:before, .titulo_cinta .arrow-cinta-left {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    min-width: 0;
-    border-top: 15px solid transparent;
-    border-bottom: 15px solid transparent;
-    border-right: 15px solid #b1b3b1;
-    border-bottom: 0px solid transparent;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    z-index: -1; }
-  /* line 33, content.scss */
-  .titulo_cinta:after, .titulo_cinta .arrow-cinta-right {
-    display: inline-block;
-    width: 0;
-    height: 0;
-    min-width: 0;
-    border-bottom: 15px solid transparent;
-    border-top: 15px solid transparent;
-    border-left: 15px solid #b1b3b1;
-    border-bottom: 0px solid transparent;
-    position: absolute;
-    top: -15px;
-    right: 0;
-    z-index: -1; }
-
-/* line 43, content.scss */
 .content-main-title {
   font-size: 42px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding-top: 0px; }
 
 /*----------------------------------------------------------------
@@ -187,8 +151,8 @@ Estilos de modulos de contenido
     color: #4bb0da; }
   /* line 53, modules.scss */
   .module-c .module-c-icon {
-    font-size: 40px;
-    line-height: 100px;
+    font-size: 44px;
+    line-height: 104px;
     height: 100px;
     width: 100px;
     position: relative;
@@ -202,6 +166,28 @@ Estilos de modulos de contenido
   /* line 66, modules.scss */
   .module-c .module-c-content p {
     margin-top: 0; }
+
+/* line 73, modules.scss */
+.module-t {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  *zoom: 1; }
+  /* line 26, functions.scss */
+  .module-t:before, .module-t:after {
+    display: table;
+    content: ""; }
+  /* line 30, functions.scss */
+  .module-t:after {
+    clear: both; }
+  /* line 77, modules.scss */
+  .module-t .module-t-image {
+    width: 30%;
+    float: left; }
+  /* line 81, modules.scss */
+  .module-t .module-t-detail {
+    width: 70%;
+    float: left;
+    padding-left: 10px; }
 
 /* Footer */
 /* ---------------------------------------------------------------- */

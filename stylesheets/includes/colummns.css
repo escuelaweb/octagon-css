@@ -139,3 +139,15 @@
 /* line 42, colummns.scss */
 .center {
   text-align: center; }
+
+/* line 46, colummns.scss */
+.visible-grid {
+  padding: 10px 0;
+  background-color: #e5e5e5;
+  margin-top: 10px;
+  margin-bottom: 10px; }
+  /* line 51, colummns.scss */
+  .visible-grid [class*="grid"] {
+    padding: 10px 0;
+    text-align: center;
+    background-color: #cbcccb; }

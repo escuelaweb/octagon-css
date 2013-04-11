@@ -1,5 +1,5 @@
 /* line 3, buttons.scss */
-.boton {
+.btn {
   position: relative;
   display: inline-block;
   background-color: #4bb0da;
@@ -17,23 +17,23 @@
   -webkit-box-shadow: 0 1px 1px 0 #b1b3b1 ;
   box-shadow: 0 1px 1px 0 #b1b3b1 ; }
   /* line 14, buttons.scss */
-  .boton:hover {
+  .btn:hover {
     color: #fcfcfc;
     background-color: #258ab4; }
   /* line 18, buttons.scss */
-  .boton.anchor {
+  .btn.anchor {
     display: block; }
   /* line 21, buttons.scss */
-  .boton.boton-g {
+  .btn.btn-g {
     padding: 1.6em;
     font-size: 1.3em;
     text-align: center; }
   /* line 26, buttons.scss */
-  .boton.boton-wicon.anchor {
+  .btn.btn-wicon.anchor {
     text-align: left;
     padding-right: 50px; }
     /* line 29, buttons.scss */
-    .boton.boton-wicon.anchor .boton-wicon-icon {
+    .btn.btn-wicon.anchor .btn-wicon-icon {
       font-size: 30px;
       display: block;
       line-height: 2.5em;
@@ -41,7 +41,7 @@
       right: 0.5em;
       top: 0; }
     /* line 37, buttons.scss */
-    .boton.boton-wicon.anchor:after {
+    .btn.btn-wicon.anchor:after {
       content: "";
       display: block;
       height: 100%;
@@ -52,73 +52,73 @@
       border-left: #299ac9 1px solid; }
 
 /* line 51, buttons.scss */
-.boton.boton-morado {
+.btn.btn-morado {
   background-color: #9966c8; }
   /* line 53, buttons.scss */
-  .boton.boton-morado:hover {
+  .btn.btn-morado:hover {
     background-color: #733ca6; }
   /* line 57, buttons.scss */
-  .boton.boton-morado.boton-wicon.anchor:after {
+  .btn.btn-morado.btn-wicon.anchor:after {
     border-right: #b28cd5 1px solid;
     border-left: #8042b9 1px solid; }
 /* line 63, buttons.scss */
-.boton.boton-verde {
+.btn.btn-verde {
   background-color: #ace44a; }
   /* line 65, buttons.scss */
-  .boton.boton-verde:hover {
+  .btn.btn-verde:hover {
     background-color: #88c41d; }
   /* line 69, buttons.scss */
-  .boton.boton-verde.boton-wicon.anchor:after {
+  .btn.btn-verde.btn-wicon.anchor:after {
     border-right: #c0eb76 1px solid;
     border-left: #97da21 1px solid; }
 /* line 75, buttons.scss */
-.boton.boton-naranja {
+.btn.btn-naranja {
   background-color: #eeba43; }
   /* line 77, buttons.scss */
-  .boton.boton-naranja:hover {
+  .btn.btn-naranja:hover {
     background-color: #d29813; }
   /* line 81, buttons.scss */
-  .boton.boton-naranja.boton-wicon.anchor:after {
+  .btn.btn-naranja.btn-wicon.anchor:after {
     border-right: #f2cb72 1px solid;
     border-left: #e9a915 1px solid; }
 /* line 87, buttons.scss */
-.boton.boton-rojo {
+.btn.btn-rojo {
   background-color: #dd4646; }
   /* line 89, buttons.scss */
-  .boton.boton-rojo:hover {
+  .btn.btn-rojo:hover {
     background-color: #b52121; }
   /* line 93, buttons.scss */
-  .boton.boton-rojo.boton-wicon.anchor:after {
+  .btn.btn-rojo.btn-wicon.anchor:after {
     border-right: #e57171 1px solid;
     border-left: #cb2525 1px solid; }
 /* line 99, buttons.scss */
-.boton.boton-white {
+.btn.btn-white {
   color: #282828;
   background-color: #fcfcfc; }
   /* line 102, buttons.scss */
-  .boton.boton-white:hover {
+  .btn.btn-white:hover {
     background-color: #d6d6d6; }
   /* line 106, buttons.scss */
-  .boton.boton-white.boton-wicon.anchor:after {
+  .btn.btn-white.btn-wicon.anchor:after {
     border-right: white 1px solid;
     border-left: #e3e3e3 1px solid; }
 /* line 112, buttons.scss */
-.boton.boton-gris {
+.btn.btn-gris {
   background-color: #b1b3b1; }
   /* line 114, buttons.scss */
-  .boton.boton-gris:hover {
+  .btn.btn-gris:hover {
     background-color: #8a8d8a; }
   /* line 118, buttons.scss */
-  .boton.boton-gris.boton-wicon.anchor:after {
+  .btn.btn-gris.btn-wicon.anchor:after {
     border-right: #cbcccb 1px solid;
     border-left: #979a97 1px solid; }
 /* line 124, buttons.scss */
-.boton.boton-gris-oscuro {
+.btn.btn-gris-oscuro {
   background-color: #8a8d8a; }
   /* line 126, buttons.scss */
-  .boton.boton-gris-oscuro:hover {
+  .btn.btn-gris-oscuro:hover {
     background-color: #646764; }
   /* line 130, buttons.scss */
-  .boton.boton-gris-oscuro.boton-wicon.anchor:after {
+  .btn.btn-gris-oscuro.btn-wicon.anchor:after {
     border-right: #a4a6a4 1px solid;
     border-left: #717471 1px solid; }
