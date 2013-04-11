@@ -15,6 +15,11 @@ html {
   bottom: 0;
 }
 
+.right {
+	float: right;
+	text-align: right;
+}
+
 /* Headlines Font-size definition */
 /* ---------------------------------------------------------------- */
 @for $i from 1 through 6 {
