@@ -25,7 +25,7 @@
     display: block; }
   /* line 21, buttons.scss */
   .boton.boton-g {
-    padding: 20px;
+    padding: 1.6em;
     font-size: 1.3em;
     text-align: center; }
   /* line 26, buttons.scss */
@@ -34,7 +34,7 @@
     padding-right: 50px; }
     /* line 29, buttons.scss */
     .boton.boton-wicon.anchor .boton-wicon-icon {
-      font-size: 25px;
+      font-size: 30px;
       display: block;
       line-height: 2.5em;
       position: absolute;
@@ -46,7 +46,7 @@
       display: block;
       height: 100%;
       position: absolute;
-      right: 50px;
+      right: 60px;
       top: 0;
       border-right: #75c3e3 1px solid;
       border-left: #299ac9 1px solid; }
@@ -91,3 +91,34 @@
   .boton.boton-rojo.boton-wicon.anchor:after {
     border-right: #e57171 1px solid;
     border-left: #cb2525 1px solid; }
+/* line 99, buttons.scss */
+.boton.boton-white {
+  color: #282828;
+  background-color: #fcfcfc; }
+  /* line 102, buttons.scss */
+  .boton.boton-white:hover {
+    background-color: #d6d6d6; }
+  /* line 106, buttons.scss */
+  .boton.boton-white.boton-wicon.anchor:after {
+    border-right: white 1px solid;
+    border-left: #e3e3e3 1px solid; }
+/* line 112, buttons.scss */
+.boton.boton-gris {
+  background-color: #b1b3b1; }
+  /* line 114, buttons.scss */
+  .boton.boton-gris:hover {
+    background-color: #8a8d8a; }
+  /* line 118, buttons.scss */
+  .boton.boton-gris.boton-wicon.anchor:after {
+    border-right: #cbcccb 1px solid;
+    border-left: #979a97 1px solid; }
+/* line 124, buttons.scss */
+.boton.boton-gris-oscuro {
+  background-color: #8a8d8a; }
+  /* line 126, buttons.scss */
+  .boton.boton-gris-oscuro:hover {
+    background-color: #646764; }
+  /* line 130, buttons.scss */
+  .boton.boton-gris-oscuro.boton-wicon.anchor:after {
+    border-right: #a4a6a4 1px solid;
+    border-left: #717471 1px solid; }
