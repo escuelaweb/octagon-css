@@ -637,247 +637,252 @@ html {
   top: auto;
   bottom: 0; }
 
+/* line 18, includes/generals.scss */
+.right {
+  float: right;
+  text-align: right; }
+
 /* Headlines Font-size definition */
 /* ---------------------------------------------------------------- */
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h1 {
   font-size: 2.5em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h2 {
   font-size: 2.2em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h3 {
   font-size: 1.9em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h4 {
   font-size: 1.6em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h5 {
   font-size: 1.3em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 21, includes/generals.scss */
+/* line 26, includes/generals.scss */
 h6 {
   font-size: 1em;
   font-weight: 400;
   font-family: "Dosis", sans-serif;
   margin-bottom: 20px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt0 {
   margin-top: 0px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr0 {
   margin-right: 0px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb0 {
   margin-bottom: 0px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml0 {
   margin-left: 0px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt10 {
   margin-top: 10px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr10 {
   margin-right: 10px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb10 {
   margin-bottom: 10px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml10 {
   margin-left: 10px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt20 {
   margin-top: 20px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr20 {
   margin-right: 20px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb20 {
   margin-bottom: 20px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml20 {
   margin-left: 20px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt30 {
   margin-top: 30px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr30 {
   margin-right: 30px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb30 {
   margin-bottom: 30px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml30 {
   margin-left: 30px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt40 {
   margin-top: 40px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr40 {
   margin-right: 40px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb40 {
   margin-bottom: 40px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml40 {
   margin-left: 40px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt50 {
   margin-top: 50px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr50 {
   margin-right: 50px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb50 {
   margin-bottom: 50px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml50 {
   margin-left: 50px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt60 {
   margin-top: 60px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr60 {
   margin-right: 60px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb60 {
   margin-bottom: 60px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml60 {
   margin-left: 60px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt70 {
   margin-top: 70px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr70 {
   margin-right: 70px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb70 {
   margin-bottom: 70px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml70 {
   margin-left: 70px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt80 {
   margin-top: 80px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr80 {
   margin-right: 80px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb80 {
   margin-bottom: 80px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml80 {
   margin-left: 80px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt90 {
   margin-top: 90px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr90 {
   margin-right: 90px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb90 {
   margin-bottom: 90px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml90 {
   margin-left: 90px; }
 
-/* line 30, includes/generals.scss */
+/* line 35, includes/generals.scss */
 .mt100 {
   margin-top: 100px; }
 
-/* line 31, includes/generals.scss */
+/* line 36, includes/generals.scss */
 .mr100 {
   margin-right: 100px; }
 
-/* line 32, includes/generals.scss */
+/* line 37, includes/generals.scss */
 .mb100 {
   margin-bottom: 100px; }
 
-/* line 33, includes/generals.scss */
+/* line 38, includes/generals.scss */
 .ml100 {
   margin-left: 100px; }
 
 /* Generals */
 /* ---------------------------------------------------------------- */
-/* line 38, includes/generals.scss */
+/* line 43, includes/generals.scss */
 img {
   image-rendering: optimizeQuality;
   -ms-interpolation-mode: bicubic; }
 
-/* line 43, includes/generals.scss */
+/* line 48, includes/generals.scss */
 .icons.icons-medium {
   font-size: 16px;
   line-height: 1.2em; }
-/* line 47, includes/generals.scss */
+/* line 52, includes/generals.scss */
 .icons.icons-big {
   font-size: 22px;
   line-height: 1.2em; }
-/* line 51, includes/generals.scss */
+/* line 56, includes/generals.scss */
 .icons.icons-small {
   font-size: 18px;
   line-height: 12px; }
 
-/* line 56, includes/generals.scss */
+/* line 61, includes/generals.scss */
 .icons.small {
   font-size: 18px;
   line-height: 12px;
@@ -885,7 +890,7 @@ img {
   top: 0.15em;
   margin-right: 5px; }
 
-/* line 64, includes/generals.scss */
+/* line 69, includes/generals.scss */
 .img-rounded {
   -webkit-border-radius: 50%;
   -moz-border-radius: 50%;
@@ -893,17 +898,17 @@ img {
   -o-border-radius: 50%;
   border-radius: 50%; }
 
-/* line 68, includes/generals.scss */
+/* line 73, includes/generals.scss */
 .innerpadding {
   padding-left: 10px;
   padding-right: 10px; }
 
-/* line 76, includes/generals.scss */
+/* line 81, includes/generals.scss */
 p {
   margin: 10px 0;
   line-height: 1.5em; }
 
-/* line 81, includes/generals.scss */
+/* line 86, includes/generals.scss */
 a {
   color: #4b4d4b;
   text-decoration: none;
@@ -914,52 +919,52 @@ a {
   -ms-transition: all 600ms ease;
   -o-transition: all 600ms ease;
   transition: all 600ms ease; }
-  /* line 87, includes/generals.scss */
+  /* line 92, includes/generals.scss */
   a:hover {
     text-decoration: none;
     color: #4bb0da; }
 
-/* line 93, includes/generals.scss */
+/* line 98, includes/generals.scss */
 li {
   vertical-align: top; }
 
-/* line 97, includes/generals.scss */
+/* line 102, includes/generals.scss */
 strong, b {
   font-weight: bold; }
 
-/* line 101, includes/generals.scss */
+/* line 106, includes/generals.scss */
 .azul {
   color: #4bb0da; }
 
-/* line 102, includes/generals.scss */
+/* line 107, includes/generals.scss */
 .gris {
   color: #4b4d4b; }
 
-/* line 103, includes/generals.scss */
+/* line 108, includes/generals.scss */
 .gris_claro {
   color: #b1b3b1; }
 
-/* line 104, includes/generals.scss */
+/* line 109, includes/generals.scss */
 .gris_oscuro {
   color: #282828; }
 
-/* line 105, includes/generals.scss */
+/* line 110, includes/generals.scss */
 .gris_sombra {
   color: #4bb0da; }
 
-/* line 106, includes/generals.scss */
+/* line 111, includes/generals.scss */
 .menu_claro {
   color: #fafafa; }
 
-/* line 107, includes/generals.scss */
+/* line 112, includes/generals.scss */
 .menu_oscuro {
   color: #eaeaea; }
 
-/* line 109, includes/generals.scss */
+/* line 114, includes/generals.scss */
 .unstyled {
   list-style: none; }
 
-/* line 113, includes/generals.scss */
+/* line 118, includes/generals.scss */
 .arrow-down-medium {
   display: inline-block;
   width: 0;
@@ -969,7 +974,7 @@ strong, b {
   border-right: 4px solid transparent;
   border-top: 4px solid #4b4d4b; }
 
-/* line 117, includes/generals.scss */
+/* line 122, includes/generals.scss */
 .arrow-left-medium {
   display: inline-block;
   width: 0;
@@ -979,7 +984,7 @@ strong, b {
   border-bottom: 4px solid transparent;
   border-right: 4px solid #4b4d4b; }
 
-/* line 121, includes/generals.scss */
+/* line 126, includes/generals.scss */
 .arrow-right-medium {
   display: inline-block;
   width: 0;
@@ -989,12 +994,12 @@ strong, b {
   border-top: 4px solid transparent;
   border-left: 4px solid #4b4d4b; }
 
-/* line 125, includes/generals.scss */
+/* line 130, includes/generals.scss */
 .titleunderline {
   padding-bottom: 5px;
   border-bottom: 1px #b1b3b1 solid; }
 
-/* line 130, includes/generals.scss */
+/* line 135, includes/generals.scss */
 a.btn, .btn {
   -moz-box-shadow: none;
   -webkit-box-shadow: none;
@@ -1029,17 +1034,17 @@ a.btn, .btn {
     border: none;
     background: none;
     background-color: #21799e; }
-  /* line 132, includes/generals.scss */
+  /* line 137, includes/generals.scss */
   a.btn.close, .btn.close {
     background-color: #dd4646; }
 
-/* line 137, includes/generals.scss */
+/* line 142, includes/generals.scss */
 .close {
   position: absolute;
   top: 10px;
   right: 10px; }
 
-/* line 143, includes/generals.scss */
+/* line 148, includes/generals.scss */
 .reserve_boton {
   position: relative;
   display: block;
@@ -1061,13 +1066,13 @@ a.btn, .btn {
   -moz-box-shadow: 0 1px 1px 0 #b1b3b1 ;
   -webkit-box-shadow: 0 1px 1px 0 #b1b3b1 ;
   box-shadow: 0 1px 1px 0 #b1b3b1 ; }
-  /* line 158, includes/generals.scss */
+  /* line 163, includes/generals.scss */
   .reserve_boton:hover {
     background-color: #185974; }
-    /* line 160, includes/generals.scss */
+    /* line 165, includes/generals.scss */
     .reserve_boton:hover .icons {
       color: #b1b3b1; }
-  /* line 164, includes/generals.scss */
+  /* line 169, includes/generals.scss */
   .reserve_boton .icons {
     position: absolute;
     right: 20px;
@@ -1081,7 +1086,7 @@ a.btn, .btn {
     -o-transition: all 600ms ease;
     transition: all 600ms ease; }
 
-/* line 174, includes/generals.scss */
+/* line 179, includes/generals.scss */
 .redes_sociales {
   position: fixed;
   z-index: 1000;
@@ -1091,16 +1096,16 @@ a.btn, .btn {
   height: 200px;
   margin-top: -120px;
   font-size: 1.2em; }
-  /* line 184, includes/generals.scss */
+  /* line 189, includes/generals.scss */
   .redes_sociales .list {
     list-style: none;
     margin: 0;
     padding: 0; }
-    /* line 188, includes/generals.scss */
+    /* line 193, includes/generals.scss */
     .redes_sociales .list li {
       display: block;
       margin: 5px 0; }
-    /* line 192, includes/generals.scss */
+    /* line 197, includes/generals.scss */
     .redes_sociales .list .red {
       display: block;
       width: 245px;
@@ -1117,11 +1122,11 @@ a.btn, .btn {
       -o-border-radius: 22.5px;
       border-radius: 22.5px;
       text-decoration: none; }
-      /* line 204, includes/generals.scss */
+      /* line 209, includes/generals.scss */
       .redes_sociales .list .red:hover {
         right: 240px;
         text-decoration: none; }
-      /* line 208, includes/generals.scss */
+      /* line 213, includes/generals.scss */
       .redes_sociales .list .red .icons {
         font-size: 2em;
         position: relative;
@@ -1129,18 +1134,18 @@ a.btn, .btn {
         margin-left: 10px;
         margin-right: 10px; }
 
-/* line 219, includes/generals.scss */
+/* line 224, includes/generals.scss */
 blockquote {
   line-height: 1.5em;
   padding: 0 0 0 15px;
   margin: 0 0 20px;
   border-left: 5px solid #4bb0da; }
 
-/* line 226, includes/generals.scss */
+/* line 231, includes/generals.scss */
 .clearfix:after {
   clear: both; }
 
-/* line 227, includes/generals.scss */
+/* line 232, includes/generals.scss */
 .hide-text {
   font: 0/0 a;
   color: transparent;
@@ -1148,7 +1153,7 @@ blockquote {
   background-color: transparent;
   border: 0; }
 
-/* line 228, includes/generals.scss */
+/* line 233, includes/generals.scss */
 .input-block-level {
   display: block;
   width: 100%;
@@ -1157,7 +1162,7 @@ blockquote {
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
-/* line 229, includes/generals.scss */
+/* line 234, includes/generals.scss */
 .tooltip {
   position: absolute;
   z-index: 1030;
@@ -1168,28 +1173,28 @@ blockquote {
   opacity: 0;
   filter: alpha(opacity=0); }
 
-/* line 229, includes/generals.scss */
+/* line 234, includes/generals.scss */
 .tooltip.in {
   opacity: 0.8;
   filter: alpha(opacity=80); }
 
-/* line 230, includes/generals.scss */
+/* line 235, includes/generals.scss */
 .tooltip.top {
   margin-top: -3px; }
 
-/* line 231, includes/generals.scss */
+/* line 236, includes/generals.scss */
 .tooltip.right {
   margin-left: 3px; }
 
-/* line 232, includes/generals.scss */
+/* line 237, includes/generals.scss */
 .tooltip.bottom {
   margin-top: 3px; }
 
-/* line 233, includes/generals.scss */
+/* line 238, includes/generals.scss */
 .tooltip.left {
   margin-left: -3px; }
 
-/* line 234, includes/generals.scss */
+/* line 239, includes/generals.scss */
 .tooltip-inner {
   max-width: 200px;
   padding: 8px;
@@ -1201,7 +1206,7 @@ blockquote {
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 235, includes/generals.scss */
+/* line 240, includes/generals.scss */
 .tooltip-arrow {
   position: absolute;
   width: 0;
@@ -1209,7 +1214,7 @@ blockquote {
   border-color: transparent;
   border-style: solid; }
 
-/* line 236, includes/generals.scss */
+/* line 241, includes/generals.scss */
 .tooltip.top .tooltip-arrow {
   bottom: 0;
   left: 50%;
@@ -1217,7 +1222,7 @@ blockquote {
   border-width: 5px 5px 0;
   border-top-color: #000000; }
 
-/* line 237, includes/generals.scss */
+/* line 242, includes/generals.scss */
 .tooltip.right .tooltip-arrow {
   top: 50%;
   left: 0;
@@ -1225,7 +1230,7 @@ blockquote {
   border-width: 5px 5px 5px 0;
   border-right-color: #000000; }
 
-/* line 238, includes/generals.scss */
+/* line 243, includes/generals.scss */
 .tooltip.left .tooltip-arrow {
   top: 50%;
   right: 0;
@@ -1233,7 +1238,7 @@ blockquote {
   border-width: 5px 0 5px 5px;
   border-left-color: #000000; }
 
-/* line 239, includes/generals.scss */
+/* line 244, includes/generals.scss */
 .tooltip.bottom .tooltip-arrow {
   top: 0;
   left: 50%;
@@ -1241,7 +1246,7 @@ blockquote {
   border-width: 0 5px 5px;
   border-bottom-color: #000000; }
 
-/* line 240, includes/generals.scss */
+/* line 245, includes/generals.scss */
 .popover {
   position: absolute;
   top: 0;
@@ -1263,23 +1268,23 @@ blockquote {
   -moz-box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
   box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2); }
 
-/* line 240, includes/generals.scss */
+/* line 245, includes/generals.scss */
 .popover.top {
   margin-bottom: 10px; }
 
-/* line 241, includes/generals.scss */
+/* line 246, includes/generals.scss */
 .popover.right {
   margin-left: 10px; }
 
-/* line 242, includes/generals.scss */
+/* line 247, includes/generals.scss */
 .popover.bottom {
   margin-top: 10px; }
 
-/* line 243, includes/generals.scss */
+/* line 248, includes/generals.scss */
 .popover.left {
   margin-right: 10px; }
 
-/* line 244, includes/generals.scss */
+/* line 249, includes/generals.scss */
 .popover-title {
   color: #282828;
   margin: 0;
@@ -1293,17 +1298,17 @@ blockquote {
   -moz-border-radius: 5px 5px 0 0;
   border-radius: 5px 5px 0 0; }
 
-/* line 245, includes/generals.scss */
+/* line 250, includes/generals.scss */
 .popover-content {
   padding: 0px 14px 9px;
   color: #666; }
 
-/* line 246, includes/generals.scss */
+/* line 251, includes/generals.scss */
 .popover-content p, .popover-content ul, .popover-content ol {
   margin-bottom: 0;
   font-size: 0.9em; }
 
-/* line 247, includes/generals.scss */
+/* line 252, includes/generals.scss */
 .popover .arrow, .popover .arrow:after {
   position: absolute;
   display: inline-block;
@@ -1312,12 +1317,12 @@ blockquote {
   border-color: transparent;
   border-style: solid; }
 
-/* line 248, includes/generals.scss */
+/* line 253, includes/generals.scss */
 .popover .arrow:after {
   content: "";
   z-index: -1; }
 
-/* line 249, includes/generals.scss */
+/* line 254, includes/generals.scss */
 .popover.top .arrow {
   bottom: -10px;
   left: 50%;
@@ -1325,14 +1330,14 @@ blockquote {
   border-width: 10px 10px 0;
   border-top-color: #ffffff; }
 
-/* line 249, includes/generals.scss */
+/* line 254, includes/generals.scss */
 .popover.top .arrow:after {
   border-width: 11px 11px 0;
   border-top-color: rgba(0, 0, 0, 0.25);
   bottom: -1px;
   left: -11px; }
 
-/* line 250, includes/generals.scss */
+/* line 255, includes/generals.scss */
 .popover.right .arrow {
   top: 50%;
   left: -10px;
@@ -1340,14 +1345,14 @@ blockquote {
   border-width: 10px 10px 10px 0;
   border-right-color: #ffffff; }
 
-/* line 250, includes/generals.scss */
+/* line 255, includes/generals.scss */
 .popover.right .arrow:after {
   border-width: 11px 11px 11px 0;
   border-right-color: rgba(0, 0, 0, 0.25);
   bottom: -11px;
   left: -1px; }
 
-/* line 251, includes/generals.scss */
+/* line 256, includes/generals.scss */
 .popover.bottom .arrow {
   top: -10px;
   left: 50%;
@@ -1355,14 +1360,14 @@ blockquote {
   border-width: 0 10px 10px;
   border-bottom-color: #ffffff; }
 
-/* line 251, includes/generals.scss */
+/* line 256, includes/generals.scss */
 .popover.bottom .arrow:after {
   border-width: 0 11px 11px;
   border-bottom-color: rgba(0, 0, 0, 0.25);
   top: -1px;
   left: -11px; }
 
-/* line 252, includes/generals.scss */
+/* line 257, includes/generals.scss */
 .popover.left .arrow {
   top: 50%;
   right: -10px;
@@ -1370,30 +1375,30 @@ blockquote {
   border-width: 10px 0 10px 10px;
   border-left-color: #ffffff; }
 
-/* line 252, includes/generals.scss */
+/* line 257, includes/generals.scss */
 .popover.left .arrow:after {
   border-width: 11px 0 11px 11px;
   border-left-color: rgba(0, 0, 0, 0.25);
   bottom: -11px;
   right: -1px; }
 
-/* line 253, includes/generals.scss */
+/* line 258, includes/generals.scss */
 .modal-open .dropdown-menu {
   z-index: 2050; }
 
-/* line 254, includes/generals.scss */
+/* line 259, includes/generals.scss */
 .modal-open .dropdown.open {
   *z-index: 2050; }
 
-/* line 255, includes/generals.scss */
+/* line 260, includes/generals.scss */
 .modal-open .popover {
   z-index: 2060; }
 
-/* line 256, includes/generals.scss */
+/* line 261, includes/generals.scss */
 .modal-open .tooltip {
   z-index: 2080; }
 
-/* line 257, includes/generals.scss */
+/* line 262, includes/generals.scss */
 .modal-backdrop {
   position: fixed;
   top: 0;
@@ -1403,16 +1408,16 @@ blockquote {
   z-index: 1040;
   background-color: #000000; }
 
-/* line 257, includes/generals.scss */
+/* line 262, includes/generals.scss */
 .modal-backdrop.fade {
   opacity: 0; }
 
-/* line 258, includes/generals.scss */
+/* line 263, includes/generals.scss */
 .modal-backdrop, .modal-backdrop.fade.in {
   opacity: 0.8;
   filter: alpha(opacity=80); }
 
-/* line 259, includes/generals.scss */
+/* line 264, includes/generals.scss */
 .modal {
   position: fixed;
   top: 50%;
@@ -1433,7 +1438,7 @@ blockquote {
   -moz-background-clip: padding-box;
   background-clip: padding-box; }
 
-/* line 259, includes/generals.scss */
+/* line 264, includes/generals.scss */
 .modal.fade {
   -webkit-transition: opacity .3s linear, top .3s ease-out;
   -moz-transition: opacity .3s linear, top .3s ease-out;
@@ -1441,35 +1446,35 @@ blockquote {
   transition: opacity .3s linear, top .3s ease-out;
   top: -25%; }
 
-/* line 260, includes/generals.scss */
+/* line 265, includes/generals.scss */
 .modal.fade.in {
   top: 50%; }
 
-/* line 261, includes/generals.scss */
+/* line 266, includes/generals.scss */
 .modal-header {
   padding: 9px 15px;
   border-bottom: 1px solid #eee; }
 
-/* line 261, includes/generals.scss */
+/* line 266, includes/generals.scss */
 .modal-header .close {
   margin-top: 2px; }
 
-/* line 262, includes/generals.scss */
+/* line 267, includes/generals.scss */
 .modal-header h3 {
   margin: 0;
   line-height: 30px; }
 
-/* line 263, includes/generals.scss */
+/* line 268, includes/generals.scss */
 .modal-body {
   overflow-y: auto;
   max-height: 80%px;
   padding: 15px; }
 
-/* line 264, includes/generals.scss */
+/* line 269, includes/generals.scss */
 .modal-form {
   margin-bottom: 0; }
 
-/* line 265, includes/generals.scss */
+/* line 270, includes/generals.scss */
 .modal-footer {
   padding: 14px 15px 15px;
   margin-bottom: 0;
@@ -1484,38 +1489,38 @@ blockquote {
   box-shadow: inset 0 1px 0 #ffffff;
   *zoom: 1; }
 
-/* line 265, includes/generals.scss */
+/* line 270, includes/generals.scss */
 .modal-footer:before, .modal-footer:after {
   display: table;
   content: "";
   line-height: 0; }
 
-/* line 266, includes/generals.scss */
+/* line 271, includes/generals.scss */
 .modal-footer:after {
   clear: both; }
 
-/* line 267, includes/generals.scss */
+/* line 272, includes/generals.scss */
 .modal-footer .btn + .btn {
   margin-left: 5px;
   margin-bottom: 0; }
 
-/* line 268, includes/generals.scss */
+/* line 273, includes/generals.scss */
 .modal-footer .btn-group .btn + .btn {
   margin-left: -1px; }
 
-/* line 269, includes/generals.scss */
+/* line 274, includes/generals.scss */
 .dropup, .dropdown {
   position: relative; }
 
-/* line 270, includes/generals.scss */
+/* line 275, includes/generals.scss */
 .dropdown-toggle {
   *margin-bottom: -3px; }
 
-/* line 271, includes/generals.scss */
+/* line 276, includes/generals.scss */
 .dropdown-toggle:active, .open .dropdown-toggle {
   outline: 0; }
 
-/* line 272, includes/generals.scss */
+/* line 277, includes/generals.scss */
 .caret {
   display: inline-block;
   width: 0;
@@ -1526,12 +1531,12 @@ blockquote {
   border-left: 4px solid transparent;
   content: ""; }
 
-/* line 273, includes/generals.scss */
+/* line 278, includes/generals.scss */
 .dropdown .caret {
   margin-top: 8px;
   margin-left: 2px; }
 
-/* line 274, includes/generals.scss */
+/* line 279, includes/generals.scss */
 .dropdown-menu {
   position: absolute;
   top: 100%;
@@ -1558,12 +1563,12 @@ blockquote {
   -moz-background-clip: padding;
   background-clip: padding-box; }
 
-/* line 274, includes/generals.scss */
+/* line 279, includes/generals.scss */
 .dropdown-menu.pull-right {
   right: 0;
   left: auto; }
 
-/* line 275, includes/generals.scss */
+/* line 280, includes/generals.scss */
 .dropdown-menu .divider {
   *width: 100%;
   height: 1px;
@@ -1573,7 +1578,7 @@ blockquote {
   background-color: #e5e5e5;
   border-bottom: 1px solid #ffffff; }
 
-/* line 276, includes/generals.scss */
+/* line 281, includes/generals.scss */
 .dropdown-menu a {
   display: block;
   padding: 3px 20px;
@@ -1583,7 +1588,7 @@ blockquote {
   color: #333333;
   white-space: nowrap; }
 
-/* line 277, includes/generals.scss */
+/* line 282, includes/generals.scss */
 .dropdown-menu li > a:hover, .dropdown-menu li > a:focus, .dropdown-submenu:hover > a {
   text-decoration: none;
   color: #ffffff;
@@ -1597,7 +1602,7 @@ blockquote {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0); }
 
-/* line 278, includes/generals.scss */
+/* line 283, includes/generals.scss */
 .dropdown-menu .active > a, .dropdown-menu .active > a:hover {
   color: #ffffff;
   text-decoration: none;
@@ -1612,46 +1617,46 @@ blockquote {
   background-repeat: repeat-x;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff0088cc', endColorstr='#ff0077b3', GradientType=0); }
 
-/* line 279, includes/generals.scss */
+/* line 284, includes/generals.scss */
 .dropdown-menu .disabled > a, .dropdown-menu .disabled > a:hover {
   color: #999999; }
 
-/* line 280, includes/generals.scss */
+/* line 285, includes/generals.scss */
 .dropdown-menu .disabled > a:hover {
   text-decoration: none;
   background-color: transparent;
   cursor: default; }
 
-/* line 281, includes/generals.scss */
+/* line 286, includes/generals.scss */
 .open {
   *z-index: 1000; }
 
-/* line 281, includes/generals.scss */
+/* line 286, includes/generals.scss */
 .open > .dropdown-menu {
   display: block; }
 
-/* line 282, includes/generals.scss */
+/* line 287, includes/generals.scss */
 .pull-right > .dropdown-menu {
   right: 0;
   left: auto; }
 
-/* line 283, includes/generals.scss */
+/* line 288, includes/generals.scss */
 .dropup .caret, .navbar-fixed-bottom .dropdown .caret {
   border-top: 0;
   border-bottom: 4px solid #000000;
   content: "\2191"; }
 
-/* line 284, includes/generals.scss */
+/* line 289, includes/generals.scss */
 .dropup .dropdown-menu, .navbar-fixed-bottom .dropdown .dropdown-menu {
   top: auto;
   bottom: 100%;
   margin-bottom: 1px; }
 
-/* line 285, includes/generals.scss */
+/* line 290, includes/generals.scss */
 .dropdown-submenu {
   position: relative; }
 
-/* line 286, includes/generals.scss */
+/* line 291, includes/generals.scss */
 .dropdown-submenu > .dropdown-menu {
   top: 0;
   left: 100%;
@@ -1661,11 +1666,11 @@ blockquote {
   -moz-border-radius: 0 6px 6px 6px;
   border-radius: 0 6px 6px 6px; }
 
-/* line 287, includes/generals.scss */
+/* line 292, includes/generals.scss */
 .dropdown-submenu:hover .dropdown-menu {
   display: block; }
 
-/* line 288, includes/generals.scss */
+/* line 293, includes/generals.scss */
 .dropdown-submenu > a:after {
   display: block;
   content: " ";
@@ -1679,47 +1684,47 @@ blockquote {
   margin-top: 5px;
   margin-right: -10px; }
 
-/* line 289, includes/generals.scss */
+/* line 294, includes/generals.scss */
 .dropdown-submenu:hover > a:after {
   border-left-color: #ffffff; }
 
-/* line 290, includes/generals.scss */
+/* line 295, includes/generals.scss */
 .dropdown .dropdown-menu .nav-header {
   padding-left: 20px;
   padding-right: 20px; }
 
-/* line 291, includes/generals.scss */
+/* line 296, includes/generals.scss */
 .typeahead {
   margin-top: 2px;
   -webkit-border-radius: 4px;
   -moz-border-radius: 4px;
   border-radius: 4px; }
 
-/* line 292, includes/generals.scss */
+/* line 297, includes/generals.scss */
 .pull-right {
   float: right; }
 
-/* line 293, includes/generals.scss */
+/* line 298, includes/generals.scss */
 .pull-left {
   float: left; }
 
-/* line 294, includes/generals.scss */
+/* line 299, includes/generals.scss */
 .hide {
   display: none; }
 
-/* line 295, includes/generals.scss */
+/* line 300, includes/generals.scss */
 .show {
   display: block; }
 
-/* line 296, includes/generals.scss */
+/* line 301, includes/generals.scss */
 .invisible {
   visibility: hidden; }
 
-/* line 297, includes/generals.scss */
+/* line 302, includes/generals.scss */
 .affix {
   position: fixed; }
 
-/* line 298, includes/generals.scss */
+/* line 303, includes/generals.scss */
 .fade {
   opacity: 0;
   -webkit-transition: opacity 0.15s linear;
@@ -1727,11 +1732,11 @@ blockquote {
   -o-transition: opacity 0.15s linear;
   transition: opacity 0.15s linear; }
 
-/* line 298, includes/generals.scss */
+/* line 303, includes/generals.scss */
 .fade.in {
   opacity: 1; }
 
-/* line 299, includes/generals.scss */
+/* line 304, includes/generals.scss */
 .collapse {
   position: relative;
   height: 0;
@@ -1742,7 +1747,7 @@ blockquote {
   -o-transition: height 0.35s ease;
   transition: height 0.35s ease; }
 
-/* line 299, includes/generals.scss */
+/* line 304, includes/generals.scss */
 .collapse.in {
   height: auto; }
 
@@ -2024,40 +2029,41 @@ Estilos de modulos de contenido
   /* line 10, includes/modules.scss */
   .module-f .module-f-icon {
     float: left;
-    width: 60px;
+    width: 25%;
+    text-align: center;
     font-size: 40px;
     margin-top: 15px;
     color: #282828;
     text-shadow: 0 -1px 0 #e0e0e0; }
-  /* line 18, includes/modules.scss */
+  /* line 19, includes/modules.scss */
   .module-f .module-f-text {
     float: left;
-    width: 220px; }
-    /* line 21, includes/modules.scss */
+    width: 75%; }
+    /* line 22, includes/modules.scss */
     .module-f .module-f-text p {
       margin-top: 0; }
-  /* line 25, includes/modules.scss */
+  /* line 26, includes/modules.scss */
   .module-f .module-f-title {
     display: inline;
     color: #dd4646;
     font-size: 14px;
     margin: 0;
     font-weight: bold; }
-  /* line 38, includes/modules.scss */
+  /* line 39, includes/modules.scss */
   .module-f:nth-child(3n+3) {
     -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ; }
 
-/* line 45, includes/modules.scss */
+/* line 46, includes/modules.scss */
 .module-c {
   text-align: center; }
-  /* line 47, includes/modules.scss */
+  /* line 48, includes/modules.scss */
   .module-c .module-c-title {
     margin-top: 20px;
     margin-bottom: 5px;
     color: #4bb0da; }
-  /* line 52, includes/modules.scss */
+  /* line 53, includes/modules.scss */
   .module-c .module-c-icon {
     font-size: 40px;
     line-height: 100px;
@@ -2071,7 +2077,7 @@ Estilos de modulos de contenido
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px; }
-  /* line 65, includes/modules.scss */
+  /* line 66, includes/modules.scss */
   .module-c .module-c-content p {
     margin-top: 0; }
 
@@ -2097,7 +2103,7 @@ Estilos de modulos de contenido
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
     box-shadow: inset 0 -1px 0 white;
-    background-color: white; }
+    background-color: #f4f4f4; }
     /* line 49, includes/scaffold.scss */
     #footer .upperfooter ul li {
       margin-bottom: 5px; }

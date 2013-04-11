@@ -151,40 +151,41 @@ Estilos de modulos de contenido
   /* line 10, modules.scss */
   .module-f .module-f-icon {
     float: left;
-    width: 60px;
+    width: 25%;
+    text-align: center;
     font-size: 40px;
     margin-top: 15px;
     color: #282828;
     text-shadow: 0 -1px 0 #e0e0e0; }
-  /* line 18, modules.scss */
+  /* line 19, modules.scss */
   .module-f .module-f-text {
     float: left;
-    width: 220px; }
-    /* line 21, modules.scss */
+    width: 75%; }
+    /* line 22, modules.scss */
     .module-f .module-f-text p {
       margin-top: 0; }
-  /* line 25, modules.scss */
+  /* line 26, modules.scss */
   .module-f .module-f-title {
     display: inline;
     color: #dd4646;
     font-size: 14px;
     margin: 0;
     font-weight: bold; }
-  /* line 38, modules.scss */
+  /* line 39, modules.scss */
   .module-f:nth-child(3n+3) {
     -moz-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     -webkit-box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ;
     box-shadow: 0 0 0 0 rgba(255, 255, 255, 0) ; }
 
-/* line 45, modules.scss */
+/* line 46, modules.scss */
 .module-c {
   text-align: center; }
-  /* line 47, modules.scss */
+  /* line 48, modules.scss */
   .module-c .module-c-title {
     margin-top: 20px;
     margin-bottom: 5px;
     color: #4bb0da; }
-  /* line 52, modules.scss */
+  /* line 53, modules.scss */
   .module-c .module-c-icon {
     font-size: 40px;
     line-height: 100px;
@@ -198,7 +199,7 @@ Estilos de modulos de contenido
     -ms-border-radius: 50px;
     -o-border-radius: 50px;
     border-radius: 50px; }
-  /* line 65, modules.scss */
+  /* line 66, modules.scss */
   .module-c .module-c-content p {
     margin-top: 0; }
 
@@ -224,7 +225,7 @@ Estilos de modulos de contenido
     border-top: 1px solid #E0E0E0;
     border-bottom: 1px solid #E0E0E0;
     box-shadow: inset 0 -1px 0 white;
-    background-color: white; }
+    background-color: #f4f4f4; }
     /* line 49, scaffold.scss */
     #footer .upperfooter ul li {
       margin-bottom: 5px; }
