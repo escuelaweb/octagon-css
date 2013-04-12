@@ -6,7 +6,6 @@
   display: inline-block;
   background-color: $azul;
   color: $white;
-  text-align: left;
   font-family: $chivo;
   padding: 1.1em 2em;
   text-decoration: none;
@@ -26,11 +25,16 @@
     background-color: $morado;
     &:hover {
       background-color: darken($morado,15%);
+      
     }
     &.btn-wicon {
       &:after {
         border-right: lighten($morado, 10%) $border-thin solid;
         border-left: darken($morado, 10%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($morado, 0%) $border-thin solid;
+        border-left: darken($morado, 25%) $border-thin solid;
       }
     }
   }
@@ -44,6 +48,10 @@
         border-right: lighten($verde, 10%) $border-thin solid;
         border-left: darken($verde, 10%) $border-thin solid;
       }
+      &:hover:after {
+        border-right: lighten($verde, 0%) $border-thin solid;
+        border-left: darken($verde, 40%) $border-thin solid;
+      }
     }
   }
   &.btn-naranja, &.btn-warning {
@@ -53,8 +61,12 @@
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($naranja, 10%) $border-thin solid;
-        border-left: darken($naranja, 10%) $border-thin solid;
+        border-right: lighten($naranja, 0%) $border-thin solid;
+        border-left: darken($naranja, 25%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($naranja, 0%) $border-thin solid;
+        border-left: darken($naranja, 45%) $border-thin solid;
       }
     }
   }
@@ -67,6 +79,10 @@
       &:after {
         border-right: lighten($rojo, 10%) $border-thin solid;
         border-left: darken($rojo, 10%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($rojo, 0%) $border-thin solid;
+        border-left: darken($rojo, 30%) $border-thin solid;
       }
     }
   }
@@ -81,6 +97,10 @@
         border-right: lighten($white, 10%) $border-thin solid;
         border-left: darken($white, 10%) $border-thin solid;
       }
+      &:hover:after {
+        border-right: lighten(darken($white,0%), 10%) $border-thin solid;
+        border-left: darken(darken($white,35%), 10%) $border-thin solid;
+      }
     }
   }
   &.btn-gris {
@@ -91,19 +111,27 @@
     &.btn-wicon {
       &:after {
         border-right: lighten($gris_claro, 10%) $border-thin solid;
-        border-left: darken($gris_claro, 10%) $border-thin solid;
+        border-left: darken($gris_claro, 20%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($gris_claro, 0%) $border-thin solid;
+        border-left: darken($gris_claro, 35%) $border-thin solid;
       }
     }
   }
   &.btn-gris-oscuro {
     background-color: darken($gris_claro,15%);
     &:hover {
-      background-color: darken(darken($gris_claro,15%),15%);
+      background-color: darken($gris_claro,25%);
     }
     &.btn-wicon {
       &:after {
         border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
         border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($gris_claro, 0%) $border-thin solid;
+        border-left: darken($gris_claro, 45%) $border-thin solid;
       }
     }
   }
@@ -157,31 +185,6 @@
 
 // Botones con iconos
 
-/* 
-    &.btn-wicon.anchor {
-    text-align: left;
-    padding-right: 50px;
-    .btn-wicon-icon {
-      font-size: 30px;
-      display: block;
-      line-height: 2.2em;
-      position: absolute;
-      right: 0.5em;
-      top: 0;
-    }
-    &:after {
-      content: "";
-      display: block;
-      height: 100%;
-      position: absolute;
-      right: 60px;
-      top: 0;
-      border-right: lighten($azul, 10%) $border-thin solid;
-      border-left: darken($azul, 10%) $border-thin solid;
-    }
-  }
-*/
-
 .btn {
   &.btn-wicon {
     text-align: left;
@@ -189,9 +192,9 @@
     .btn-wicon-icon {
       font-size: 1.2em;
       display: block;
-      line-height: 1.8em;
+      line-height: 1.9em;
       position: absolute;
-      right: 0.5em;
+      right: 0.55em;
       top: 0;
     }
     &:after {
@@ -203,6 +206,22 @@
       top: 0;
       border-right: lighten($azul, 10%) $border-thin solid;
       border-left: darken($azul, 10%) $border-thin solid;
+    }
+    &:hover:after {
+      border-right: lighten($azul, 0%) $border-thin solid;
+      border-left: darken($azul, 30%) $border-thin solid;
+    }
+  }
+  &.btn-wicon.btn-wicon-left {
+    padding-right: 2em;
+    padding-left: 3.4em;
+    .btn-wicon-icon {
+      right: auto;
+      left: 0.6em;
+    }
+    &:after { 
+      right: auto;
+      left: 2.5em;
     }
   }
 }
