@@ -99,5 +99,6 @@ PLATFORMS
 DEPENDENCIES
   builder
   coffee-script
+  maruku
   middleman (~> 3.0.13)
   sass

@@ -3,10 +3,10 @@
 #content {
   position: relative;
   margin-top: 10px;
-  padding: 5px 10px 40px 10px;
+  padding: 0px 10px 60px 10px;
   background-color: white;
-  padding-top: 60px;
   @include box-shadow(0,0,5px,0,$gris,0.5);
+  @include box-sizing(content-box);
   &.contents.show {
 
   }
@@ -15,34 +15,9 @@
   }
 }
 
-.titulo_cinta {
-  background-color: $gris;
-  color: white;
-  padding: 10px 25px;
-  position: relative;
-  left: -25px;
-  @include box-shadow(0,4px,0,0,$azul,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $gris_claro);
-    border-bottom: 0px solid transparent;
-    position: absolute;
-    top: -15px;
-    left: 0;
-    z-index: -1;
-  }
-  &:after, .arrow-cinta-right {
-    @include arrow('right', 15px, $gris_claro);
-    border-bottom: 0px solid transparent;
-    position: absolute;
-    top: -15px;
-    right: 0;
-    z-index: -1;
-  }
-}
-
 .content-main-title {
   font-size: 42px;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 60px;
   padding-top: 0px;
 }

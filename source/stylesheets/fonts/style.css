@@ -1,22 +1,12 @@
 @font-face {
 	font-family: 'icomoon';
-	src:url('fonts/escuela/fonts/icomoon.eot');
-	src:url('fonts/escuela/fonts/icomoon.eot?#iefix') format('embedded-opentype'),
-		url('fonts/escuela/fonts/icomoon.woff') format('woff'),
-		url('fonts/escuela/fonts/icomoon.ttf') format('truetype'),
-		url('fonts/escuela/fonts/icomoon.svg#icomoon') format('svg');
+	src:url('fonts/icomoon.eot');
+	src:url('fonts/icomoon.eot?#iefix') format('embedded-opentype'),
+		url('fonts/icomoon.woff') format('woff'),
+		url('fonts/icomoon.ttf') format('truetype'),
+		url('fonts/icomoon.svg#icomoon') format('svg');
 	font-weight: normal;
 	font-style: normal;
-}
-
-.icons {
-	font-family: 'icomoon';
-	font-weight: normal;
-	font-variant: normal;
-	text-transform: none;
-	line-height: 1;
-	text-rendering: optimizeLegibility;
-	-webkit-font-smoothing: antialiased;
 }
 
 /* Use the following CSS code if you want to use data attributes for inserting your icons */
@@ -37,7 +27,7 @@ Instead of a list of all class selectors,
 you can use the generic selector below, but it's slower:
 [class*="icon-"] {
 */
-.icon-pencil, .icon-broadcast, .icon-microphone, .icon-support, .icon-mouse, .icon-tablet, .icon-database, .icon-loading, .icon-equalizer, .icon-cog, .icon-pie, .icon-cube, .icon-menu, .icon-briefcase, .icon-compass, .icon-stats-up, .icon-book, .icon-stats, .icon-stats-2, .icon-cube-2, .icon-trophy, .icon-location, .icon-help, .icon-warning, .icon-minus, .icon-plus, .icon-close, .icon-remove, .icon-mobile, .icon-phone, .icon-paper, .icon-email, .icon-attachment, .icon-price, .icon-mouse-2, .icon-clock, .icon-play, .icon-light-bulb, .icon-creative-commons, .icon-network, .icon-suitcase, .icon-user, .icon-code, .icon-keyboard, .icon-calendar-alt-fill, .icon-magnifying-glass, .icon-home, .icon-pencil-2, .icon-wrench, .icon-console, .icon-code-2, .icon-puzzle, .icon-arrow, .icon-arrow-2, .icon-arrow-3, .icon-arrow-4, .icon-pencil-3, .icon-users, .icon-calendar-alt-stroke, .icon-play-2, .icon-record, .icon-book-2, .icon-history, .icon-history-2, .icon-layout, .icon-contract, .icon-bookmark, .icon-atom, .icon-coffee, .icon-rocket, .icon-github, .icon-refresh, .icon-cloud, .icon-gplus, .icon-twitter, .icon-facebook, .icon-drawer, .icon-drawer-2, .icon-info-circle, .icon-upload, .icon-download, .icon-list, .icon-exit, .icon-error, .icon-uniF013, .icon-faq, .icon-firstaid, .icon-student {
+.icon-pencil, .icon-broadcast, .icon-microphone, .icon-support, .icon-mouse, .icon-tablet, .icon-database, .icon-loading, .icon-equalizer, .icon-cog, .icon-pie, .icon-cube, .icon-menu, .icon-briefcase, .icon-compass, .icon-stats-up, .icon-book, .icon-stats, .icon-stats-2, .icon-cube-2, .icon-trophy, .icon-location, .icon-help, .icon-warning, .icon-minus, .icon-plus, .icon-close, .icon-remove, .icon-mobile, .icon-phone, .icon-paper, .icon-email, .icon-attachment, .icon-price, .icon-mouse-2, .icon-clock, .icon-play, .icon-light-bulb, .icon-creative-commons, .icon-network, .icon-suitcase, .icon-user, .icon-code, .icon-keyboard, .icon-calendar-alt-fill, .icon-magnifying-glass, .icon-home, .icon-pencil-2, .icon-wrench, .icon-console, .icon-code-2, .icon-puzzle, .icon-arrow, .icon-arrow-2, .icon-arrow-3, .icon-arrow-4, .icon-pencil-3, .icon-users, .icon-calendar-alt-stroke, .icon-play-2, .icon-record, .icon-book-2, .icon-history, .icon-history-2, .icon-layout, .icon-contract, .icon-bookmark, .icon-atom, .icon-coffee, .icon-rocket, .icon-github, .icon-refresh, .icon-cloud, .icon-gplus, .icon-twitter, .icon-facebook, .icon-drawer, .icon-drawer-2, .icon-info-circle, .icon-upload, .icon-download, .icon-list, .icon-exit, .icon-error, .icon-uniF013, .icon-faq, .icon-firstaid, .icon-student, .icon-html5, .icon-html5-2, .icon-css3, .icon-chrome, .icon-firefox, .icon-IE, .icon-wordpress, .icon-git {
 	font-family: 'icomoon';
 	speak: none;
 	font-style: normal;
@@ -310,4 +300,28 @@ you can use the generic selector below, but it's slower:
 }
 .icon-student:before {
 	content: "\f288";
+}
+.icon-html5:before {
+	content: "\e000";
+}
+.icon-html5-2:before {
+	content: "\e001";
+}
+.icon-css3:before {
+	content: "\e002";
+}
+.icon-chrome:before {
+	content: "\e003";
+}
+.icon-firefox:before {
+	content: "\e004";
+}
+.icon-IE:before {
+	content: "\e005";
+}
+.icon-wordpress:before {
+	content: "\e006";
+}
+.icon-git:before {
+	content: "\e007";
 }
