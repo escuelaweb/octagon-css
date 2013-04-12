@@ -23,10 +23,23 @@
             </span>
           </a>
         </div>
-        <div class="grid7">
+        <div class="grid9">
           <div class="divisor"></div>
-          <ul class="menu scroller">
-            <li><a href="#content">Caracteristicas</a></li>
+          <ul class="menu scroller left">
+            <li>
+              <a href="#" class="dropdown-toggle">Modulos</a>
+              <ul class="submenu">
+                <li><a href="#caracteristicas">Modulo de Caracteristicas</a></li>
+                <li><a href="#modulos-t">Modulos de Thumbnail</a></li>
+              </ul>
+            </li>
+            <li>
+              <a href="#" class="dropdown-toggle">Caracteristicas</a>
+              <ul class="submenu">
+                <li><a href="#sistema-de-columnas">Columnas</a></li>
+                <li><a href="#buttons">Botones</a></li>
+              </ul>
+            </li>
             <li>
               <a href="#" class="dropdown-toggle">Enlaces</a>
               <ul class="submenu dropdown-menu">
@@ -35,20 +48,16 @@
                 <li><a href="#">subenlace</a></li>
               </ul>
             </li>
-            <li><a href="#">Enlaces</a></li>
           </ul>
-        </div>
-        <div class="grid2 right">
-          <div class="divisor"></div>
-          <ul class="menu scroller">
+          <ul class="menu scroller right">
             <li>
               <a href="#">Enlaces 1</a>
             </li>
             <li>
               <a href="#">Enlaces 1</a>
             </li>
-            
           </ul>
+          <div class="divisor right"></div>
         </div>
       </div>
     </div>
@@ -70,45 +79,51 @@
 <div class="row">
   <article class="module-c grid4">
     <header>
-      <div class="module-c-icon icons">&#x26;</div>
-      <h3 class="module-c-title">Titulo del modulo</h3>
+      <div class="module-c-icon icons">&#xe001;</div>
+      <h3 class="module-c-title">Build with HTML5</h3>
     </header>
     <div class="module-c-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, blanditiis maiores porro maxime modi voluptates harum ex ad illum ut. Tenetur, nulla labore consequuntur tempore voluptates cumque cupiditate tempora aperiam.</p>
+      <p>
+        Octogon ha sido creado para soportar las nuevas etiquetas semanticas HTML5. Aplicandole estilos a dichas etiquetas para que puedan funcionar en basicamente cualquier navegador (hasta en IE6, aunque eso no es un browser respetable).
+      </p>
     </div>
   </article>
   <article class="module-c grid4">
     <header>
-      <div class="module-c-icon icons">&#x32;</div>
-      <h3 class="module-c-title">Titulo del modulo</h3>
+      <div class="module-c-icon icons">&#xe002;</div>
+      <h3 class="module-c-title">Powered by CSS3</h3>
     </header>
     <div class="module-c-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, blanditiis maiores porro maxime modi voluptates harum ex ad illum ut. Tenetur, nulla labore consequuntur tempore voluptates cumque cupiditate tempora aperiam.</p>
+      <p>
+        Creado bajo los ultimos estandares CSS3, lo que permite al framework experimentar las nuevas features de CSS, por lo tanto no intentes que los estilos como bordes redondiados, sombras, transiciones, etc. funcionen en IE6 
+      </p>
     </div>
   </article>
   <article class="module-c grid4">
     <header>
-      <div class="module-c-icon icons">&#x52;</div>
-      <h3 class="module-c-title">Titulo del modulo</h3>
+      <div class="module-c-icon icons">&#x70;</div>
+      <h3 class="module-c-title">Un proyecto para la comunidad</h3>
     </header>
     <div class="module-c-content">
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Adipisci, blanditiis maiores porro maxime modi voluptates harum ex ad illum ut. Tenetur, nulla labore consequuntur tempore voluptates cumque cupiditate tempora aperiam.</p>
+      <p>
+        Es un proyecto abierto a la comunidad, por lo tanto cualquier nueva linea de codigo sera bien recibida. Espero que la comunidad de desarrolladores pueda a hacer mejor este proyecto dia a dia.
+      </p>
     </div>
   </article>
 </div>
 <div class="row mt40">
   <div class="grid4 offset2">
-    <a target="_blank" href="https://github.com/escuelaweb/framework-css" class="boton boton-g anchor boton-gris-oscuro boton-wicon">
+    <a target="_blank" href="https://github.com/escuelaweb/framework-css" class="btn btn-h anchor btn-gris-oscuro btn-wicon">
       Repositorio Github
-      <span class="boton-wicon-icon icons">
+      <span class="btn-wicon-icon icons">
         &#x70;
       </span>
     </a>
   </div>
   <div class="grid4">
-    <a target="_blank" href="https://github.com/escuelaweb/framework-css/archive/master.zip" class="boton boton-g anchor boton-wicon">
+    <a target="_blank" href="https://github.com/escuelaweb/framework-css/archive/master.zip" class="btn btn-h anchor btn-wicon">
       Descargar v0.1
-      <span class="boton-wicon-icon icons">
+      <span class="btn-wicon-icon icons">
         &#x5b;
       </span>
     </a>
@@ -123,10 +138,12 @@
       <section id="main" class="row">
         
 
-<div class="grid12">
-  <h1 class="content-main-title">
-    Caracteristicas de Octagon framework
-  </h1>
+<section id="caracteristicas" class="grid12">
+  <header>
+    <h1 class="content-main-title">
+      Caracteristicas de Octagon framework
+    </h1>
+  </header>
   <div class="row">
     <article class="module-f grid4">
       <aside class="module-f-icon icons left"> &#x4e; </aside>
@@ -156,7 +173,7 @@
       </div>
     </article>
   </div>
-  <div class="row">
+  <!-- <div class="row">
     <article class="module-f grid4">
       <aside class="module-f-icon icons left"> e </aside>
       <div class="module-f-text">
@@ -175,8 +192,265 @@
         <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem, earum, eligendi veritatis consequuntur saepe a deleniti quae rem esse voluptate facere provident cum assumenda natus qui ipsa iusto aliquid doloremque.</p>
       </div>
     </article>
+  </div> -->
+</section>
+<section id="modulos-t" class="grid12">
+  <header>
+    <h2 class="titulo-cinta">
+      Lorem ipsum dolor sit amet, consectetur adipisicing elit
+    </h2>
+  </header>
+  <div class="row">
+    <article class="module-t grid6">
+      <div class="module-t-image">
+        <img src="images/badgets/design_big.png" />
+      </div>
+      <div class="module-t-detail">
+        <header>
+          <h2 class="module-t-title">
+            Nivel Basico
+          </h2>
+        </header>
+        <div class="module-t-excerpt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, delectus, rerum, fugiat, exercitationem consequuntur pariatur numquam repellat veritatis quos omnis obcaecati facilis quisquam illo quis voluptas expedita voluptatibus animi tempora?</p>
+        </div>
+      </div>
+    </article>
+    <article class="module-t grid6">
+      <div class="module-t-image">
+        <img src="images/badgets/design_big.png" />
+      </div>
+      <div class="module-t-detail">
+        <header>
+          <h2 class="module-t-title">
+            Nivel Basico
+          </h2>
+        </header>
+        <div class="module-t-excerpt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, delectus, rerum, fugiat, exercitationem consequuntur pariatur numquam repellat veritatis quos omnis obcaecati facilis quisquam illo quis voluptas expedita voluptatibus animi tempora?</p>
+        </div>
+      </div>
+    </article>
+    <article class="module-t grid6">
+      <div class="module-t-image">
+        <img src="images/badgets/design_big.png" />
+      </div>
+      <div class="module-t-detail">
+        <header>
+          <h2 class="module-t-title">
+            Nivel Basico
+          </h2>
+        </header>
+        <div class="module-t-excerpt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, delectus, rerum, fugiat, exercitationem consequuntur pariatur numquam repellat veritatis quos omnis obcaecati facilis quisquam illo quis voluptas expedita voluptatibus animi tempora?</p>
+        </div>
+      </div>
+    </article>
+    <article class="module-t grid6">
+      <div class="module-t-image">
+        <img src="images/badgets/design_big.png" />
+      </div>
+      <div class="module-t-detail">
+        <header>
+          <h2 class="module-t-title">
+            Nivel Basico
+          </h2>
+        </header>
+        <div class="module-t-excerpt">
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eius, delectus, rerum, fugiat, exercitationem consequuntur pariatur numquam repellat veritatis quos omnis obcaecati facilis quisquam illo quis voluptas expedita voluptatibus animi tempora?</p>
+        </div>
+      </div>
+    </article>
   </div>
-</div>
+</section>
+
+<section id="sistema-de-columnas" class="grid12">
+  <header>
+    <h1 class="titulo-cinta naranja">
+      Sistema de Columnas
+    </h1>
+  </header>
+  <div>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, eum maiores nesciunt facilis assumenda? Consequatur, officia, placeat, magnam, eos minima tenetur animi adipisci excepturi quia ea odio necessitatibus dolorem aliquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, beatae, vero, id, labore atque saepe suscipit eius quisquam provident necessitatibus deserunt sapiente quis iure enim minima ipsa corporis modi dolores.</p>
+  </div>
+  <div class="row">
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+        <div class="grid1">.grid1</div>
+      </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid4">4 Columnas (.grid4)</div>
+        <div class="grid4">4 Columnas (.grid4)</div>
+        <div class="grid4">4 Columnas (.grid4)</div>
+      </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid3">3 Columnas (.grid3)</div>
+        <div class="grid3">3 Columnas (.grid3)</div>
+        <div class="grid3">3 Columnas (.grid3)</div>
+        <div class="grid3">3 Columnas (.grid3)</div>
+      </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid4">4 Columnas (.grid4)</div>
+        <div class="grid8">8 Columnas (.grid8)</div>
+      </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid9">9 Columnas (.grid9)</div>
+        <div class="grid3">3 Columnas (.grid3)</div>
+      </div>
+    </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid12">12 Columnas (.grid12)</div>
+      </div>
+    </div>
+  </div>
+  <div class="row mt30">
+    <div class="grid4">
+      <h4>¿Como usar el sistema de columnas?</h4>
+      <p>
+        El sistema de columna de octogon esta basado en 12 columnas y un ancho de total de 940px en estado normal, es decir, sin aplicar estilos Responsive.
+      </p>
+      <p>
+        Las clases para el manejo del grid son:
+      </p>
+      <ul class="mt0 pt0">
+        <li>
+          <b>.container</b>: que es la clase que centra el contenido y le coloca el ancho a 940px
+        </li>
+        <li>
+          <b>.row</b>: se encarga de iniciar la el sistema anidado de columnas
+        </li>
+        <li>
+          <b>.grid[x]</b>: define el ancho en columnas de un div, section, article, etc.
+        </li>
+      </ul>
+    </div>
+    <div class="grid8">
+      <h4 id='ejemplos_de_uso_del_sistema_de_columnas'>Ejemplos de uso del sistema de columnas</h4>
+
+<p>Elemento que ocupe las 12 columnas</p>
+
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;grid12&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno</p>
+
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+    &lt;div class=&quot;row&quot;&gt;
+      &lt;div class=&quot;grid4&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+      &lt;div class=&quot;grid4&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+      &lt;div class=&quot;grid4&quot;&gt;Lorem ipsum dolor sit amet&lt;/div&gt;
+    &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<p>Anidar columnas dentro de columnas</p>
+
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid9&quot;&gt;
+      &lt;div class=&quot;row&quot;&gt;
+        &lt;div class=&quot;grid3&quot;&gt;Lorem ipsum dolor&lt;/div&gt;
+        &lt;div class=&quot;grid3&quot;&gt;Lorem ipsum dolor&lt;/div&gt;
+        &lt;div class=&quot;grid3&quot;&gt;Lorem ipsum dolor&lt;/div&gt;
+      &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;grid3&quot;&gt;
+        Lorem ipsum dolor sit ametone corrupti.
+    &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+    </div>
+  </div>
+</section>
+<section id="buttons" class="grid12">
+  <header>
+    <h1 class="titulo-cinta">
+      Botones
+    </h1>
+  </header>
+  <div class="row">
+    <section class="grid4">
+      <header>
+        <h4>Tipos de Botones</h4>
+      </header>
+      <div class="mt10">
+        <a href="#" class="btn">Boton normal</a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-accept">Boton de accept</a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-action">Boton de actions</a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-error">Boton de error</a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-warning">Boton de warning</a>
+      </div>
+    </section>
+
+    <section class="grid4">
+      <header>
+        <h4>Variaciones de Tamano</h4>
+      </header>
+      <div class="mt10">
+        <a href="#" class="btn btn-p">
+          Boton pequeno
+        </a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn">
+          Boton normal
+        </a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-m">
+          Boton medium
+        </a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn btn-g">
+          Boton Grande
+        </a>
+      </div>
+      <div class="mt10">
+        <a href="#" class="btn anchor">
+          Boton full width
+        </a>
+      </div>
+    </section>
+
+    <section class="grid4">
+      <header>
+        <h4>Botones con Iconos</h4>
+      </header>
+    </section>
+
+  </div>
+</section>
       </section>
     </section>
 

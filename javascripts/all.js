@@ -107,7 +107,7 @@ n();return d?d.promise(g):g}})(jQuery);
 (function($, window, document, undefined) {
   
   $(function() {
-    $('pre.codehighlight').each(function(i, e) { hljs.highlightBlock(e) });
+    $('pre').each(function(i, e) { hljs.highlightBlock(e) });
     $(".menu.scroller a").smoothscrolling();
     $(".site-name").smoothscrolling();
   })
