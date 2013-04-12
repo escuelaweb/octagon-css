@@ -1,13 +1,14 @@
 @import "functions";
 
 .btn {
+  font-size: $font_base;
   position: relative;
   display: inline-block;
   background-color: $azul;
   color: $white;
   text-align: left;
   font-family: $chivo;
-  padding: 1em 2em;
+  padding: 1.1em 2em;
   text-decoration: none;
   @include border-radius(5px);
   @include box-shadow(0,1px,1px,0,$gris_claro);
@@ -18,18 +19,13 @@
   &.anchor {
     display: block;
   }
-  &.btn-g {
-    padding: 1.6em;
-    font-size: 1.3em;
-    text-align: center;
-  }
   &.btn-wicon.anchor {
     text-align: left;
     padding-right: 50px;
     .btn-wicon-icon {
       font-size: 30px;
       display: block;
-      line-height: 2.5em;
+      line-height: 2.2em;
       position: absolute;
       right: 0.5em;
       top: 0;
@@ -48,7 +44,7 @@
 }
 // Variaciones de color
 .btn {
-  &.btn-morado {
+  &.btn-morado, &.btn-action {
     background-color: $morado;
     &:hover {
       background-color: darken($morado,15%);
@@ -60,10 +56,10 @@
       }
     }
   }
-  &.btn-verde {
-    background-color: $verde;
+  &.btn-verde, &.btn-accept {
+    background-color: darken($verde,15%);
     &:hover {
-      background-color: darken($verde,15%);
+      background-color: darken($verde,25%);
     }
     &.btn-wicon.anchor {
       &:after {
@@ -72,10 +68,10 @@
       }
     }
   }
-  &.btn-naranja {
-    background-color: $naranja;
+  &.btn-naranja, &.btn-warning {
+    background-color: darken($naranja,15%);
     &:hover {
-      background-color: darken($naranja,15%);
+      background-color: darken($naranja,25%);
     }
     &.btn-wicon.anchor {
       &:after {
@@ -84,7 +80,7 @@
       }
     }
   }
-  &.btn-rojo {
+  &.btn-rojo, &.btn-error {
     background-color: $rojo;
     &:hover {
       background-color: darken($rojo,15%);
@@ -132,5 +128,28 @@
         border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
       }
     }
+  }
+}
+
+// Variaciones de Tamano 
+.btn {
+  &.btn-p {
+    font-size: 0.8em;
+  }
+  &.btn-m {
+    font-size: 1.2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+  &.btn-g {
+    font-size: 1.3em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    padding-right: 2em;
+  }
+  &.btn-h {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 1em 2em;
   }
 }
