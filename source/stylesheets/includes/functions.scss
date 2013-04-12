@@ -81,12 +81,21 @@
 
 }
 
-@mixin transition($property, $duration, $function){
-  -webkit-transition: $property $duration $function;
-  -moz-transition:    $property $duration $function;
-  -ms-transition:     $property $duration $function;
-  -o-transition:      $property $duration $function;
-  transition:         $property $duration $function;
+@mixin transition($property, $duration: "false", $function: "false"){
+  @if $duration == "false" and $function == "false" {
+    -webkit-transition: $property;
+    -moz-transition:    $property;
+    -ms-transition:     $property;
+    -o-transition:      $property;
+    transition:         $property;
+  }
+  @else {
+    -webkit-transition: $property $duration $function;
+    -moz-transition:    $property $duration $function;
+    -ms-transition:     $property $duration $function;
+    -o-transition:      $property $duration $function;
+    transition:         $property $duration $function;
+  }
 }
 // Recibe numero del 0 - 1 
 @mixin opacity($value) {

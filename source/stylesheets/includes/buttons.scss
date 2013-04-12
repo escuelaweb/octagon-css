@@ -1,13 +1,14 @@
 @import "functions";
 
-.boton {
+.btn {
+  font-size: $font_base;
   position: relative;
   display: inline-block;
   background-color: $azul;
   color: $white;
   text-align: left;
   font-family: $chivo;
-  padding: 1em 2em;
+  padding: 1.1em 2em;
   text-decoration: none;
   @include border-radius(5px);
   @include box-shadow(0,1px,1px,0,$gris_claro);
@@ -18,18 +19,13 @@
   &.anchor {
     display: block;
   }
-  &.boton-g {
-    padding: 20px;
-    font-size: 1.3em;
-    text-align: center;
-  }
-  &.boton-wicon.anchor {
+  &.btn-wicon.anchor {
     text-align: left;
     padding-right: 50px;
-    .boton-wicon-icon {
-      font-size: 25px;
+    .btn-wicon-icon {
+      font-size: 30px;
       display: block;
-      line-height: 2.5em;
+      line-height: 2.2em;
       position: absolute;
       right: 0.5em;
       top: 0;
@@ -39,7 +35,7 @@
       display: block;
       height: 100%;
       position: absolute;
-      right: 50px;
+      right: 60px;
       top: 0;
       border-right: lighten($azul, 10%) $border-thin solid;
       border-left: darken($azul, 10%) $border-thin solid;
@@ -47,53 +43,113 @@
   }
 }
 // Variaciones de color
-.boton {
-  &.boton-morado {
+.btn {
+  &.btn-morado, &.btn-action {
     background-color: $morado;
     &:hover {
       background-color: darken($morado,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($morado, 10%) $border-thin solid;
         border-left: darken($morado, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-verde {
-    background-color: $verde;
+  &.btn-verde, &.btn-accept {
+    background-color: darken($verde,15%);
     &:hover {
-      background-color: darken($verde,15%);
+      background-color: darken($verde,25%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($verde, 10%) $border-thin solid;
         border-left: darken($verde, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-naranja {
-    background-color: $naranja;
+  &.btn-naranja, &.btn-warning {
+    background-color: darken($naranja,15%);
     &:hover {
-      background-color: darken($naranja,15%);
+      background-color: darken($naranja,25%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($naranja, 10%) $border-thin solid;
         border-left: darken($naranja, 10%) $border-thin solid;
       }
     }
   }
-  &.boton-rojo {
+  &.btn-rojo, &.btn-error {
     background-color: $rojo;
     &:hover {
       background-color: darken($rojo,15%);
     }
-    &.boton-wicon.anchor {
+    &.btn-wicon.anchor {
       &:after {
         border-right: lighten($rojo, 10%) $border-thin solid;
         border-left: darken($rojo, 10%) $border-thin solid;
       }
     }
+  }
+  &.btn-white {
+    color: $gris_oscuro;
+    background-color: $white;
+    &:hover {
+      background-color: darken($white,15%);
+    }
+    &.btn-wicon.anchor {
+      &:after {
+        border-right: lighten($white, 10%) $border-thin solid;
+        border-left: darken($white, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-gris {
+    background-color: $gris_claro;
+    &:hover {
+      background-color: darken($gris_claro,15%);
+    }
+    &.btn-wicon.anchor {
+      &:after {
+        border-right: lighten($gris_claro, 10%) $border-thin solid;
+        border-left: darken($gris_claro, 10%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-gris-oscuro {
+    background-color: darken($gris_claro,15%);
+    &:hover {
+      background-color: darken(darken($gris_claro,15%),15%);
+    }
+    &.btn-wicon.anchor {
+      &:after {
+        border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
+        border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
+      }
+    }
+  }
+}
+
+// Variaciones de Tamano 
+.btn {
+  &.btn-p {
+    font-size: 0.8em;
+  }
+  &.btn-m {
+    font-size: 1.2em;
+    padding-top: 0.6em;
+    padding-bottom: 0.6em;
+  }
+  &.btn-g {
+    font-size: 1.3em;
+    padding-top: 0.9em;
+    padding-bottom: 0.9em;
+    padding-right: 2em;
+  }
+  &.btn-h {
+    text-align: left;
+    font-size: 1.5em;
+    padding: 1em 2em;
   }
 }

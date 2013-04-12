@@ -12,11 +12,12 @@ $azul_claro       : lighten($azul,40%);
 $gris_claro       : lighten($gris,40%);
 $gris_oscuro      : #282828;
 $gris_sombra      : #E0E0E0;
+$black            : #000;
 $menu_claro       : #FAFAFA;
 $menu_oscuro      : #EAEAEA;
 $white            : #fcfcfc;
 $link_hover       : $azul;
-$footer_background: lighten($gris_claro,50%);
+$footer_background: lighten($gris_claro,26%);
 
 // Las familias disponibles desde Google Webfonts son:;
 // font-family: 'Ubuntu', sans-serif;

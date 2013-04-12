@@ -7,6 +7,7 @@
 # require 'susy'
 
 require 'sass'
+require "maruku"
 
 # # Set slim-lang output style
 # Slim::Engine.set_default_options :pretty => true
@@ -50,8 +51,17 @@ require 'sass'
 
 # Methods defined in the helpers block are available in templates
 # helpers do
-#   def some_helper
-#     "Helping"
+#   def module_c(title, content, icon )
+#     result = '<article class="module-c grid4">'
+#     result <<  '<header>'
+#     result <<     '<div class="module-c-icon icons"> #{icon} </div>'
+#     result <<     '<h3 class="module-c-title"> #{title} </h3>'
+#     result <<   '</header>'
+#     result <<   '<div class="module-c-content">'
+#     result <<     '<p> #{content} </p>'
+#     result <<   '</div>'
+#     result << '</article>'
+#     return result
 #   end
 # end
 

@@ -1,11 +1,18 @@
 @import "functions";
 
+.menu, .submenu {
+	padding: 0;
+	margin: 0;
+	list-style: none;
+}
+
 .menu{
 	height: $menu_height;
 	li {
 		position: relative;
 		display: inline-block;
 		height: $menu_height;
+		margin: 0;
 		&:first-child {
 
 		}
@@ -48,6 +55,7 @@
 		margin-top: 4px;
 		width: 200px;
 		background-color: black;
+		padding: 5px 0;
 		background-color: rgba(black,0.8);
 		@include border-radius(5px);
 		@include box-shadow(0,0px,2px,0,$gris_claro);
@@ -61,6 +69,7 @@
 		li {
 			float:none;
 			display: block;
+			height: $submenu_height;
 			a {
 				height: $submenu_height;
 				line-height: $submenu_height;
