@@ -10,3 +10,6 @@ Bootstrap desarrollado para todos los nuevos servicios de la [EscuelaWeb](http:/
 		Las funciones (mixins) se escriben "border-radius"
 		Para la indentacion se usa la tabulacion.
 		Solo se usaran caracteres basicos a-z, A-Z,0-9, -, _. Y no caracateres especiales (incluso en los comentarios).
+		
+		
+Más detalle [link](http://escuelaweb.github.io/octagon-css/)
