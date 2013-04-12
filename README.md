@@ -1,8 +1,6 @@
 Octagon Framework css
 ===============================================
 
-Autor: Sergio A. Marin Z. [@highercomve](http://twitter.com/highercomve) // [Blog](http://sergiomarin.co.cc)
-
 Guia de estilos desarrollada para todos los nuevos servicios de la [EscuelaWeb](http://escuelaweb.co), hecho con sass.
 
 	Estilos:
@@ -10,3 +8,9 @@ Guia de estilos desarrollada para todos los nuevos servicios de la [EscuelaWeb](
 		Las funciones (mixins) se escriben "border-radius"
 		Para la indentacion se usa la tabulacion.
 		Solo se usaran caracteres basicos a-z, A-Z,0-9, -, _. Y no caracateres especiales (incluso en los comentarios).
+
+Más info [aqui](http://escuelaweb.github.io/octagon-css)
+
+Autor: Sergio A. Marin Z. [@highercomve](http://twitter.com/highercomve) // [Blog](http://sergiomarin.co.cc)
+
+Licencia [GPL 3.0](http://opensource.org/licenses/gpl-3.0.html)
