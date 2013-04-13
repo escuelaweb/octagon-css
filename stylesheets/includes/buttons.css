@@ -97,74 +97,75 @@
     border-left: #898989 1px solid; }
 /* line 106, buttons.scss */
 .btn.btn-gris {
-  background-color: #b1b3b1; }
-  /* line 108, buttons.scss */
+  color: #212121;
+  background-color: #f1f1f1; }
+  /* line 110, buttons.scss */
   .btn.btn-gris:hover {
-    background-color: #8a8d8a; }
-  /* line 112, buttons.scss */
+    background-color: #e4e4e4; }
+  /* line 114, buttons.scss */
   .btn.btn-gris.btn-wicon:after {
+    border-right: white 1px solid;
+    border-left: #bebebe 1px solid; }
+  /* line 118, buttons.scss */
+  .btn.btn-gris.btn-wicon:hover:after {
+    border-right: #f1f1f1 1px solid;
+    border-left: #989898 1px solid; }
+/* line 124, buttons.scss */
+.btn.btn-gris-oscuro {
+  background-color: #b1b3b1; }
+  /* line 126, buttons.scss */
+  .btn.btn-gris-oscuro:hover {
+    background-color: #8a8d8a; }
+  /* line 130, buttons.scss */
+  .btn.btn-gris-oscuro.btn-wicon:after {
     border-right: #cbcccb 1px solid;
     border-left: #7d817d 1px solid; }
-  /* line 116, buttons.scss */
-  .btn.btn-gris.btn-wicon:hover:after {
-    border-right: #b1b3b1 1px solid;
-    border-left: #585a58 1px solid; }
-/* line 122, buttons.scss */
-.btn.btn-gris-oscuro {
-  background-color: #8a8d8a; }
-  /* line 124, buttons.scss */
-  .btn.btn-gris-oscuro:hover {
-    background-color: #717471; }
-  /* line 128, buttons.scss */
-  .btn.btn-gris-oscuro.btn-wicon:after {
-    border-right: #a4a6a4 1px solid;
-    border-left: #717471 1px solid; }
-  /* line 132, buttons.scss */
+  /* line 134, buttons.scss */
   .btn.btn-gris-oscuro.btn-wicon:hover:after {
     border-right: #b1b3b1 1px solid;
-    border-left: #3e403e 1px solid; }
+    border-left: #585a58 1px solid; }
 
-/* line 142, buttons.scss */
+/* line 144, buttons.scss */
 .btn.btn-p {
   font-size: 0.8em; }
-/* line 146, buttons.scss */
+/* line 148, buttons.scss */
 .btn.btn-m {
   font-size: 1.2em;
   padding-top: 0.6em;
   padding-bottom: 0.6em; }
-  /* line 151, buttons.scss */
+  /* line 153, buttons.scss */
   .btn.btn-m.btn-wicon .btn-wicon-icon {
     font-size: 1.1em;
     right: 0.6em;
     line-height: 2.1em; }
-/* line 158, buttons.scss */
+/* line 160, buttons.scss */
 .btn.btn-g {
   font-size: 1.3em;
   padding-top: 0.9em;
   padding-bottom: 0.9em;
   padding-right: 2em; }
-  /* line 164, buttons.scss */
+  /* line 166, buttons.scss */
   .btn.btn-g.btn-wicon .btn-wicon-icon {
     font-size: 1.3em;
     right: 0.5em;
     line-height: 2.1em; }
-/* line 171, buttons.scss */
+/* line 173, buttons.scss */
 .btn.btn-h {
   text-align: left;
   font-size: 1.5em;
   padding: 1em 2em;
   padding-left: 0.8em; }
-  /* line 177, buttons.scss */
+  /* line 179, buttons.scss */
   .btn.btn-h.btn-wicon .btn-wicon-icon {
     font-size: 1.7em;
     right: 0.25em;
     line-height: 1.9em; }
 
-/* line 189, buttons.scss */
+/* line 191, buttons.scss */
 .btn.btn-wicon {
   text-align: left;
   padding-right: 3.4em; }
-  /* line 192, buttons.scss */
+  /* line 194, buttons.scss */
   .btn.btn-wicon .btn-wicon-icon {
     font-size: 1.2em;
     display: block;
@@ -172,7 +173,7 @@
     position: absolute;
     right: 0.55em;
     top: 0; }
-  /* line 200, buttons.scss */
+  /* line 202, buttons.scss */
   .btn.btn-wicon:after {
     content: "";
     display: block;
@@ -182,19 +183,19 @@
     top: 0;
     border-right: #75c3e3 1px solid;
     border-left: #299ac9 1px solid; }
-  /* line 210, buttons.scss */
+  /* line 212, buttons.scss */
   .btn.btn-wicon:hover:after {
     border-right: #4bb0da 1px solid;
     border-left: #185974 1px solid; }
-/* line 215, buttons.scss */
+/* line 217, buttons.scss */
 .btn.btn-wicon.btn-wicon-left {
   padding-right: 2em;
   padding-left: 3.4em; }
-  /* line 218, buttons.scss */
+  /* line 220, buttons.scss */
   .btn.btn-wicon.btn-wicon-left .btn-wicon-icon {
     right: auto;
     left: 0.6em; }
-  /* line 222, buttons.scss */
+  /* line 224, buttons.scss */
   .btn.btn-wicon.btn-wicon-left:after {
     right: auto;
     left: 2.5em; }
