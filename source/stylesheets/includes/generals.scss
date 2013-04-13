@@ -157,7 +157,7 @@ strong, b {
 }
 
 a.btn, .btn {
-	@include boton();
+  @include boton();
 	&.close {
 		background-color: $rojo;
 	}
