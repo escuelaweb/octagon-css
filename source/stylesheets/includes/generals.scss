@@ -56,33 +56,6 @@ img {
 	image-rendering: optimizeQuality;
 	-ms-interpolation-mode: bicubic;
 }
-.icons {
-  font-family: 'icomoon';
-  font-weight: normal;
-  font-variant: normal;
-  text-transform: none;
-  -webkit-font-smoothing: antialiased;
-  text-rendering: geometricPrecision;
-	&.icons-medium {
-		font-size: 16px;
-		line-height: 1.2em;
-	}
-	&.icons-big {
-		font-size: 22px;
-		line-height: 1.2em;
-	}
-	&.icons-small {
-		font-size: 18px;
-		line-height: 12px;
-	}
-}
-.icons.small {
-	font-size: 18px;
-	line-height: 12px;
-	position: relative;
-	top: 0.15em;
-	margin-right: 5px;
-}
 
 .img-rounded {
 	@include border-radius(50%);
