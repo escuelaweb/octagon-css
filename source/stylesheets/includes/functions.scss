@@ -9,7 +9,7 @@
 }
 
 @mixin offset-calc($number) {
-  margin-left: $column-width * $number + ($column_gutter * $number);
+  margin-left: $column-width * $number + ($column_gutter * $number) + 20px;
 }
 
 @mixin margin-creation($direction, $time) {
