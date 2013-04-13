@@ -129,6 +129,75 @@
       }
     }
   }
+  &.btn-google {
+    $bg_color: #df4a32;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-github {
+    $bg_color: $gris_boton;
+    color: $gris;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 5%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-facebook {
+    $bg_color: #3B5998;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-twitter {
+    $bg_color: #4bb0da;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
 }
 
 // Variaciones de Tamano 
@@ -147,6 +216,17 @@
         right: 0.6em;
         line-height: 2.1em;
       }
+      &:after { 
+        right: 2.3em
+      }
+      &.btn-wicon-left {
+        .btn-wicon-icon {
+          left: 0.55em;
+        }
+        &:after { 
+          left: 2.2em
+        }
+      }
     }
   }
   &.btn-g {
@@ -159,6 +239,17 @@
         font-size: 1.3em;
         right: 0.5em;
         line-height: 2.1em;
+      }
+      &:after { 
+        right: 2.5em
+      }
+      &.btn-wicon-left {
+        .btn-wicon-icon {
+          left: 0.55em;
+        }
+        &:after { 
+          left: 2.6em
+        }
       }
     }
   }
@@ -194,7 +285,7 @@
       display: block;
       height: 100%;
       position: absolute;
-      right: 2.5em;
+      right: 2.4em;
       top: 0;
       border-right: lighten($azul, 10%) $border-thin solid;
       border-left: darken($azul, 10%) $border-thin solid;
@@ -213,7 +304,7 @@
     }
     &:after { 
       right: auto;
-      left: 2.5em;
+      left: 2.4em;
     }
   }
 }
