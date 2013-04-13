@@ -9,7 +9,8 @@
   //@include box-shadow(2px,0,0,0,$gris_sombra,0.4);
   .module-f-icon {
     float: left;
-    width: 60px;
+    width: 25%;
+    text-align: center;
     font-size: 40px;
     margin-top: 15px;
     color: $gris_oscuro;
@@ -17,7 +18,7 @@
   }
   .module-f-text {
     float: left;
-    width: 220px;
+    width: 75%;
     p {
       margin-top: 0;
     }
@@ -42,5 +43,52 @@
 }
 
 // Module center
-
+.module-c {
+  text-align: center;
+  .module-c-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: $azul;
+  }
+  .module-c-icon {
+    font-size: 44px;
+    line-height: 104px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: $morado;
+    margin: 0 auto;
+    //border: $white $border_medium solid;
+    // @include text-shadow(-1px -1px 0 darken($azul,20%));
+    @include border-radius(50px);
+  }
+  .module-c-content {
+    p {
+      margin-top: 0;
+    }
+  }
+}
 // Module with thumbnail
+
+.module-t {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include clearfix;
+  .module-t-image {
+    width: 30%;
+    float: left;
+  }
+  .module-t-detail {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+  }
+  .module-t-title {
+  }
+  .module-t-excerpt {
+    .module-t-et {
+    }
+  }
+  &:hover {
+  }
+}

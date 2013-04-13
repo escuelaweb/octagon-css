@@ -2,9 +2,10 @@
 Monokai style - ported by Luigi Maselli - http://grigio.org
 */
 
-p code, pre.codehighlight {
+p code, pre.codehighlight,
+pre code, pre.codehighlight {
   display: block; 
-  padding: 10px 20px;
+  padding: 30px 20px;
   background: #272822;
   word-spacing: 0.5em;
   letter-spacing: 0.2em;
@@ -14,14 +15,6 @@ p code, pre.codehighlight {
 
 p code, pre.codehighlight {
   color: #DDD;
-}
-
-pre code, pre.codehighlight {
-  display: block; 
-  padding: 10px 20px;
-  background: #272822;
-  word-spacing: 0.5em;
-  letter-spacing: 0.2em;
 }
 
 pre .tag,
