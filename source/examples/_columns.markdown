@@ -1,6 +1,6 @@
-#### Ejemplos de uso del sistema de columnas
+### Ejemplos de uso del sistema de columnas
 
-Elemento que ocupe las 12 columnas
+#### Elemento que ocupe las 12 columnas
 
     <div class="container">
         <div class="row">
@@ -8,7 +8,7 @@ Elemento que ocupe las 12 columnas
         </div>
     </div>
 
-Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno
+#### Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno
 
     <div class="container">
         <div class="row">
@@ -18,7 +18,7 @@ Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno
         </div>
     </div>
 
-Anidar columnas dentro de columnas
+#### Anidar columnas dentro de columnas
 
     <div class="container">
       <div class="row">
@@ -32,5 +32,14 @@ Anidar columnas dentro de columnas
         <div class="grid3">
             Lorem ipsum dolor sit ametone corrupti.
         </div>
+      </div>
+    </div>
+
+#### Columnas con offset
+
+    <div class="container">
+      <div class="row">
+        <div class="grid6 offset3"></div>
+        <div class="grid3"></div>
       </div>
     </div>

@@ -1,16 +1,8 @@
 @import "functions";
 
 .btn {
-  font-size: $font_base;
+  @include boton();
   position: relative;
-  display: inline-block;
-  background-color: $azul;
-  color: $white;
-  font-family: $chivo;
-  padding: 1.1em 2em;
-  text-decoration: none;
-  @include border-radius(5px);
-  @include box-shadow(0,1px,1px,0,$gris_claro);
   &:hover {
     color: $white;
     background-color: darken($azul,15%);
@@ -104,6 +96,24 @@
     }
   }
   &.btn-gris {
+    color: #212121;
+    background-color: $gris_boton;
+    //@include text-shadow(0,0,0,$gris_boton);
+    &:hover {
+      background-color: darken($gris_boton,5%);
+    }
+    &.btn-wicon {
+      &:after {
+        border-right: lighten($gris_boton, 10%) $border-thin solid;
+        border-left: darken($gris_boton, 20%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($gris_boton, 0%) $border-thin solid;
+        border-left: darken($gris_boton, 35%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-gris-oscuro {
     background-color: $gris_claro;
     &:hover {
       background-color: darken($gris_claro,15%);
@@ -116,22 +126,6 @@
       &:hover:after {
         border-right: lighten($gris_claro, 0%) $border-thin solid;
         border-left: darken($gris_claro, 35%) $border-thin solid;
-      }
-    }
-  }
-  &.btn-gris-oscuro {
-    background-color: darken($gris_claro,15%);
-    &:hover {
-      background-color: darken($gris_claro,25%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
-        border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($gris_claro, 0%) $border-thin solid;
-        border-left: darken($gris_claro, 45%) $border-thin solid;
       }
     }
   }
@@ -159,7 +153,7 @@
     font-size: 1.3em;
     padding-top: 0.9em;
     padding-bottom: 0.9em;
-    padding-right: 2em;
+    padding-right: 1em;
     &.btn-wicon {
       .btn-wicon-icon { 
         font-size: 1.3em;
@@ -169,10 +163,8 @@
     }
   }
   &.btn-h {
-    text-align: left;
-    font-size: 1.5em;
-    padding: 1em 2em;
-    padding-left: 0.8em;
+    font-size: 1.4em;
+    padding: 1em 0.8em;
     &.btn-wicon {
       .btn-wicon-icon { 
         font-size: 1.7em;

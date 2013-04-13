@@ -6,7 +6,6 @@
   $(function() {
     $('pre').each(function(i, e) { hljs.highlightBlock(e) });
     $(".menu.scroller a").smoothscrolling();
-    $(".site-name").smoothscrolling();
   })
 
 })(window.jQuery, window, document);
