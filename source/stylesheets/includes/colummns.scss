@@ -7,8 +7,8 @@
 }
 .grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12,.grid13,.grid14,
 .grid15,.grid16,.grid17,.grid18,.grid19,.grid20,.grid21,.grid22,.grid23,.grid24 {
-  float:left;
-  margin-left:$column_gutter;
+  float: left;
+  margin-left: $column_gutter;
 }
 
 @for $i from 1 through $column_number {
@@ -26,19 +26,31 @@
 }
 
 .right {
-  float:right;
-  text-align:right;
+  float: right;
+  text-align: right;
 }
 
 .left {
-  float:left;
-  text-align:left;
+  float: left;
+  text-align: left;
 }
 
 .inline {
-  display:inline-block;
+  display: inline-block;
 }
 
 .center {
-  text-align:center;
+  text-align: center;
+}
+
+.visible-grid {
+  padding: 10px 0;
+  background-color: lighten($gris_claro,20%);
+  margin-top: 10px;
+  margin-bottom: 10px;
+  [class*="grid"] {
+    padding: 10px 0;
+    text-align: center;
+    background-color: lighten($gris_claro,10%);
+  }
 }
