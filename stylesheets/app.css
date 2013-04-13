@@ -2595,17 +2595,19 @@ p code, pre.codehighlight,
 pre code, pre.codehighlight {
   display: block;
   padding: 30px 20px;
-  background: #272822;
+  background: #000;
+  /*background: #272822;*/
   word-spacing: 0.5em;
   letter-spacing: 0.2em;
   overflow: auto;
-  max-height: 600px; }
+  max-height: 600px;
+  margin-bottom: 10px; }
 
-/* line 17, includes/default-hightlights.css */
+/* line 19, includes/default-hightlights.css */
 p code, pre.codehighlight {
   color: #DDD; }
 
-/* line 42, includes/default-hightlights.css */
+/* line 44, includes/default-hightlights.css */
 pre .tag,
 pre .tag .title,
 pre .keyword,
@@ -2628,21 +2630,22 @@ pre.codehighlight .lisp .title,
 pre.codehighlight .clojure .built_in,
 pre.codehighlight .nginx .title,
 pre.codehighlight .tex .special {
-  color: #F92672; }
+  /*color: #F92672;*/
+  color: #3A83C7; }
 
-/* line 46, includes/default-hightlights.css */
+/* line 49, includes/default-hightlights.css */
 pre code, pre.codehighlight {
   color: #DDD; }
 
-/* line 50, includes/default-hightlights.css */
+/* line 53, includes/default-hightlights.css */
 pre code .constant, pre.codehighlight .constant {
   color: #66D9EF; }
 
-/* line 54, includes/default-hightlights.css */
+/* line 57, includes/default-hightlights.css */
 pre .class .title, pre.codehighlight .class .title {
   color: white; }
 
-/* line 67, includes/default-hightlights.css */
+/* line 70, includes/default-hightlights.css */
 pre .attribute,
 pre.codehighlight .attribute,
 pre .symbol,
@@ -2653,9 +2656,10 @@ pre .value,
 pre.codehighlight .value,
 pre .regexp,
 pre.codehighlight .regexp {
-  color: #BF79DB; }
+  /*color: #BF79DB;*/
+  color: #86529B; }
 
-/* line 120, includes/default-hightlights.css */
+/* line 124, includes/default-hightlights.css */
 pre .tag .value,
 pre .string,
 pre .subst,
@@ -2708,7 +2712,7 @@ pre.codehighlight .tex .command,
 pre.codehighlight .prompt {
   color: #A6E22E; }
 
-/* line 143, includes/default-hightlights.css */
+/* line 147, includes/default-hightlights.css */
 pre .comment,
 pre .java .annotation,
 pre .python .decorator,
@@ -2731,7 +2735,7 @@ pre.codehighlight .apache .sqbracket,
 pre.codehighlight .tex .formula {
   color: #75715E; }
 
-/* line 182, includes/default-hightlights.css */
+/* line 186, includes/default-hightlights.css */
 pre .keyword,
 pre .literal,
 pre .css .id,
@@ -2770,7 +2774,7 @@ pre.codehighlight .request,
 pre.codehighlight .status {
   font-weight: bold; }
 
-/* line 199, includes/default-hightlights.css */
+/* line 203, includes/default-hightlights.css */
 pre.codehighlight .coffeescript .javascript,
 pre.codehighlight .javascript .xml,
 pre.codehighlight .tex .formula,
