@@ -104,6 +104,24 @@
     }
   }
   &.btn-gris {
+    color: #212121;
+    background-color: $gris_boton;
+    //@include text-shadow(0,0,0,$gris_boton);
+    &:hover {
+      background-color: darken($gris_boton,5%);
+    }
+    &.btn-wicon {
+      &:after {
+        border-right: lighten($gris_boton, 10%) $border-thin solid;
+        border-left: darken($gris_boton, 20%) $border-thin solid;
+      }
+      &:hover:after {
+        border-right: lighten($gris_boton, 0%) $border-thin solid;
+        border-left: darken($gris_boton, 35%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-gris-oscuro {
     background-color: $gris_claro;
     &:hover {
       background-color: darken($gris_claro,15%);
@@ -116,22 +134,6 @@
       &:hover:after {
         border-right: lighten($gris_claro, 0%) $border-thin solid;
         border-left: darken($gris_claro, 35%) $border-thin solid;
-      }
-    }
-  }
-  &.btn-gris-oscuro {
-    background-color: darken($gris_claro,15%);
-    &:hover {
-      background-color: darken($gris_claro,25%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten(darken($gris_claro,15%), 10%) $border-thin solid;
-        border-left: darken(darken($gris_claro,15%), 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($gris_claro, 0%) $border-thin solid;
-        border-left: darken($gris_claro, 45%) $border-thin solid;
       }
     }
   }
