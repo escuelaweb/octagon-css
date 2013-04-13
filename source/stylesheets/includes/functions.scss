@@ -177,7 +177,7 @@
   color: $color;
   margin-right: 10px;
   @include border-radius(5px);
-  @include text-shadow(0,1px,0,#3c3c3c);
+  //@include text-shadow(0,1px,0,#3c3c3c);
   @include box-shadow(0,1px,1px,0,$shadow);
   @include transition(all,400ms,ease);
   &:hover {
