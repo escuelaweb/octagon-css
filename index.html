@@ -17,7 +17,7 @@
     <div id="main_menu" class="container">
       <div class="row">
         <div id="logo" class="grid3">
-          <a class="site-name" href="/index.html#main_menu">
+          <a class="site-name" href="index.html">
             <span class="icon left">
               <img height="28" alt="Logo Escuela de Diseño Web" src="images/logo2.png" />
             </span>
@@ -38,6 +38,7 @@
               <ul class="submenu">
                 <li><a href="#sistema-de-columnas">Columnas</a></li>
                 <li><a href="#buttons">Botones</a></li>
+                <li><a href="#iconos">Iconos</a></li>
               </ul>
             </li>
             <li>
@@ -332,6 +333,12 @@
         <div class="grid12">12 Columnas (.grid12)</div>
       </div>
     </div>
+    <div class="grid12 visible-grid">
+      <div class="row">
+        <div class="grid6 offset3"> .grid6.offset3</div>
+        <div class="grid3"> .grid3</div>
+      </div>
+    </div>
   </div>
   <div class="row mt30">
     <div class="grid4">
@@ -352,12 +359,15 @@
         <li>
           <b>.grid[x]</b>: define el ancho en columnas de un div, section, article, etc.
         </li>
+        <li>
+          <b>.offset[x]</b>: coloca un margen a la izquierda de cierta cantidad de columnas.
+        </li>
       </ul>
     </div>
     <div class="grid8">
-      <h4 id='ejemplos_de_uso_del_sistema_de_columnas'>Ejemplos de uso del sistema de columnas</h4>
+      <h3 id='ejemplos_de_uso_del_sistema_de_columnas'>Ejemplos de uso del sistema de columnas</h3>
 
-<p>Elemento que ocupe las 12 columnas</p>
+<h4 id='elemento_que_ocupe_las_12_columnas'>Elemento que ocupe las 12 columnas</h4>
 
 <pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -365,7 +375,7 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-<p>Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno</p>
+<h4 id='dividir_el_sistema_en_3_sectores_usando_3_div_de_4_columnas_cada_uno'>Dividir el sistema en 3 sectores usando 3 div de 4 columnas cada uno</h4>
 
 <pre><code>&lt;div class=&quot;container&quot;&gt;
     &lt;div class=&quot;row&quot;&gt;
@@ -375,7 +385,7 @@
     &lt;/div&gt;
 &lt;/div&gt;</code></pre>
 
-<p>Anidar columnas dentro de columnas</p>
+<h4 id='anidar_columnas_dentro_de_columnas'>Anidar columnas dentro de columnas</h4>
 
 <pre><code>&lt;div class=&quot;container&quot;&gt;
   &lt;div class=&quot;row&quot;&gt;
@@ -389,6 +399,15 @@
     &lt;div class=&quot;grid3&quot;&gt;
         Lorem ipsum dolor sit ametone corrupti.
     &lt;/div&gt;
+  &lt;/div&gt;
+&lt;/div&gt;</code></pre>
+
+<h4 id='columnas_con_offset'>Columnas con offset</h4>
+
+<pre><code>&lt;div class=&quot;container&quot;&gt;
+  &lt;div class=&quot;row&quot;&gt;
+    &lt;div class=&quot;grid6 offset3&quot;&gt;&lt;/div&gt;
+    &lt;div class=&quot;grid3&quot;&gt;&lt;/div&gt;
   &lt;/div&gt;
 &lt;/div&gt;</code></pre>
     </div>
@@ -489,6 +508,410 @@
       </div>
     </section>
 
+  </div><!-- .row -->
+
+  <div class="row mt40">
+    <div class="grid4">
+      <h4>¿Como usar los botones?</h4>
+      <p>
+        Octagon cuenta con un sistema ed botones donde tenemos variaciones de colores, tamaños y inclusion de iconos dentro del boton.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ex amet minus ullam asperiores! Dolorem minima quam officiis mollitia rerum! Repellendus, odio illo vitae explicabo illum ipsam itaque modi ea!
+      </p>
+    </div>
+    <div class="grid8">
+      <h3 id='ejemplos_de_uso_de_botones'>Ejemplos de uso de botones</h3>
+
+<p>A continuacion se observan ejemplos de uso de las clases que poseen los botones, dichas clases se pueden combinar entre ellas para generar muchisimas variaciones de estilo de botones.</p>
+
+<h4 id='variaciones_de_color'>Variaciones de color</h4>
+
+<pre><code>&lt;!-- Boton por defecto --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Boton normal&lt;/a&gt;
+
+&lt;!-- Boton en color verde o boton de aceptar --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-accept&quot;&gt;Boton de accept&lt;/a&gt;
+
+&lt;!-- Boton en color purpura o boton de accion --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-action&quot;&gt;Boton de actions&lt;/a&gt;
+
+&lt;!-- Boton en color rojo o boton de error --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-error&quot;&gt;Boton de error&lt;/a&gt;
+
+&lt;!-- Boton en color naranja o boton de warning --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-warning&quot;&gt;Boton de warning&lt;/a&gt;</code></pre>
+
+<h4 id='variaciones_de_tamao'>Variaciones de tamaño</h4>
+
+<pre><code>&lt;!-- Boton tamaño regular --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn&quot;&gt;Boton normal&lt;/a&gt;
+
+&lt;!-- Boton pequeño --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-p&quot;&gt;Boton pequeño&lt;/a&gt;
+
+&lt;!-- Boton mediano --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-m&quot;&gt;Boton mediano&lt;/a&gt;
+
+&lt;!-- Boton grande --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-&quot;&gt;Boton grande&lt;/a&gt;
+
+&lt;!-- Boton gigante --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-h&quot;&gt;Boton gigante&lt;/a&gt;</code></pre>
+
+<h3 id='boton_con_iconos_embed'>Boton con iconos embed</h3>
+
+<pre><code>&lt;!-- Boton con icono del lado derecho --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-wicon&quot;&gt;
+  Boton con Icono a la derecha
+  &lt;!-- icono que integra el framwork --&gt;
+  &lt;span class=&quot;btn-wicon-icon icons&quot;&gt;&amp;#x5b;&lt;/span&gt;
+&lt;/a&gt;
+
+&lt;!-- Boton con icono del lado izquierdo --&gt;
+&lt;a href=&quot;#&quot; class=&quot;btn btn-wicon btn-wicon-left&quot;&gt;
+  icono a la izquierda
+  &lt;span class=&quot;btn-wicon-icon icons&quot;&gt;&amp;#x61;&lt;/span&gt;
+&lt;/a&gt;</code></pre>
+    </div>
+  </div><!-- .row -->
+</section>
+
+<section id="iconos" class="grid12">
+  <header>
+    <h1 class="titulo_cinta">Estilo para iconos</h1>
+  </header>
+  <div class="row">
+    <div class="grid12">
+      <h2 class="center mt20 mb40">Juegos de iconos completo, todos los iconos son utilizados con la propiedad @font-face por lo que son una fuente vectorizada</h2>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">2</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">3</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">?</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">D</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">I</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">L</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">M</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">R</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">S</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">T</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">V</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">X</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">X</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">s</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">#</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">$</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">0</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">1</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">6</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">-</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&lt;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">=</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">></div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">B</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">E</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">O</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">P</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">U</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">@</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">5</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">!</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">'</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">(</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">)</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">*</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">,</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">"</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">+</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">/</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">9</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">:</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">A</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">C</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">F</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">G</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">%</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">J</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">K</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">N</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">W</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">Y</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">[</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">\</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">]</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">a</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">b</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">c</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">f</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">g</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">h</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">i</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">k</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">1</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">o</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">`</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">d</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">e</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">j</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">p</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">r</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">z</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">.</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">4</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">7</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">8</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">Q</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">Z</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">^</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">_</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">n</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">m</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xf04a;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xf013;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xf099;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xf2ba;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xf288;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe000;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe001;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe002;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe003;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe004;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe005;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe006;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe007;</div>
+    </div>
+  </div>
+  <div class="row">
+    <div class="grid12 mt40">
+      <h3>
+        Variaciones de tamano de los iconos
+      </h3>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-small">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-medium">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-big">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-small icons-rounded">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-medium icons-rounded">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-big icons-rounded">&#xe007;</div>
+    </div>
+    <div class="grid1 center mt10 mb10">
+      <div class="icons icons-huge icons-rounded">&#xe007;</div>
+    </div>
+  </div> 
+  <div class="row mt40">
+    <div class="grid6 offset3">
+      <a href="iconos.html" class="btn btn-h btn-wicon anchor center">
+        Detalle sobre los caracteres para cada icono
+        <span class="btn-wicon-icon icons">]</span>
+      </a>
+    </div>
   </div>
 </section>
       </section>

@@ -7,23 +7,53 @@
   -webkit-font-smoothing: antialiased;
   text-rendering: geometricPrecision; }
   /* line 11, iconos.scss */
-  .icons.icons-medium {
+  .icons.icons-small {
     font-size: 16px;
     line-height: 1.2em; }
-  /* line 15, iconos.scss */
+    /* line 14, iconos.scss */
+    .icons.icons-small.icons-rounded {
+      line-height: 1.8em; }
+  /* line 18, iconos.scss */
+  .icons.icons-medium {
+    font-size: 18px;
+    line-height: 1.2em; }
+    /* line 21, iconos.scss */
+    .icons.icons-medium.icons-rounded {
+      line-height: 1.7em; }
+  /* line 25, iconos.scss */
   .icons.icons-big {
     font-size: 22px;
     line-height: 1.2em; }
-  /* line 19, iconos.scss */
-  .icons.icons-small {
-    font-size: 18px;
-    line-height: 12px; }
-  /* line 23, iconos.scss */
+    /* line 28, iconos.scss */
+    .icons.icons-big.icons-rounded {
+      line-height: 1.8em; }
+  /* line 32, iconos.scss */
   .icons.icons-huge {
     font-size: 30px;
-    line-height: 12px; }
+    line-height: 1.2em; }
+    /* line 35, iconos.scss */
+    .icons.icons-huge.icons-rounded {
+      line-height: 2em; }
+  /* line 39, iconos.scss */
+  .icons.icons-rounded {
+    background-color: #b1b3b1;
+    height: 2em;
+    line-height: 2em;
+    width: 2em;
+    color: #fcfcfc;
+    margin-left: auto;
+    margin-right: auto;
+    border: #fcfcfc 4px solid;
+    -moz-box-shadow: 0 0 4px #979a97;
+    -webkit-box-shadow: 0 0 4px #979a97;
+    box-shadow: 0 0 4px #979a97;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    border-radius: 50%; }
 
-/* line 28, iconos.scss */
+/* line 52, iconos.scss */
 .icons.small {
   font-size: 18px;
   line-height: 12px;
