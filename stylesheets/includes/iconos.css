@@ -1,0 +1,32 @@
+/* line 4, iconos.scss */
+.icons {
+  font-family: 'icomoon';
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: geometricPrecision; }
+  /* line 11, iconos.scss */
+  .icons.icons-medium {
+    font-size: 16px;
+    line-height: 1.2em; }
+  /* line 15, iconos.scss */
+  .icons.icons-big {
+    font-size: 22px;
+    line-height: 1.2em; }
+  /* line 19, iconos.scss */
+  .icons.icons-small {
+    font-size: 18px;
+    line-height: 12px; }
+  /* line 23, iconos.scss */
+  .icons.icons-huge {
+    font-size: 30px;
+    line-height: 12px; }
+
+/* line 28, iconos.scss */
+.icons.small {
+  font-size: 18px;
+  line-height: 12px;
+  position: relative;
+  top: 0.15em;
+  margin-right: 5px; }
