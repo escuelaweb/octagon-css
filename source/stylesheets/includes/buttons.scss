@@ -1,16 +1,8 @@
 @import "functions";
 
 .btn {
-  font-size: $font_base;
+  @include boton();
   position: relative;
-  display: inline-block;
-  background-color: $azul;
-  color: $white;
-  font-family: $chivo;
-  padding: 1.1em 2em;
-  text-decoration: none;
-  @include border-radius(5px);
-  @include box-shadow(0,1px,1px,0,$gris_claro);
   &:hover {
     color: $white;
     background-color: darken($azul,15%);
@@ -137,6 +129,75 @@
       }
     }
   }
+  &.btn-google {
+    $bg_color: #df4a32;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-github {
+    $bg_color: $gris_boton;
+    color: $gris;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 5%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-facebook {
+    $bg_color: #3B5998;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
+  &.btn-twitter {
+    $bg_color: #4bb0da;
+    background-color: $bg_color;
+    &.btn-wicon { 
+      &:after {
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
+      }
+      &:hover {
+        background-color: darken($bg_color, 10%);
+      }
+      &:hover:after {
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 15%) $border-thin solid;
+      }
+    }
+  }
 }
 
 // Variaciones de Tamano 
@@ -155,26 +216,46 @@
         right: 0.6em;
         line-height: 2.1em;
       }
+      &:after { 
+        right: 2.3em
+      }
+      &.btn-wicon-left {
+        .btn-wicon-icon {
+          left: 0.55em;
+        }
+        &:after { 
+          left: 2.2em
+        }
+      }
     }
   }
   &.btn-g {
     font-size: 1.3em;
     padding-top: 0.9em;
     padding-bottom: 0.9em;
-    padding-right: 2em;
+    padding-right: 1em;
     &.btn-wicon {
       .btn-wicon-icon { 
         font-size: 1.3em;
         right: 0.5em;
         line-height: 2.1em;
       }
+      &:after { 
+        right: 2.5em
+      }
+      &.btn-wicon-left {
+        .btn-wicon-icon {
+          left: 0.55em;
+        }
+        &:after { 
+          left: 2.6em
+        }
+      }
     }
   }
   &.btn-h {
-    text-align: left;
-    font-size: 1.5em;
-    padding: 1em 2em;
-    padding-left: 0.8em;
+    font-size: 1.4em;
+    padding: 1em 0.8em;
     &.btn-wicon {
       .btn-wicon-icon { 
         font-size: 1.7em;
@@ -204,7 +285,7 @@
       display: block;
       height: 100%;
       position: absolute;
-      right: 2.5em;
+      right: 2.4em;
       top: 0;
       border-right: lighten($azul, 10%) $border-thin solid;
       border-left: darken($azul, 10%) $border-thin solid;
@@ -223,7 +304,7 @@
     }
     &:after { 
       right: auto;
-      left: 2.5em;
+      left: 2.4em;
     }
   }
 }
