@@ -70,7 +70,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset1 {
-  margin-left: 80px; }
+  margin-left: 100px; }
 
 /* line 15, includes/colummns.scss */
 .grid2 {
@@ -78,7 +78,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset2 {
-  margin-left: 160px; }
+  margin-left: 180px; }
 
 /* line 15, includes/colummns.scss */
 .grid3 {
@@ -86,7 +86,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset3 {
-  margin-left: 240px; }
+  margin-left: 260px; }
 
 /* line 15, includes/colummns.scss */
 .grid4 {
@@ -94,7 +94,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset4 {
-  margin-left: 320px; }
+  margin-left: 340px; }
 
 /* line 15, includes/colummns.scss */
 .grid5 {
@@ -102,7 +102,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset5 {
-  margin-left: 400px; }
+  margin-left: 420px; }
 
 /* line 15, includes/colummns.scss */
 .grid6 {
@@ -110,7 +110,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset6 {
-  margin-left: 480px; }
+  margin-left: 500px; }
 
 /* line 15, includes/colummns.scss */
 .grid7 {
@@ -118,7 +118,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset7 {
-  margin-left: 560px; }
+  margin-left: 580px; }
 
 /* line 15, includes/colummns.scss */
 .grid8 {
@@ -126,7 +126,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset8 {
-  margin-left: 640px; }
+  margin-left: 660px; }
 
 /* line 15, includes/colummns.scss */
 .grid9 {
@@ -134,7 +134,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset9 {
-  margin-left: 720px; }
+  margin-left: 740px; }
 
 /* line 15, includes/colummns.scss */
 .grid10 {
@@ -142,7 +142,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset10 {
-  margin-left: 800px; }
+  margin-left: 820px; }
 
 /* line 15, includes/colummns.scss */
 .grid11 {
@@ -150,7 +150,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset11 {
-  margin-left: 880px; }
+  margin-left: 900px; }
 
 /* line 15, includes/colummns.scss */
 .grid12 {
@@ -158,7 +158,7 @@ table {
 
 /* line 16, includes/colummns.scss */
 .offset12 {
-  margin-left: 960px; }
+  margin-left: 980px; }
 
 /* line 19, includes/colummns.scss */
 .row {
@@ -2259,46 +2259,121 @@ blockquote {
   .btn.btn-gris-oscuro.btn-wicon:hover:after {
     border-right: #b1b3b1 1px solid;
     border-left: #585a58 1px solid; }
+/* line 132, includes/buttons.scss */
+.btn.btn-google {
+  background-color: #df4a32; }
+  /* line 136, includes/buttons.scss */
+  .btn.btn-google.btn-wicon:after {
+    border-right: #e6715e 1px solid;
+    border-left: #c0341e 1px solid; }
+  /* line 140, includes/buttons.scss */
+  .btn.btn-google.btn-wicon:hover {
+    background-color: #c0341e; }
+  /* line 143, includes/buttons.scss */
+  .btn.btn-google.btn-wicon:hover:after {
+    border-right: #df4a32 1px solid;
+    border-left: #aa2e1b 1px solid; }
+/* line 149, includes/buttons.scss */
+.btn.btn-github {
+  color: #4b4d4b;
+  background-color: #f1f1f1; }
+  /* line 154, includes/buttons.scss */
+  .btn.btn-github.btn-wicon:after {
+    border-right: white 1px solid;
+    border-left: #d7d7d7 1px solid; }
+  /* line 158, includes/buttons.scss */
+  .btn.btn-github.btn-wicon:hover {
+    background-color: #e4e4e4; }
+  /* line 161, includes/buttons.scss */
+  .btn.btn-github.btn-wicon:hover:after {
+    border-right: #f1f1f1 1px solid;
+    border-left: #cbcbcb 1px solid; }
+/* line 167, includes/buttons.scss */
+.btn.btn-facebook {
+  background-color: #3b5998; }
+  /* line 171, includes/buttons.scss */
+  .btn.btn-facebook.btn-wicon:after {
+    border-right: #4c70ba 1px solid;
+    border-left: #2d4373 1px solid; }
+  /* line 175, includes/buttons.scss */
+  .btn.btn-facebook.btn-wicon:hover {
+    background-color: #2d4373; }
+  /* line 178, includes/buttons.scss */
+  .btn.btn-facebook.btn-wicon:hover:after {
+    border-right: #3b5998 1px solid;
+    border-left: #263961 1px solid; }
+/* line 184, includes/buttons.scss */
+.btn.btn-twitter {
+  background-color: #4bb0da; }
+  /* line 188, includes/buttons.scss */
+  .btn.btn-twitter.btn-wicon:after {
+    border-right: #75c3e3 1px solid;
+    border-left: #299ac9 1px solid; }
+  /* line 192, includes/buttons.scss */
+  .btn.btn-twitter.btn-wicon:hover {
+    background-color: #299ac9; }
+  /* line 195, includes/buttons.scss */
+  .btn.btn-twitter.btn-wicon:hover:after {
+    border-right: #4bb0da 1px solid;
+    border-left: #258ab4 1px solid; }
 
-/* line 136, includes/buttons.scss */
+/* line 205, includes/buttons.scss */
 .btn.btn-p {
   font-size: 0.8em; }
-/* line 140, includes/buttons.scss */
+/* line 209, includes/buttons.scss */
 .btn.btn-m {
   font-size: 1.2em;
   padding-top: 0.6em;
   padding-bottom: 0.6em; }
-  /* line 145, includes/buttons.scss */
+  /* line 214, includes/buttons.scss */
   .btn.btn-m.btn-wicon .btn-wicon-icon {
     font-size: 1.1em;
     right: 0.6em;
     line-height: 2.1em; }
-/* line 152, includes/buttons.scss */
+  /* line 219, includes/buttons.scss */
+  .btn.btn-m.btn-wicon:after {
+    right: 2.3em; }
+  /* line 223, includes/buttons.scss */
+  .btn.btn-m.btn-wicon.btn-wicon-left .btn-wicon-icon {
+    left: 0.55em; }
+  /* line 226, includes/buttons.scss */
+  .btn.btn-m.btn-wicon.btn-wicon-left:after {
+    left: 2.2em; }
+/* line 232, includes/buttons.scss */
 .btn.btn-g {
   font-size: 1.3em;
   padding-top: 0.9em;
   padding-bottom: 0.9em;
   padding-right: 1em; }
-  /* line 158, includes/buttons.scss */
+  /* line 238, includes/buttons.scss */
   .btn.btn-g.btn-wicon .btn-wicon-icon {
     font-size: 1.3em;
     right: 0.5em;
     line-height: 2.1em; }
-/* line 165, includes/buttons.scss */
+  /* line 243, includes/buttons.scss */
+  .btn.btn-g.btn-wicon:after {
+    right: 2.5em; }
+  /* line 247, includes/buttons.scss */
+  .btn.btn-g.btn-wicon.btn-wicon-left .btn-wicon-icon {
+    left: 0.55em; }
+  /* line 250, includes/buttons.scss */
+  .btn.btn-g.btn-wicon.btn-wicon-left:after {
+    left: 2.6em; }
+/* line 256, includes/buttons.scss */
 .btn.btn-h {
   font-size: 1.4em;
   padding: 1em 0.8em; }
-  /* line 169, includes/buttons.scss */
+  /* line 260, includes/buttons.scss */
   .btn.btn-h.btn-wicon .btn-wicon-icon {
     font-size: 1.7em;
     right: 0.25em;
     line-height: 1.9em; }
 
-/* line 181, includes/buttons.scss */
+/* line 272, includes/buttons.scss */
 .btn.btn-wicon {
   text-align: left;
   padding-right: 3.4em; }
-  /* line 184, includes/buttons.scss */
+  /* line 275, includes/buttons.scss */
   .btn.btn-wicon .btn-wicon-icon {
     font-size: 1.2em;
     display: block;
@@ -2306,32 +2381,32 @@ blockquote {
     position: absolute;
     right: 0.55em;
     top: 0; }
-  /* line 192, includes/buttons.scss */
+  /* line 283, includes/buttons.scss */
   .btn.btn-wicon:after {
     content: "";
     display: block;
     height: 100%;
     position: absolute;
-    right: 2.5em;
+    right: 2.4em;
     top: 0;
     border-right: #75c3e3 1px solid;
     border-left: #299ac9 1px solid; }
-  /* line 202, includes/buttons.scss */
+  /* line 293, includes/buttons.scss */
   .btn.btn-wicon:hover:after {
     border-right: #4bb0da 1px solid;
     border-left: #185974 1px solid; }
-/* line 207, includes/buttons.scss */
+/* line 298, includes/buttons.scss */
 .btn.btn-wicon.btn-wicon-left {
   padding-right: 2em;
   padding-left: 3.4em; }
-  /* line 210, includes/buttons.scss */
+  /* line 301, includes/buttons.scss */
   .btn.btn-wicon.btn-wicon-left .btn-wicon-icon {
     right: auto;
     left: 0.6em; }
-  /* line 214, includes/buttons.scss */
+  /* line 305, includes/buttons.scss */
   .btn.btn-wicon.btn-wicon-left:after {
     right: auto;
-    left: 2.5em; }
+    left: 2.4em; }
 
 /* line 4, includes/scaffold.scss */
 body {
