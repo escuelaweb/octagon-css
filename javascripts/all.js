@@ -50,7 +50,8 @@ n();return d?d.promise(g):g}})(jQuery);
 
     return this.each(function () {
       // Filter the url path on anchor href
-      var thisPath = filterPath(this.pathname) || locationPath;
+      var thisPath = filterPath(this.pathname) || locationPath,
+          $elementOnFullHeight = $(".full-height");
           
       if (locationPath == thisPath && (location.hostname == this.hostname || !this.hostname) && this.hash.replace(/#/, '')) {
         var $target = $(this.hash),
@@ -64,8 +65,10 @@ n();return d?d.promise(g):g}})(jQuery);
           // Wait until image are loaded
           $(scrollElem).imagesLoaded(function() {
             // Set every class="full-height" to windows height
-            if($(".full-height").height() < windowsHeight) {
-              $(".full-height").height(windowsHeight);
+            if($elementOnFullHeight.length !== 0) {
+              if(elementOnFullHeight.height() < windowsHeight) {
+                $(".full-height").height(windowsHeight);
+              }
             }
             // Element to scroll
             targetOffset = $target.offset().top - offsetTop;
@@ -109,7 +112,6 @@ n();return d?d.promise(g):g}})(jQuery);
   $(function() {
     $('pre').each(function(i, e) { hljs.highlightBlock(e) });
     $(".menu.scroller a").smoothscrolling();
-    $(".site-name").smoothscrolling();
   })
 
 })(window.jQuery, window, document);

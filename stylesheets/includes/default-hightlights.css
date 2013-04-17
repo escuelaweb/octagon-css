@@ -7,11 +7,13 @@ p code, pre.codehighlight,
 pre code, pre.codehighlight {
   display: block; 
   padding: 30px 20px;
-  background: #272822;
+  background: #000;
+  /*background: #272822;*/
   word-spacing: 0.5em;
   letter-spacing: 0.2em;
   overflow: auto;
   max-height: 600px;
+  margin-bottom: 10px;
 }
 
 p code, pre.codehighlight {
@@ -40,7 +42,8 @@ pre.codehighlight .lisp .title,
 pre.codehighlight .clojure .built_in,
 pre.codehighlight .nginx .title,
 pre.codehighlight .tex .special {
-  color: #F92672;
+  /*color: #F92672;*/
+  color: #3A83C7;
 }
 
 pre code, pre.codehighlight {
@@ -65,7 +68,8 @@ pre .value,
 pre.codehighlight .value,
 pre .regexp, 
 pre.codehighlight .regexp {
-  color: #BF79DB;
+  /*color: #BF79DB;*/
+  color: #86529B;
 }
 
 pre .tag .value,
