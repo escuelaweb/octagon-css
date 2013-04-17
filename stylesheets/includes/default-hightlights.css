@@ -1,0 +1,205 @@
+/*
+Monokai style - ported by Luigi Maselli - http://grigio.org
+*/
+
+
+p code, pre.codehighlight,
+pre code, pre.codehighlight {
+  display: block; 
+  padding: 30px 20px;
+  background: #000;
+  /*background: #272822;*/
+  word-spacing: 0.5em;
+  letter-spacing: 0.2em;
+  overflow: auto;
+  max-height: 600px;
+  margin-bottom: 10px;
+}
+
+p code, pre.codehighlight {
+  color: #DDD;
+}
+
+pre .tag,
+pre .tag .title,
+pre .keyword,
+pre .literal,
+pre .change,
+pre .winutils,
+pre .flow,
+pre .lisp .title,
+pre .clojure .built_in,
+pre .nginx .title,
+pre .tex .special,
+pre.codehighlight .tag,
+pre.codehighlight .tag .title,
+pre.codehighlight .keyword,
+pre.codehighlight .literal,
+pre.codehighlight .change,
+pre.codehighlight .winutils,
+pre.codehighlight .flow,
+pre.codehighlight .lisp .title,
+pre.codehighlight .clojure .built_in,
+pre.codehighlight .nginx .title,
+pre.codehighlight .tex .special {
+  /*color: #F92672;*/
+  color: #3A83C7;
+}
+
+pre code, pre.codehighlight {
+  color: #DDD;
+}
+
+pre code .constant, pre.codehighlight .constant {
+  color: #66D9EF;
+}
+
+pre .class .title, pre.codehighlight .class .title {
+  color: white;
+}
+
+pre .attribute,
+pre.codehighlight .attribute,
+pre .symbol,
+pre.codehighlight .symbol,
+pre .symbol .string,
+pre.codehighlight .symbol .string,
+pre .value,
+pre.codehighlight .value,
+pre .regexp, 
+pre.codehighlight .regexp {
+  /*color: #BF79DB;*/
+  color: #86529B;
+}
+
+pre .tag .value,
+pre .string,
+pre .subst,
+pre .title,
+pre .haskell .type,
+pre .preprocessor,
+pre .ruby .class .parent,
+pre .built_in,
+pre .sql .aggregate,
+pre .django .template_tag,
+pre .django .variable,
+pre .smalltalk .class,
+pre .javadoc,
+pre .django .filter .argument,
+pre .smalltalk .localvars,
+pre .smalltalk .array,
+pre .attr_selector,
+pre .pseudo,
+pre .addition,
+pre .stream,
+pre .envvar,
+pre .apache .tag,
+pre .apache .cbracket,
+pre .tex .command,
+pre .prompt,
+pre.codehighlight .tag .value,
+pre.codehighlight .string,
+pre.codehighlight .subst,
+pre.codehighlight .title,
+pre.codehighlight .haskell .type,
+pre.codehighlight .preprocessor,
+pre.codehighlight .ruby .class .parent,
+pre.codehighlight .built_in,
+pre.codehighlight .sql .aggregate,
+pre.codehighlight .django .template_tag,
+pre.codehighlight .django .variable,
+pre.codehighlight .smalltalk .class,
+pre.codehighlight .javadoc,
+pre.codehighlight .django .filter .argument,
+pre.codehighlight .smalltalk .localvars,
+pre.codehighlight .smalltalk .array,
+pre.codehighlight .attr_selector,
+pre.codehighlight .pseudo,
+pre.codehighlight .addition,
+pre.codehighlight .stream,
+pre.codehighlight .envvar,
+pre.codehighlight .apache .tag,
+pre.codehighlight .apache .cbracket,
+pre.codehighlight .tex .command,
+pre.codehighlight .prompt {
+  color: #A6E22E;
+}
+
+pre .comment,
+pre .java .annotation,
+pre .python .decorator,
+pre .template_comment,
+pre .pi,
+pre .doctype,
+pre .deletion,
+pre .shebang,
+pre .apache .sqbracket,
+pre .tex .formula,
+pre.codehighlight .comment,
+pre.codehighlight .java .annotation,
+pre.codehighlight .python .decorator,
+pre.codehighlight .template_comment,
+pre.codehighlight .pi,
+pre.codehighlight .doctype,
+pre.codehighlight .deletion,
+pre.codehighlight .shebang,
+pre.codehighlight .apache .sqbracket,
+pre.codehighlight .tex .formula {
+  color: #75715E;
+}
+
+pre .keyword,
+pre .literal,
+pre .css .id,
+pre .phpdoc,
+pre .title,
+pre .haskell .type,
+pre .vbscript .built_in,
+pre .sql .aggregate,
+pre .rsl .built_in,
+pre .smalltalk .class,
+pre .diff .header,
+pre .chunk,
+pre .winutils,
+pre .bash .variable,
+pre .apache .tag,
+pre .tex .special,
+pre .request,
+pre .status,
+pre.codehighlight .keyword,
+pre.codehighlight .literal,
+pre.codehighlight .css .id,
+pre.codehighlight .phpdoc,
+pre.codehighlight .title,
+pre.codehighlight .haskell .type,
+pre.codehighlight .vbscript .built_in,
+pre.codehighlight .sql .aggregate,
+pre.codehighlight .rsl .built_in,
+pre.codehighlight .smalltalk .class,
+pre.codehighlight .diff .header,
+pre.codehighlight .chunk,
+pre.codehighlight .winutils,
+pre.codehighlight .bash .variable,
+pre.codehighlight .apache .tag,
+pre.codehighlight .tex .special,
+pre.codehighlight .request,
+pre.codehighlight .status {
+  font-weight: bold;
+}
+
+pre.codehighlight .coffeescript .javascript,
+pre.codehighlight .javascript .xml,
+pre.codehighlight .tex .formula,
+pre.codehighlight .xml .javascript,
+pre.codehighlight .xml .vbscript,
+pre.codehighlight .xml .css,
+pre.codehighlight .xml .cdata,
+pre.codehighlight .coffeescript .javascript,
+pre.codehighlight .javascript .xml,
+pre.codehighlight .tex .formula,
+pre.codehighlight .xml .javascript,
+pre.codehighlight .xml .vbscript,
+pre.codehighlight .xml .css,
+pre.codehighlight .xml .cdata {
+  opacity: 0.5;
+}
