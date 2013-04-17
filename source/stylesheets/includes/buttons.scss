@@ -14,118 +14,125 @@
 // Variaciones de color
 .btn {
   &.btn-morado, &.btn-action {
-    background-color: $morado;
+    $bg_color: $morado;
+    background-color: $bg_color;
     &:hover {
-      background-color: darken($morado,15%);
+      background-color: darken($bg_color,15%);
       
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($morado, 10%) $border-thin solid;
-        border-left: darken($morado, 10%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($morado, 0%) $border-thin solid;
-        border-left: darken($morado, 25%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 25%) $border-thin solid;
       }
     }
   }
   &.btn-verde, &.btn-accept {
-    background-color: darken($verde,15%);
+    $bg_color: $verde;
+    background-color: darken($bg_color,15%);
     &:hover {
-      background-color: darken($verde,25%);
+      background-color: darken($bg_color,25%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($verde, 10%) $border-thin solid;
-        border-left: darken($verde, 10%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($verde, 0%) $border-thin solid;
-        border-left: darken($verde, 40%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 40%) $border-thin solid;
       }
     }
   }
   &.btn-naranja, &.btn-warning {
-    background-color: darken($naranja,15%);
+    $bg_color: $naranja;
+    background-color: darken($bg_color,15%);
     &:hover {
-      background-color: darken($naranja,25%);
+      background-color: darken($bg_color,25%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($naranja, 0%) $border-thin solid;
-        border-left: darken($naranja, 25%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 25%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($naranja, 0%) $border-thin solid;
-        border-left: darken($naranja, 45%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 45%) $border-thin solid;
       }
     }
   }
   &.btn-rojo, &.btn-error {
-    background-color: $rojo;
+    $bg_color: $rojo;
+    background-color: $bg_color;
     &:hover {
-      background-color: darken($rojo,15%);
+      background-color: darken($bg_color,15%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($rojo, 10%) $border-thin solid;
-        border-left: darken($rojo, 10%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($rojo, 0%) $border-thin solid;
-        border-left: darken($rojo, 30%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 30%) $border-thin solid;
       }
     }
   }
   &.btn-white {
+    $bg_color: $white;
     color: $gris_oscuro;
-    background-color: $white;
+    background-color: $bg_color;
     &:hover {
-      background-color: darken($white,15%);
+      background-color: darken($bg_color,15%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($white, 10%) $border-thin solid;
-        border-left: darken($white, 10%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 10%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten(darken($white,0%), 10%) $border-thin solid;
-        border-left: darken(darken($white,35%), 10%) $border-thin solid;
+        border-right: lighten(darken($bg_color,0%), 10%) $border-thin solid;
+        border-left: darken(darken($bg_color,35%), 10%) $border-thin solid;
       }
     }
   }
   &.btn-gris {
     color: #212121;
-    background-color: $gris_boton;
+    $bg_color: $gris_boton;
+    background-color: $bg_color;
     //@include text-shadow(0,0,0,$gris_boton);
     &:hover {
-      background-color: darken($gris_boton,5%);
+      background-color: darken($bg_color,5%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($gris_boton, 10%) $border-thin solid;
-        border-left: darken($gris_boton, 20%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 20%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($gris_boton, 0%) $border-thin solid;
-        border-left: darken($gris_boton, 35%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 35%) $border-thin solid;
       }
     }
   }
   &.btn-gris-oscuro {
-    background-color: $gris_claro;
+    $bg_color: $gris_claro;
+    background-color: $bg_color;
     &:hover {
-      background-color: darken($gris_claro,15%);
+      background-color: darken($bg_color,15%);
     }
     &.btn-wicon {
       &:after {
-        border-right: lighten($gris_claro, 10%) $border-thin solid;
-        border-left: darken($gris_claro, 20%) $border-thin solid;
+        border-right: lighten($bg_color, 10%) $border-thin solid;
+        border-left: darken($bg_color, 20%) $border-thin solid;
       }
       &:hover:after {
-        border-right: lighten($gris_claro, 0%) $border-thin solid;
-        border-left: darken($gris_claro, 35%) $border-thin solid;
+        border-right: lighten($bg_color, 0%) $border-thin solid;
+        border-left: darken($bg_color, 35%) $border-thin solid;
       }
     }
   }
