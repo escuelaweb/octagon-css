@@ -218,12 +218,12 @@ a.btn, .btn {
 }
 
 .titulo-cinta, .titulo_cinta {
-	width: 100%;
+	width: 102%;
   background-color: $gris;
   color: white;
   padding: 10px 25px;
   position: relative;
-  left: -25px;
+  left: -34px;
   @include box-shadow(0,4px,0,0,$azul,1);
   &:before, .arrow-cinta-left {
   	@include arrow('left', 15px, $azul);
