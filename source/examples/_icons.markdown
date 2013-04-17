@@ -21,7 +21,7 @@
     <!-- clase icono enorme -->
     <div class="icons icons-huge">&#xe007;</div>
 
-#### Uso de iconos con borde redondeado   
+#### Uso de iconos dentro de sombra circular   
 
     <!-- clase "icons-rounded" para encerrarlos en un circulo -->
     
