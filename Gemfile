@@ -4,7 +4,7 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.0.13"
 gem "middleman-smusher"
-# gem "slim"
+gem "haml"
 gem "sass"
 gem "coffee-script"
 gem "builder"
