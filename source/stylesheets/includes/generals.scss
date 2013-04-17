@@ -279,12 +279,13 @@ section.grid12 > header {
   }
 }
 .titulo-cinta.rojo, .titulo_cinta {
-  @include box-shadow(0,4px,0,0,$rojo,1);
+  $color: lighten($rojo, 15%);
+  @include box-shadow(0,4px,0,0,$color,1);
   &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $rojo);
+    @include arrow('left', 15px, $color);
   }
   &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $rojo);
+    @include arrow('right', 15px, $color);
   }
 }
 
