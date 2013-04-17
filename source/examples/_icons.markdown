@@ -1,11 +1,11 @@
 ### Ejemplos de uso de los Iconos
 
 #### Implementacion de los iconos  
+
+La implementación puede ser con usada con div, span o cualquier otra etiqueta
     
-    <div class="grid1 center mt10 mb10">
-      <!-- clase icono + clase tamaño del icono -->
-      <div class="icons icons-huge">&</div>
-    </div>
+    <!-- clase icono + clase tamaño del icono -->
+    <div class="icons icons-huge">&</div>
 
 #### Uso de los iconos en sus distintos tamaños
     
