@@ -2,7 +2,6 @@
 
 .btn {
   @include boton();
-  position: relative;
   &:hover {
     color: $white;
     background-color: darken($azul,15%);
@@ -14,196 +13,40 @@
 // Variaciones de color
 .btn {
   &.btn-morado, &.btn-action {
-    $bg_color: $morado;
-    background-color: $bg_color;
-    &:hover {
-      background-color: darken($bg_color,15%);
-      
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 25%) $border-thin solid;
-      }
-    }
+    @include boton-hover($morado);
   }
   &.btn-verde, &.btn-accept {
-    $bg_color: $verde;
-    background-color: darken($bg_color,15%);
-    &:hover {
-      background-color: darken($bg_color,25%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 40%) $border-thin solid;
-      }
-    }
+    @include boton-hover(darken($verde,15%));
   }
   &.btn-naranja, &.btn-warning {
-    $bg_color: $naranja;
-    background-color: darken($bg_color,15%);
-    &:hover {
-      background-color: darken($bg_color,25%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 25%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 45%) $border-thin solid;
-      }
-    }
+    @include boton-hover(darken($naranja, 10%), 5%);
   }
   &.btn-rojo, &.btn-error {
-    $bg_color: $rojo;
-    background-color: $bg_color;
-    &:hover {
-      background-color: darken($bg_color,15%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 30%) $border-thin solid;
-      }
-    }
+    @include boton-hover($rojo);
   }
   &.btn-white {
-    $bg_color: $white;
     color: $gris_oscuro;
-    background-color: $bg_color;
-    &:hover {
-      background-color: darken($bg_color,15%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten(darken($bg_color,0%), 10%) $border-thin solid;
-        border-left: darken(darken($bg_color,35%), 10%) $border-thin solid;
-      }
-    }
+    @include boton-hover($white);
   }
   &.btn-gris {
     color: #212121;
-    $bg_color: $gris_boton;
-    background-color: $bg_color;
-    //@include text-shadow(0,0,0,$gris_boton);
-    &:hover {
-      background-color: darken($bg_color,5%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 20%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 35%) $border-thin solid;
-      }
-    }
+    @include boton-hover($gris_boton);
   }
   &.btn-gris-oscuro {
-    $bg_color: $gris_claro;
-    background-color: $bg_color;
-    &:hover {
-      background-color: darken($bg_color,15%);
-    }
-    &.btn-wicon {
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 20%) $border-thin solid;
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 35%) $border-thin solid;
-      }
-    }
+    @include boton-hover($gris_claro);
   }
   &.btn-google {
-    $bg_color: #df4a32;
-    background-color: $bg_color;
-    &.btn-wicon { 
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover {
-        background-color: darken($bg_color, 10%);
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 15%) $border-thin solid;
-      }
-    }
+    @include boton-hover($google_color, 5%);
   }
   &.btn-github {
-    $bg_color: $gris_boton;
-    color: $gris;
-    background-color: $bg_color;
-    &.btn-wicon { 
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover {
-        background-color: darken($bg_color, 5%);
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 15%) $border-thin solid;
-      }
-    }
+    color: $gris_oscuro;
+    @include boton-hover($gris_boton, 5%);
   }
   &.btn-facebook {
-    $bg_color: #3B5998;
-    background-color: $bg_color;
-    &.btn-wicon { 
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover {
-        background-color: darken($bg_color, 10%);
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 15%) $border-thin solid;
-      }
-    }
+    @include boton-hover($facebook_color);
   }
   &.btn-twitter {
-    $bg_color: #4bb0da;
-    background-color: $bg_color;
-    &.btn-wicon { 
-      &:after {
-        border-right: lighten($bg_color, 10%) $border-thin solid;
-        border-left: darken($bg_color, 10%) $border-thin solid;
-      }
-      &:hover {
-        background-color: darken($bg_color, 10%);
-      }
-      &:hover:after {
-        border-right: lighten($bg_color, 0%) $border-thin solid;
-        border-left: darken($bg_color, 15%) $border-thin solid;
-      }
-    }
+    @include boton-hover($twitter_color);
   }
 }
 

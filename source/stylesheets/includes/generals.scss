@@ -217,7 +217,7 @@ a.btn, .btn {
 	}
 }
 
-.titulo-cinta, .titulo_cinta {
+.belt-title, .titulo-cinta, .titulo_cinta {
 	width: 102%;
   background-color: $gris;
   color: white;
@@ -251,7 +251,7 @@ section.grid12 > header {
   padding-top: 70px;
 }
 
-.titulo-cinta.morado, .titulo_cinta {
+.belt-title.morado, .titulo-cinta.morado, .titulo_cinta.morado {
 	@include box-shadow(0,4px,0,0,$morado,1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $morado);
@@ -260,7 +260,7 @@ section.grid12 > header {
     @include arrow('right', 15px, $morado);
   }
 }
-.titulo-cinta.verde, .titulo_cinta {
+.belt-title.verde, .titulo-cinta.verde, .titulo_cinta.verde {
   @include box-shadow(0,4px,0,0,$verde,1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $verde);
@@ -269,7 +269,7 @@ section.grid12 > header {
     @include arrow('right', 15px, $verde);
   }
 }
-.titulo-cinta.naranja, .titulo_cinta {
+.belt-title.naranja, .titulo-cinta.naranja, .titulo_cinta.naranja {
   @include box-shadow(0,4px,0,0,$naranja,1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $naranja);
@@ -278,7 +278,7 @@ section.grid12 > header {
     @include arrow('right', 15px, $naranja);
   }
 }
-.titulo-cinta.rojo, .titulo_cinta {
+.belt-title.rojo, .titulo-cinta.rojo, .titulo_cinta.rojo {
   $color: lighten($rojo, 15%);
   @include box-shadow(0,4px,0,0,$color,1);
   &:before, .arrow-cinta-left {
