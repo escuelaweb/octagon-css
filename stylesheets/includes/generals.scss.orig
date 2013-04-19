@@ -1,0 +1,86 @@
+/*
+Syntax error: Invalid CSS after "}": expected selector or at-rule, was "<<<<<<< HEAD"
+        on line 220 of /home/sergio/Desktop/octagon-css/source/stylesheets/includes/generals.scss.orig
+
+215: 			}
+216: 		}
+217: 	}
+218: }
+219: 
+220: <<<<<<< HEAD
+221: =======
+222: .belt-title, .titulo-cinta, .titulo_cinta {
+223: 	width: 102%;
+224:   background-color: $gris;
+225:   color: white;
+
+Backtrace:
+/home/sergio/Desktop/octagon-css/source/stylesheets/includes/generals.scss.orig:220
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/scss/parser.rb:1148:in `expected'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/scss/parser.rb:1084:in `expected'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/scss/parser.rb:28:in `parse'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:342:in `_to_tree'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:315:in `_render'
+/usr/lib/ruby/gems/1.9.1/gems/sass-3.2.7/lib/sass/engine.rb:262:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-sass-0.9.1/lib/sprockets/sass/sass_template.rb:40:in `evaluate'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-sprockets-3.0.10/lib/middleman-sprockets/sass.rb:46:in `evaluate'
+/usr/lib/ruby/gems/1.9.1/gems/tilt-1.3.6/lib/tilt/template.rb:77:in `render'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/context.rb:193:in `block in evaluate'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/context.rb:190:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/context.rb:190:in `evaluate'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/processed_asset.rb:12:in `initialize'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:249:in `new'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:249:in `block in build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:270:in `circular_call_protection'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:248:in `build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:93:in `block in build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/caching.rb:12:in `cache_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:92:in `build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:169:in `find_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:60:in `find_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/bundled_asset.rb:16:in `initialize'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:252:in `new'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:252:in `build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:93:in `block in build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/caching.rb:12:in `cache_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:92:in `build_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/base.rb:169:in `find_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/index.rb:60:in `find_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/environment.rb:78:in `find_asset'
+/usr/lib/ruby/gems/1.9.1/gems/sprockets-2.2.2/lib/sprockets/server.rb:47:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/builder.rb:134:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/urlmap.rb:64:in `block in call'
+/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/urlmap.rb:49:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/urlmap.rb:49:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-more-3.0.13/lib/middleman-more/extensions/minify_javascript.rb:51:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-more-3.0.13/lib/middleman-more/extensions/minify_css.rb:50:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/rack-1.4.5/lib/rack/builder.rb:134:in `call'
+/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/mock_session.rb:30:in `request'
+/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/test.rb:230:in `process_request'
+/usr/lib/ruby/gems/1.9.1/gems/rack-test-0.6.2/lib/rack/test.rb:57:in `get'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:137:in `render_to_file'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:282:in `block in execute!'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:279:in `each'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:279:in `execute!'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:198:in `invoke!'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/actions.rb:95:in `action'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli/build.rb:65:in `build'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/task.rb:27:in `run'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/invocation.rb:120:in `invoke_task'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor.rb:275:in `dispatch'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/base.rb:425:in `start'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli.rb:77:in `method_missing'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/task.rb:29:in `run'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/task.rb:126:in `run'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/invocation.rb:120:in `invoke_task'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor.rb:275:in `dispatch'
+/usr/lib/ruby/gems/1.9.1/gems/thor-0.15.4/lib/thor/base.rb:425:in `start'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/lib/middleman-core/cli.rb:22:in `start'
+/usr/lib/ruby/gems/1.9.1/gems/middleman-core-3.0.13/bin/middleman:18:in `<top (required)>'
+/usr/bin/middleman:23:in `load'
+/usr/bin/middleman:23:in `<main>'
+*/
+body:before {
+  white-space: pre;
+  font-family: monospace;
+  content: "Syntax error: Invalid CSS after \"}\": expected selector or at-rule, was \"<<<<<<< HEAD\"\A         on line 220 of /home/sergio/Desktop/octagon-css/source/stylesheets/includes/generals.scss.orig\A \A 215: 			}\A 216: 		}\A 217: 	}\A 218: }\A 219: \A 220: <<<<<<< HEAD\A 221: =======\A 222: .belt-title, .titulo-cinta, .titulo_cinta {\A 223: 	width: 102%;\A 224:   background-color: $gris;\A 225:   color: white;"; }
