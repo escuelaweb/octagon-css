@@ -26,13 +26,17 @@
 }
 
 .right {
-  float: right;
+  
   text-align: right;
 }
 
 .left {
   float: left;
   text-align: left;
+}
+
+.justify {
+  text-align: justify;
 }
 
 .inline {
@@ -42,6 +46,23 @@
 .center {
   text-align: center;
 }
+
+.float-left {
+  float: left;
+}
+
+.float-right {
+  float: right;
+}
+
+// [class*="grid"] {
+//   &.right {
+//     float: right;
+//   }
+//   &.left {
+//     float: left;
+//   }
+// }
 
 .visible-grid {
   padding: 10px 0;

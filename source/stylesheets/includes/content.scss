@@ -21,3 +21,189 @@
   margin-bottom: 60px;
   padding-top: 0px;
 }
+
+// the class titulo-cinta y titulo_cinta son para compatibilidad hacia atras
+
+.ribbon-title,
+.titulo-cinta, 
+.titulo_cinta {
+  width: 102%;
+  background-color: $gris;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -34px;
+  @include box-shadow(0,4px,0,0,$azul,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $azul);
+    content: "";
+    display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1;
+  }
+  &:after, .arrow-cinta-right {
+    @include arrow('right', 15px, $azul);
+    content: "";
+    display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+.ribbon-title.morado,
+.titulo-cinta.morado, 
+.titulo_cinta.morado {
+  @include box-shadow(0,4px,0,0,$morado,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $morado);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $morado);
+  }
+  .icons {
+    background-color: $morado;
+  }
+}
+.ribbon-title.verde, 
+.titulo-cinta.verde, 
+.titulo_cinta.verde {
+  @include box-shadow(0,4px,0,0,$verde,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $verde);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $verde);
+  }
+  .icons {
+    background-color: $verde;
+  }
+}
+.ribbon-title.naranja,
+.titulo-cinta.naranja,
+.titulo_cinta.naranja {
+  @include box-shadow(0,4px,0,0,$naranja,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $naranja);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $naranja);
+  }
+  .icons {
+    background-color: $naranja;
+  }
+}
+.ribbon-title.rojo,
+.titulo-cinta.rojo, 
+.titulo_cinta.rojo {
+  $color: lighten($rojo, 15%);
+  @include box-shadow(0,4px,0,0,$color,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $color);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $color);
+  }
+  .icons {
+    background-color: $color;
+  }
+}
+
+.ribbon-title,
+.titulo-cinta, 
+.titulo_cinta {
+  &.ribbon-wicon {
+    margin-top: 30px;
+    margin-bottom: 30px;
+    position: relative;
+    .ribbon-icon {
+      max-width: 90px;
+      position: absolute;
+      top: -22px;
+      left: -20px;
+      &.icons {
+        top: -25px;
+        left: -10px;
+        text-indent: 0;
+        text-align: center;
+        width: 90px;
+        height: 90px;
+        line-height: 90px;
+        font-size: 32px;
+        @include text-shadow(-1px -1px 0 rgba($black, 0.4));
+        @include border-radius(75px);
+      }
+    }
+    .ribbon-text {
+      margin-left: 60px;
+    }
+    &.ribbon-wicon-big {
+      margin-top: 50px;
+      margin-bottom: 50px;
+      .ribbon-icon {
+        max-width: 120px;
+        position: absolute;
+        top: -35px;
+        left: -22px;
+        &.icons {
+          top: -35px;
+          left: -10px;
+          text-indent: 0;
+          text-align: center;
+          width: 120px;
+          height: 120px;
+          line-height: 120px;
+          font-size: 42px;
+          @include text-shadow(-1px -1px 0 rgba($black, 0.4));
+          @include border-radius(60px);
+        }
+      }
+      .ribbon-text {
+        margin-left: 90px;
+      }
+    }
+  }
+  &.ribbon-right {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;    
+    left: auto;
+    right: -4px;
+    text-indent: 10px;
+  }
+  &.ribbon-left {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 10px;
+    text-indent: 10px;
+    .ribbon-icon {
+      left: auto;
+      right: -22px;
+      &.icons {
+        left: auto;
+        right: -8;
+      }
+    }
+    .ribbon-text {
+      margin-left: 0px;
+    }
+    &.ribbon-wicon-big {
+      .ribbon-icon {
+        left: auto;
+        right: -22px;
+        &.icons {
+          left: auto;
+          right: -8;
+        }
+      }
+      .ribbon-text {
+        margin-left: 0px;
+      }
+    }
+  }
+}
