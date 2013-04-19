@@ -33,6 +33,7 @@
   padding: 10px 25px;
   position: relative;
   left: -34px;
+	font-weight: 300;
   @include box-shadow(0,4px,0,0,$azul,1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $azul);
