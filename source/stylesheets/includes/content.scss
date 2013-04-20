@@ -55,10 +55,13 @@
     right: 0;
     z-index: -1;
   }
+  &.ribbon-small {
+    padding: 5px 25px;
+  }
 }
 
 // Variaciones de color
-
+// hacer refactory de esto y meter el codigo repetido en una funcion
 .ribbon-title,
 .titulo-cinta, 
 .titulo_cinta {
@@ -66,44 +69,50 @@
     background-color: darken($gris_boton, 5%);
     color: $gris_oscuro;
     border-top: $border_thin $gris_claro solid;
-    .icons {
+    &.ribbon-wicon .ribbon-icon.icons {
       color: white;
     }
   }
   &.morado {
-    @include box-shadow(0,4px,0,0,$morado,1);
+    $color: $morado;
+    @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
-      @include arrow('left', 15px, $morado);
+      @include arrow('left', 15px, $color);
     }
     &:after, .arrow-cinta-right { 
-      @include arrow('right', 15px, $morado);
+      @include arrow('right', 15px, $color);
     }
-    .icons {
-      background-color: $morado;
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
     }
   }
   &.verde {
-    @include box-shadow(0,4px,0,0,$verde,1);
+    $color: $verde;
+    @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
-      @include arrow('left', 15px, $verde);
+      @include arrow('left', 15px, $color);
     }
     &:after, .arrow-cinta-right { 
-      @include arrow('right', 15px, $verde);
+      @include arrow('right', 15px, $color);
     }
-    .icons {
-      background-color: $verde;
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
     }
   }
   &.naranja {
-    @include box-shadow(0,4px,0,0,$naranja,1);
+    $color: $naranja;
+    @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
-      @include arrow('left', 15px, $naranja);
+      @include arrow('left', 15px, $color);
     }
     &:after, .arrow-cinta-right { 
-      @include arrow('right', 15px, $naranja);
+      @include arrow('right', 15px, $color);
     }
-    .icons {
-      background-color: $naranja;
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
     }
   }
   &.rojo {
@@ -115,8 +124,9 @@
     &:after, .arrow-cinta-right { 
       @include arrow('right', 15px, $color);
     }
-    .icons {
+    &.ribbon-wicon .ribbon-icon.icons {
       background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
     }
   }
 }
@@ -135,16 +145,17 @@
       top: -22px;
       left: -20px;
       &.icons {
-        top: -25px;
+        top: -15px;
         left: -10px;
         text-indent: 0;
         text-align: center;
-        width: 90px;
-        height: 90px;
-        line-height: 90px;
-        font-size: 32px;
+        width: 76px;
+        height: 76px;
+        line-height: 76px;
+        font-size: 28px;
         @include text-shadow(-1px -1px 0 rgba($black, 0.4));
-        @include border-radius(75px);
+        @include border-radius(40px);
+        @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($azul, 10%));
       }
     }
     .ribbon-text {
@@ -159,16 +170,16 @@
         top: -35px;
         left: -22px;
         &.icons {
-          top: -35px;
+          top: -23px;
           left: -10px;
           text-indent: 0;
           text-align: center;
-          width: 120px;
-          height: 120px;
-          line-height: 120px;
-          font-size: 42px;
+          width: 100px;
+          height: 100px;
+          line-height: 100px;
+          font-size: 38px;
           @include text-shadow(-1px -1px 0 rgba($black, 0.4));
-          @include border-radius(60px);
+          @include border-radius(50px);
         }
       }
       .ribbon-text {
