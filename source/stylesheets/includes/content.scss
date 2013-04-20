@@ -56,64 +56,71 @@
   }
 }
 
-.ribbon-title.morado,
-.titulo-cinta.morado, 
-.titulo_cinta.morado {
-  @include box-shadow(0,4px,0,0,$morado,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $morado);
+// Variaciones de color
+
+.ribbon-title,
+.titulo-cinta, 
+.titulo_cinta {
+  &.light {
+    background-color: darken($gris_boton, 5%);
+    color: $gris_oscuro;
+    border-top: $border_thin $gris_claro solid;
+    .icons {
+      color: white;
+    }
   }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $morado);
+  &.morado {
+    @include box-shadow(0,4px,0,0,$morado,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $morado);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $morado);
+    }
+    .icons {
+      background-color: $morado;
+    }
   }
-  .icons {
-    background-color: $morado;
+  &.verde {
+    @include box-shadow(0,4px,0,0,$verde,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $verde);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $verde);
+    }
+    .icons {
+      background-color: $verde;
+    }
   }
-}
-.ribbon-title.verde, 
-.titulo-cinta.verde, 
-.titulo_cinta.verde {
-  @include box-shadow(0,4px,0,0,$verde,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $verde);
+  &.naranja {
+    @include box-shadow(0,4px,0,0,$naranja,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $naranja);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $naranja);
+    }
+    .icons {
+      background-color: $naranja;
+    }
   }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $verde);
-  }
-  .icons {
-    background-color: $verde;
-  }
-}
-.ribbon-title.naranja,
-.titulo-cinta.naranja,
-.titulo_cinta.naranja {
-  @include box-shadow(0,4px,0,0,$naranja,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $naranja);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $naranja);
-  }
-  .icons {
-    background-color: $naranja;
-  }
-}
-.ribbon-title.rojo,
-.titulo-cinta.rojo, 
-.titulo_cinta.rojo {
-  $color: lighten($rojo, 15%);
-  @include box-shadow(0,4px,0,0,$color,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $color);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $color);
-  }
-  .icons {
-    background-color: $color;
+  &.rojo {
+    $color: lighten($rojo, 15%);
+    @include box-shadow(0,4px,0,0,$color,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $color);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $color);
+    }
+    .icons {
+      background-color: $color;
+    }
   }
 }
 
+// Titulos con cintas
 .ribbon-title,
 .titulo-cinta, 
 .titulo_cinta {

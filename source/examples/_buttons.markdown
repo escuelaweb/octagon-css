@@ -36,7 +36,7 @@ A continuacion se observan ejemplos de uso de las clases que poseen los botones,
     <!-- Boton gigante -->
     <a href="#" class="btn btn-h">Boton gigante</a>
 
-### Boton con iconos embed
+#### Boton con iconos embed
 
     <!-- Boton con icono del lado derecho -->
     <a href="#" class="btn btn-wicon">

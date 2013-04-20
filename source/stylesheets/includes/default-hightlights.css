@@ -5,14 +5,19 @@ Monokai style - ported by Luigi Maselli - http://grigio.org
 p code, pre.codehighlight,
 pre code, pre.codehighlight {
   display: block; 
-  padding: 30px 20px;
+  padding: 20px 20px;
   background: #000;
   /*background: #272822;*/
   word-spacing: 0.5em;
   letter-spacing: 0.2em;
   overflow: auto;
   max-height: 600px;
-  margin-bottom: 10px;
+  margin-bottom: 20px;
+  white-space: pre-wrap;      /* CSS3 */   
+  white-space: -moz-pre-wrap; /* Firefox */    
+  white-space: -pre-wrap;     /* Opera <7 */   
+  white-space: -o-pre-wrap;   /* Opera 7 */    
+  word-wrap: break-word;      /* IE */
 }
 
 p code, pre.codehighlight {
