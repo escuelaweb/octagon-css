@@ -176,6 +176,7 @@
   background-color: $bg;
   color: $color;
   margin-right: 10px;
+  position: relative;
   @include border-radius(5px);
   //@include text-shadow(0,1px,0,#3c3c3c);
   @include box-shadow(0,1px,1px,0,$shadow);
@@ -186,7 +187,24 @@
     box-shadow: none;
     border: none;
     background: none;
-    background-color: darken($bg,20%);
+    background-color: darken($bg,10%);
+  }
+}
+
+@mixin boton-hover($bg_color: $azul, $bg-hover:10% ,$r-after: 10%, $l-after:10%, $r-after-h: 0%, $l-after-h:25%) {
+  background-color: $bg_color;
+  &:hover {
+    background-color: darken($bg_color,$bg-hover);
+  }
+  &.btn-wicon {
+    &:after {
+      border-right: lighten($bg_color, $r-after) $border-thin solid;
+      border-left: darken($bg_color, $l-after) $border-thin solid;
+    }
+    &:hover:after {
+      border-right: lighten($bg_color, $r-after-h) $border-thin solid;
+      border-left: darken($bg_color, $l-after-h) $border-thin solid;
+    }
   }
 }
 

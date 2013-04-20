@@ -74,7 +74,6 @@ ul {
 ol {
   list-style: decimal;
 }
-
 .unstyled {
   list-style: none;
   padding-left: 0px;
@@ -218,10 +217,84 @@ a.btn, .btn {
 	}
 }
 
+<<<<<<< HEAD
+=======
+.belt-title, .titulo-cinta, .titulo_cinta {
+	width: 102%;
+  background-color: $gris;
+  color: white;
+  padding: 10px 25px;
+  position: relative;
+  left: -34px;
+  @include box-shadow(0,4px,0,0,$azul,1);
+  &:before, .arrow-cinta-left {
+  	@include arrow('left', 15px, $azul);
+  	content: "";
+  	display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    left: 0;
+    z-index: -1;
+  }
+  &:after, .arrow-cinta-right {
+    @include arrow('right', 15px, $azul);
+    content: "";
+    display: block;
+    border-bottom: 0px solid transparent;
+    position: absolute;
+    top: -15px;
+    right: 0;
+    z-index: -1;
+  }
+}
+
+>>>>>>> 8b21f21f8c1eab9caec35e12d370dd6608bedb8a
 section.grid12 > header {
   padding-top: 70px;
 }
 
+<<<<<<< HEAD
+=======
+.belt-title.morado, .titulo-cinta.morado, .titulo_cinta.morado {
+	@include box-shadow(0,4px,0,0,$morado,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $morado);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $morado);
+  }
+}
+.belt-title.verde, .titulo-cinta.verde, .titulo_cinta.verde {
+  @include box-shadow(0,4px,0,0,$verde,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $verde);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $verde);
+  }
+}
+.belt-title.naranja, .titulo-cinta.naranja, .titulo_cinta.naranja {
+  @include box-shadow(0,4px,0,0,$naranja,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $naranja);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $naranja);
+  }
+}
+.belt-title.rojo, .titulo-cinta.rojo, .titulo_cinta.rojo {
+  $color: lighten($rojo, 15%);
+  @include box-shadow(0,4px,0,0,$color,1);
+  &:before, .arrow-cinta-left {
+    @include arrow('left', 15px, $color);
+  }
+  &:after, .arrow-cinta-right { 
+    @include arrow('right', 15px, $color);
+  }
+}
+
+>>>>>>> 8b21f21f8c1eab9caec35e12d370dd6608bedb8a
 blockquote {
 	line-height: 1.5em;
 	padding: 0 0 0 15px;

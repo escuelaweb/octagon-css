@@ -109,6 +109,7 @@ PLATFORMS
 DEPENDENCIES
   builder
   coffee-script
+  haml
   maruku
   middleman (~> 3.0.13)
   middleman-smusher

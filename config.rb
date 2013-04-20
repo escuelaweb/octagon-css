@@ -6,6 +6,7 @@
 # First: gem install susy
 # require 'susy'
 
+require "haml"
 require 'sass'
 require "maruku"
 
@@ -13,7 +14,7 @@ require "maruku"
 # Slim::Engine.set_default_options :pretty => true
  
 # # Set template languages
-# set :slim, :layout_engine => :slim
+# set :haml, :layout_engine => :haml
 
 # Change Compass configuration
 # compass_config do |config|
