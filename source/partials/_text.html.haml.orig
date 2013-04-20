@@ -95,7 +95,7 @@
         %span.ribbon-icon.icons L
         %span.ribbon-text Titulo con cinta a la derecha con icono 
     .grid9
-      %h1.ribbon-title.ribbon-left.ribbon-wicon.ribbon-wicon-big.morado.light
+      %h1.ribbon-title.ribbon-left.ribbon-wicon.ribbon-wicon-big.morado
         %span.ribbon-icon.icons.icons-octagon L
         %span.ribbon-text Titulo con cinta a la derecha con icono 
     .grid9
@@ -109,9 +109,13 @@
     .grid5.offset2
       %h4.ribbon-title.ribbon-right.ribbon-wicon.morado.light
         %span.ribbon-icon.icons.icons-octagon L
-        %span.ribbon-text Cinta a la derecha con icono 
+<<<<<<< HEAD
+        %span.ribbon-text Titulo con cinta a la derecha con icono 
   
   .row.mt40
     %hr.grid12  
     .grid12.mt40
       = partial "examples/text"
+=======
+        %span.ribbon-text Cinta a la derecha con icono 
+>>>>>>> 0a4179ea5036723f0ca638c0ff20685452d9a6ba
