@@ -34,7 +34,7 @@
   position: relative;
   left: -34px;
 	font-weight: 300;
-  @include box-shadow(0,4px,0,0,$azul,1);
+  @include box-shadow(0, 4px, 0, 0, $azul, 1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $azul);
     content: "";
@@ -55,66 +55,84 @@
     right: 0;
     z-index: -1;
   }
-}
-
-.ribbon-title.morado,
-.titulo-cinta.morado, 
-.titulo_cinta.morado {
-  @include box-shadow(0,4px,0,0,$morado,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $morado);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $morado);
-  }
-  .icons {
-    background-color: $morado;
-  }
-}
-.ribbon-title.verde, 
-.titulo-cinta.verde, 
-.titulo_cinta.verde {
-  @include box-shadow(0,4px,0,0,$verde,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $verde);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $verde);
-  }
-  .icons {
-    background-color: $verde;
-  }
-}
-.ribbon-title.naranja,
-.titulo-cinta.naranja,
-.titulo_cinta.naranja {
-  @include box-shadow(0,4px,0,0,$naranja,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $naranja);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $naranja);
-  }
-  .icons {
-    background-color: $naranja;
-  }
-}
-.ribbon-title.rojo,
-.titulo-cinta.rojo, 
-.titulo_cinta.rojo {
-  $color: lighten($rojo, 15%);
-  @include box-shadow(0,4px,0,0,$color,1);
-  &:before, .arrow-cinta-left {
-    @include arrow('left', 15px, $color);
-  }
-  &:after, .arrow-cinta-right { 
-    @include arrow('right', 15px, $color);
-  }
-  .icons {
-    background-color: $color;
+  &.ribbon-small {
+    padding: 5px 25px;
   }
 }
 
+// Variaciones de color
+// hacer refactory de esto y meter el codigo repetido en una funcion
+
+.ribbon-title,
+.titulo-cinta, 
+.titulo_cinta {
+  &.light {
+    background-color: darken($gris_boton, 5%);
+    color: $gris_oscuro;
+    border-top: $border_thin $gris_claro solid;
+    &.ribbon-wicon .ribbon-icon.icons {
+      color: white;
+    }
+  }
+  &.morado {
+    $color: $morado;
+    @include box-shadow(0, 4px, 0, 0, $color, 1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $color);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $color);
+    }
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
+    }
+  }
+  &.verde {
+    $color: $verde;
+    @include box-shadow(0,4px,0,0,$color,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $color);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $color);
+    }
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
+    }
+  }
+  &.naranja {
+    $color: $naranja;
+    @include box-shadow(0,4px,0,0,$color,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $color);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $color);
+    }
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
+    }
+  }
+  &.rojo {
+    $color: lighten($rojo, 15%);
+    @include box-shadow(0,4px,0,0,$color,1);
+    &:before, .arrow-cinta-left {
+      @include arrow('left', 15px, $color);
+    }
+    &:after, .arrow-cinta-right { 
+      @include arrow('right', 15px, $color);
+    }
+    &.ribbon-wicon .ribbon-icon.icons {
+      background-color: $color;
+      @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
+    }
+  }
+}
+
+// Titulos con cintas
 .ribbon-title,
 .titulo-cinta, 
 .titulo_cinta {
@@ -123,21 +141,23 @@
     margin-bottom: 30px;
     position: relative;
     .ribbon-icon {
+      z-index: 2;
       max-width: 90px;
       position: absolute;
       top: -22px;
       left: -20px;
       &.icons {
-        top: -25px;
+        top: -10px;
         left: -10px;
         text-indent: 0;
         text-align: center;
-        width: 90px;
-        height: 90px;
-        line-height: 90px;
-        font-size: 32px;
+        width: 60px;
+        height: 60px;
+        line-height: 64px;
+        font-size: 28px;
         @include text-shadow(-1px -1px 0 rgba($black, 0.4));
-        @include border-radius(75px);
+        @include border-radius(30px);
+        @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($azul, 10%));
       }
     }
     .ribbon-text {
@@ -147,25 +167,25 @@
       margin-top: 50px;
       margin-bottom: 50px;
       .ribbon-icon {
-        max-width: 120px;
+        max-width: 110px;
         position: absolute;
-        top: -35px;
+        top: -30px;
         left: -22px;
         &.icons {
-          top: -35px;
-          left: -10px;
+          top: -18px;
+          left: -5px;
           text-indent: 0;
           text-align: center;
-          width: 120px;
-          height: 120px;
-          line-height: 120px;
-          font-size: 42px;
+          width: 90px;
+          height: 90px;
+          line-height: 94px;
+          font-size: 38px;
           @include text-shadow(-1px -1px 0 rgba($black, 0.4));
-          @include border-radius(60px);
+          @include border-radius(50px);
         }
       }
       .ribbon-text {
-        margin-left: 90px;
+        margin-left: 80px;
       }
     }
   }
@@ -176,12 +196,36 @@
     left: auto;
     right: -4px;
     text-indent: 10px;
-  }
+    &:before {
+      border: none;
+      left: 0px;
+      top: 0;
+      z-index: 0;
+      @include arrow("right", 1.1em, $white);
+    }
+    &.ribbon-wicon-big {
+      &:before {
+        @include arrow("right", 0.9em, $white);
+      }
+    }
+}
   &.ribbon-left {
     width: 100%;
     padding-left: 20px;
     padding-right: 10px;
     text-indent: 10px;
+    &:after {
+      border: none;
+      right: 0px;
+      top: 0;
+      z-index: 0;
+      @include arrow("left", 1.1em, $white);
+    }
+    &.ribbon-wicon-big {
+      &:after {
+        @include arrow("right", 0.9em, $white);
+      }
+    }
     .ribbon-icon {
       left: auto;
       right: -22px;

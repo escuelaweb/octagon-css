@@ -9,24 +9,30 @@
  	-webkit-font-smoothing: antialiased;
 	text-rendering: geometricPrecision;
 	&.icons-small {
-		font-size: 16px;
+		font-size: 14px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.8em;
+			line-height: 2em;
+			width: 40px;
+			height: 40px;
 		}
 	}
 	&.icons-medium {
 		font-size: 18px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.7em;
+			line-height: 2.2em;
+			width: 2.4em;
+			height: 2.4em;
 		}
 	}
 	&.icons-big {
 		font-size: 22px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.8em;
+			line-height: 52px;
+			width: 56px;
+			height: 56px;
 		}
 	}
 	&.icons-huge {
@@ -38,15 +44,15 @@
 	}
 	&.icons-rounded {
 		background-color: $gris_claro;
-		height: 2em;
+		height: 2.2em;
+		width: 2.2em;
 		line-height: 2em;
-		width: 2em;
 		color: $white;
 		margin-left: auto;
 		margin-right: auto;
 		border: $white $border_medium solid;
 		@include box-shadow(0 0 $border_medium darken($gris_claro,10%));
-		@include border-radius(50%);
+		@include border-radius(60%);
 	}
 }
 .icons.small {
