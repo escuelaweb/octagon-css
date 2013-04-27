@@ -129,3 +129,56 @@ aside .menu {
 		}
 	}
 }
+
+aside nav {
+	background-color: lighten($gris,60%);
+	margin-bottom: 20px;
+	padding: 5px;
+	@include inner-box-shadow(0,1px,1px,0,$gris_claro);
+	@include border-radius(5px);
+	h5 {
+		padding: 5px 10px 0;
+	}
+	.menu {
+		list-style: none;
+		height: auto;
+		li {
+			display: block;
+			float: none;
+			height: auto;
+			&.active {
+				> a {
+					background-color: $gris;
+					border-bottom: none;
+					@include inner-box-shadow(0,0px,5px,0,lighten(black,20%));
+				}
+			}
+			a {
+				text-decoration: none;
+				display: block;
+				padding: 5px 15px;
+				height: auto;
+				line-height: 1.5em;
+				font-size: $font-base;
+				background-color: $azul;
+				color: white;
+				@include border-radius(0px);
+				@include box-shadow(0,1px,1px,0,$gris_claro);
+				&:hover {
+					background-color: lighten($gris,10%);
+					margin-bottom: 0;
+					border-bottom: none;
+				}
+				&.active {
+					background-color: $gris;
+					border-bottom: none;
+					@include inner-box-shadow(0,0px,5px,0,lighten(black,20%));
+				}
+			}
+		}
+		> li {
+			border-bottom: 1px solid darken($azul, 70%);
+			border-top: 1px solid lighten($azul, 10%);
+		}
+	}
+}
