@@ -1,1 +1,0 @@
-(function(e,t,n,r){e(function(){e("html").on("click",".dropdown-toggle",function(t){t.preventDefault();var n=e(this).next(".submenu");n.fadeToggle(400),n.mouseleave(function(){n.fadeOut(400)})})})})(jQuery,window,document);
