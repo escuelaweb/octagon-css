@@ -142,13 +142,13 @@
     position: relative;
     .ribbon-icon {
       z-index: 2;
-      max-width: 90px;
+      max-width: 80px;
       position: absolute;
-      top: -22px;
-      left: -20px;
+      top: -18px;
+      left: -25px;
       &.icons {
         top: -10px;
-        left: -10px;
+        left: -2px;
         text-indent: 0;
         text-align: center;
         width: 60px;
@@ -160,8 +160,8 @@
         @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($azul, 10%));
       }
     }
-    .ribbon-text {
-      margin-left: 60px;
+    .ribbon-text, &.ribbon-right .ribbon-text {
+      margin-left: 45px;
     }
     &.ribbon-wicon-big {
       margin-top: 50px;
@@ -170,7 +170,7 @@
         max-width: 110px;
         position: absolute;
         top: -30px;
-        left: -22px;
+        left: -30px;
         &.icons {
           top: -18px;
           left: -5px;
@@ -185,7 +185,7 @@
         }
       }
       .ribbon-text {
-        margin-left: 80px;
+        margin-left: 70px;
       }
     }
   }
@@ -195,13 +195,16 @@
     padding-right: 10px;    
     left: auto;
     right: -4px;
-    text-indent: 0px;
+    text-indent: 15px;
     &:before {
       border: none;
       left: 0px;
       top: 0;
       z-index: 0;
       @include arrow("right", 1.1em, $white);
+    }
+    .ribbon-text {
+      margin-left: 30px;
     }
     &.ribbon-wicon-big {
       &:before {
@@ -231,7 +234,7 @@
       right: -22px;
       &.icons {
         left: auto;
-        right: -8;
+        right: -8px;
       }
     }
     .ribbon-text {
@@ -243,7 +246,7 @@
         right: -22px;
         &.icons {
           left: auto;
-          right: -8;
+          right: -8px;
         }
       }
       .ribbon-text {

@@ -118,6 +118,9 @@
 	height: $menu_height;
 	border-right: lighten($gris_oscuro,80%) solid 1px;
 	border-left: $gris_sombra solid 1px;
+	&.float-right {
+		float: right;
+	}
 }
 
 aside .menu {
