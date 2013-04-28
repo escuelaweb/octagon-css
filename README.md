@@ -11,6 +11,6 @@ Guia de estilos desarrollada para todos los nuevos servicios de la [EscuelaWeb](
 
 Más info [aqui](http://escuelaweb.github.io/octagon-css)
 
-Autor: Sergio A. Marin Z. [@highercomve](http://twitter.com/highercomve) // [Blog](http://sergiomarin.co.cc)
+Autor: Sergio A. Marin Z. [@highercomve](http://twitter.com/highercomve) // [Blog](http://higher.com.ve)
 
 Licencia [GPL 3.0](http://opensource.org/licenses/gpl-3.0.html)
