@@ -1,19 +1,52 @@
 @import "functions";
 
+.formtastic {
+  label {
+    display:block;
+    margin-bottom: 10px;
+  }
+  li {
+    list-style: none;
+  }
+  .actions {
+    ol { 
+      list-style: none;
+    }
+    li {
+      display: inline-block;
+    }
+    .link_action {
+      margin-top: 11px;
+    }
+  }
+}
+
 form {
-  margin-top: 40px;
+  padding: 20px;
+  @include border-radius(10px);
+  @include background-gradient(lighten($gris_claro,25%), $white);
+  @include box-shadow(0 1px 2px 0 rgba($azul,0.5));
+  .block {
+    display: block;
+  }
+  .full {
+    width: 100%;
+  }
   label {
     font-family: $ubuntu;
     .validation-error {
       display: none;
     }
   }
-  input, select {
+  input, select, textarea {
     display: inline-block;
     padding: 5px 10px;
-    border: 1px solid $azul;
+    border: 2px solid rgba($azul,0.5);
     @include border-radius(5px);
-    @include box-shadow(-1px, -1px, 2px, 0, $gris_claro, 1, inset);
+    @include box-shadow(0, 0, 0px, 0, $gris_claro);
+  }
+  select {
+    background-color: $white;
   }
   .field {
     margin-bottom: 10px;
@@ -41,8 +74,8 @@ form {
     textarea {
       width: 69%;
     }
-  }
-  .validation-error {
+  }  
+	.validation-error {
     display: block;
     margin-bottom: 15px;
     background-color: $rojo;
@@ -50,30 +83,5 @@ form {
     padding: 5px;
     color: white;
     margin-top: -16px;
-  }
-}
-
-#error_explanation {
-  margin-bottom: 20px;
-  h2 {
-    display: none;
-  }
-  ul {
-    margin-left: 10px;
-    list-style-type: disc;
-    li {
-      list-style-type: disc;
-    }
-  }
-}
-.session_form, .register_form, .edit_form {
-  margin-top: 0px;
-  padding: 20px 20px 40px;
-  @include background-gradient(#ececec,#fff);
-  @include box-shadow(0,0,3px,0,#cacaca);
-}
-.edit_form {
-  .edit_user {
-    
   }
 }

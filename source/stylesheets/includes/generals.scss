@@ -30,6 +30,10 @@ div, section, article, footer, header {
   }
 }
 
+.subtitle {
+  font-size: 0.8em;
+}
+
 @for $i from 0 through 10 {
   .mt#{$i*10} { margin-top: $i * 10px; }
   .mr#{$i*10} { margin-right: $i * 10px; }
