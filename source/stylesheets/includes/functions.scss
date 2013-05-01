@@ -9,7 +9,7 @@
 }
 
 @mixin offset-calc($number) {
-  margin-left: $column-width * $number + ($column_gutter * $number) + 20px;
+  margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
 }
 
 @mixin margin-creation($direction, $time) {
@@ -221,4 +221,36 @@
   border: $color $size/10 solid;
   @include box-shadow(0,0,$size/10,0,$shadow);
   @include border-radius($radius);
+}
+
+@mixin column-system-create($column_width, $column_number, $column_gutter) {
+  .container {
+    width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
+    margin: 0 auto;
+    position: relative;
+  }
+  .grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12,.grid13,.grid14,
+  .grid15,.grid16,.grid17,.grid18,.grid19,.grid20,.grid21,.grid22,.grid23,.grid24 {
+    float: left;
+    margin-left: $column_gutter;
+  }
+  @for $i from 1 through $column_number {
+    .grid#{$i} { @include column-calc($i); }
+    .offset#{$i} { @include offset-calc($i);}
+  }
+  .row {
+    margin-left: $column_gutter * -1;
+    @include clearfix;
+  }
+}
+
+@mixin headlines-create($proportion:$text_proportion, $base: 1em) {
+  @for $i from 1 through 6 {
+    h#{$i} { 
+      @include text-proportion($i, $proportion, $base);
+      font-weight: $font_normal;
+      font-family: $open_sans;
+      margin-bottom: 20px;
+    }
+  }
 }
