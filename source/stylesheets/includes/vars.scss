@@ -61,3 +61,11 @@ $modal_left: -1*($modal_width/2);
 // Redes Sociales
 $alto_red_social: 45px;
 $ancho_red_social: 245px;
+
+// Responsive
+
+$large-pc: "only screen and (min-width: 1440px)";
+$medium-pc: "only screen and (min-width: 1200px) and (max-width: 1439px)";
+$pc: "only screen and (min-width: 940px) and (max-width: 1199px)";
+$tablet-portrait: "only screen and (min-width: 720px) and (max-width: 939px)";
+$phone: "only screen and (max-width: 719px)";
