@@ -1,7 +1,7 @@
 @import "vars";
 
 @mixin text-proportion($size, $proportion:$text_proportion, $base: 1em) {
-  font-size:$base*$proportion*(6-$size)+1em;
+  font-size:$base*$proportion*(6-$size) + $base;
 }
 
 @mixin column-calc($number) {
@@ -243,3 +243,19 @@
     @include clearfix;
   }
 }
+
+@mixin headlines-create($proportion:$text_proportion, $base: 1em) {
+	@for $i from 1 through 6 {
+		h#{$i} { 
+			@include text-proportion($i, $proportion, $base);
+			font-weight: $font_normal;
+			font-family: $open_sans;
+			margin-bottom: 20px;
+		}
+	}
+}
+
+
+
+
+

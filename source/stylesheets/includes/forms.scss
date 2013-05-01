@@ -40,7 +40,7 @@ form {
   }
   input, select, textarea {
     display: inline-block;
-    padding: 5px 10px;
+    padding: 10px 15px;
     border: 2px solid rgba($azul,0.5);
     @include border-radius(5px);
     @include box-shadow(0, 0, 0px, 0, $gris_claro);
