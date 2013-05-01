@@ -7,6 +7,7 @@
     <title>Octagon Framework - Escuela Web</title>
     <link href='http://fonts.googleapis.com/css?family=Dosis:400,600|Ubuntu:300,400,700|Open+Sans:400,300,600|Chivo:400,900' rel='stylesheet' type='text/css' />
     <link href="stylesheets/octagon.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/octagon-responsive.css" media="screen" rel="stylesheet" type="text/css" />
     <!--[if lt IE 9]>
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
@@ -1264,10 +1265,23 @@
   </header>
   <div class='row mt60'>
     <div class='grid4'>
-      <form>
+      <form class='form-gradiente'>
         <div class='field'>
           <label>Campo de input</label>
-          <input name='texto' type='text' />
+          <input class='mt10' name='texto' placeholder='Campo de Texto' type='text' />
+        </div>
+      </form>
+    </div>
+    <div class='grid4'>
+      <form class='form-gradiente'>
+        <div class='field'>
+          <label>Campo de select</label>
+          <select class='block full mt10' name='select'>
+            <option value='Opcion 1'>Opcion 1</option>
+            <option value='Opcion 2'>Opcion 2</option>
+            <option value='Opcion 3'>Opcion 3</option>
+            <option value='Opcion 4'>Opcion 4</option>
+          </select>
         </div>
       </form>
     </div>
@@ -1295,7 +1309,7 @@
     </section>
     <section class='mt40' id='escuelaweb'>
       <header>
-        <h1 class='center'>Acerca de Escuela Web</h1>
+        <h1 class='center'>Acerca Escuela Web</h1>
       </header>
       <div class='escuelaweb-content text-big center'>
         <p>
