@@ -1,0 +1,29 @@
+@import "functions";
+
+.notification_zone {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1000;
+  padding-top: $menu_height + 5px;
+  padding-bottom: 5px;
+  &.alert {
+    background-color: $rojo;
+    color: white;
+  }
+  &.notice {
+    background-color: $naranja;
+    color: black;
+  }
+  &.success {
+    background-color: $azul;
+    color: white;
+  }
+  .close_flash {
+    position: absolute;
+    right: 0;
+    top: -3px;
+    font-size: 25px;
+    cursor: pointer;
+  }
+}

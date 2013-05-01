@@ -1,6 +1,29 @@
 @import "functions";
 
-@include column-system-create($column_width , $column_number, $column_gutter);
+.container {
+  width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
+  margin: 0 auto;
+  position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12,.grid13,.grid14,
+.grid15,.grid16,.grid17,.grid18,.grid19,.grid20,.grid21,.grid22,.grid23,.grid24 {
+  float: left;
+  margin-left: $column_gutter;
+  @include box-sizing(border-box);
+}
+
+@for $i from 1 through $column_number {
+  .grid#{$i} { @include column-calc($i); }
+  .offset#{$i} { @include offset-calc($i);}
+}
+
+.row {
+  margin-left: $column_gutter * -1;
+  @include clearfix;
+}
 
 .clear {
   clear: both;

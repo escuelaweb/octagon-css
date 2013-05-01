@@ -3,8 +3,8 @@
 #content {
   position: relative;
   margin-top: 10px;
-  padding: 0px 20px 60px 20px;
   background-color: white;
+  padding-bottom: 60px;
   @include box-shadow(0,0,5px,0,$gris,0.5);
   @include box-sizing(content-box);
   &.contents.show {
@@ -27,12 +27,12 @@
 .ribbon-title,
 .titulo-cinta, 
 .titulo_cinta {
-  width: 102%;
+  width: 100%;
   background-color: $gris;
   color: white;
-  padding: 10px 25px;
+  padding: 10px 35px;
   position: relative;
-  left: -34px;
+  left: -35px;
 	font-weight: 300;
   @include box-shadow(0, 4px, 0, 0, $azul, 1);
   &:before, .arrow-cinta-left {

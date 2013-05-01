@@ -15,10 +15,6 @@ html {
   bottom: 0;
 }
 
-div, section, article, footer, header {
-  @include box-sizing(border-box);
-}
-
 /* Headlines Font-size definition */
 /* ---------------------------------------------------------------- */
 @for $i from 1 through 6 {

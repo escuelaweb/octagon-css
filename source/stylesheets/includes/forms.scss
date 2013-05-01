@@ -21,11 +21,14 @@
   }
 }
 
-form {
+.form-background {
   padding: 20px;
   @include border-radius(10px);
   @include background-gradient(lighten($gris_claro,25%), $white);
   @include box-shadow(0 1px 2px 0 rgba($azul,0.5));
+}
+
+form {
   .block {
     display: block;
   }
@@ -34,16 +37,22 @@ form {
   }
   label {
     font-family: $ubuntu;
+    padding-top: 10px;
+    padding-bottom: 10px;
     .validation-error {
       display: none;
     }
   }
   input, select, textarea {
     display: inline-block;
-    padding: 10px 15px;
+    padding: 5px 10px;
     border: 2px solid rgba($azul,0.5);
     @include border-radius(5px);
     @include box-shadow(0, 0, 0px, 0, $gris_claro);
+    @include box-sizing(content-box);
+    &:focus {
+      
+    }
   }
   select {
     background-color: $white;
@@ -75,7 +84,7 @@ form {
       width: 69%;
     }
   }  
-	.validation-error {
+  .validation-error {
     display: block;
     margin-bottom: 15px;
     background-color: $rojo;
