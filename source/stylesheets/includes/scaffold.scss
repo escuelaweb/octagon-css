@@ -1,0 +1,107 @@
+@import "functions";
+
+// Estilos del Body
+body {
+	font-family: $ubuntu;
+	font-weight: $font_normal;
+	font-size: $font_base;
+	background-color: $white;
+	color: $gris_oscuro;
+}
+
+@import "header";
+
+/* Content */
+/* ---------------------------------------------------------------- */
+
+@import "content";
+
+/*----------------------------------------------------------------
+Estilos de modulos de contenido
+-----------------------------------------------------------------*/
+
+@import "modules";  
+
+/*----------------------------------------------------------------
+Estilos de notificaciones
+-----------------------------------------------------------------*/
+
+@import "notifications";
+
+/* Footer */
+/* ---------------------------------------------------------------- */
+#footer {
+	padding: 0;
+	p {
+		font-size: 1em;
+	}
+	.contacto {
+		p {
+			margin-top: 0;
+		}
+	}
+	.upperfooter {
+		padding-top: 30px;
+		padding-bottom: 30px;
+		position: relative;
+		z-index: 1;
+		margin-top: -5px;
+		min-height: 160px;
+		border-top: 1px solid #E0E0E0;
+		border-bottom: 1px solid #E0E0E0;
+		box-shadow: inset 0 -1px 0 white;
+		background-color: $footer_background;
+		ul {
+			li {
+				margin-bottom: 5px;
+				a{
+					font-size: 0.9em;
+					text-decoration: none;
+				}
+			}
+		}
+		.twtr-hd {
+			display: none;
+		}
+		.twtr-ft {
+			display: none;
+		}
+		.twtr-tweet-wrap {
+			padding: 10px 0 0 0;
+		}
+		.twtr-tweet-text {
+			padding-bottom: 10px;
+		}
+		.twtr-bd {
+			font-family: $ubuntu;
+			a {
+				font-family: $ubuntu;
+			}
+		}
+	}
+	.downfooter {
+		padding: 10px 0;
+		font-size: 0.9em;
+		color: darken($gris_claro, 30%);
+	}
+  .color-row li {
+	  margin-left: 0 !important;
+	  float: left;
+	  position: relative;
+	  list-style-type: none;
+	  width: 50px;
+	  height: 10px;
+	  display: block;
+	  -webkit-box-flex: 1;
+	  -moz-box-flex: 1;
+	  box-flex: 1;
+	}
+	.logofooter {
+		width: 180px;
+		margin-top: 40px;
+		margin-left: 45px;
+		img {
+			width: 120px;
+		}
+	}
+}

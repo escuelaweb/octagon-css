@@ -1,0 +1,13 @@
+//= require_tree "./plugins"
+//= require_tree .
+
+(function($, window, document, undefined) {
+  
+  $(function() {
+    $('pre').each(function(i, e) { hljs.highlightBlock(e) });
+    $(".menu.scroller a").smoothscrolling();
+  })
+
+})(window.jQuery, window, document);
+
+

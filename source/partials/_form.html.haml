@@ -1,0 +1,20 @@
+%section#fomularios.grid12
+  %header
+    %h1.ribbon-title
+      Estilos para Formularios
+  .row.mt60
+    .grid4
+      %form.form-gradiente
+        .field
+          %label Campo de input
+          %input.mt10{ :type => "text", :name => "texto", :placeholder => "Campo de Texto" }
+    .grid4
+      %form.form-gradiente
+        .field
+          %label Campo de select
+          %select.block.full.mt10{ :name => "select" }
+            %option{:value => "Opcion 1"} Opcion 1 
+            %option{:value => "Opcion 2"} Opcion 2 
+            %option{:value => "Opcion 3"} Opcion 3  
+            %option{:value => "Opcion 4"} Opcion 4  
+  

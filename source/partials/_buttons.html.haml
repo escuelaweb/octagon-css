@@ -1,0 +1,89 @@
+%section#buttons.grid12
+  %header
+    %h1.titulo-cinta
+      Botones
+  .row
+    %section.grid4
+      %header
+        %h4 Tipos de Botones
+      .mt10
+        %a.btn{:href => "#"} Boton normal
+      .mt10
+        %a.btn.btn-accept{:href => "#"} Boton de accept
+      .mt10
+        %a.btn.btn-action{:href => "#"} Boton de actions
+      .mt10
+        %a.btn.btn-error{:href => "#"} Boton de error
+      .mt10
+        %a.btn.btn-warning{:href => "#"} Boton de warning
+    %section.grid4
+      %header
+        %h4 Variaciones de Tamano
+      .mt10
+        %a.btn.btn-p{:href => "#"} Boton pequeno
+      .mt10
+        %a.btn{:href => "#"} Boton normal
+      .mt10
+        %a.btn.btn-m{:href => "#"} Boton medium
+      .mt10
+        %a.btn.btn-g{:href => "#"} Boton Grande
+      .mt10
+        %a.btn.btn-g.anchor{:href => "#"} Boton Grande
+      .mt10
+        %a.btn.anchor.center{:href => "#"} Boton full width
+    %section.grid4
+      %header
+        %h4 Botones con Iconos
+      .mt10
+        %a.btn.btn-wicon{:href => "#"}
+          Boton con Icono a la derecha
+          %span.btn-wicon-icon.icons [
+      .mt10
+        %a.btn.btn-m.btn-wicon{:href => "#"}
+          Boton medium
+          %span.btn-wicon-icon.icons '
+      .mt10
+        %a.btn.btn-g.btn-wicon.btn-rojo{:href => "#"}
+          Boton Grande
+          %span.btn-wicon-icon.icons.btn-wicon-left a
+      .mt10
+        %a.btn.btn-wicon.btn-morado.btn-wicon-left{:href => "#"}
+          Boton con icono a la izquierda
+          %span.btn-wicon-icon.icons a
+      .mt10
+        %a.btn.btn-m.btn-wicon.btn-morado.btn-wicon-left{:href => "#"}
+          icono a la izquierda
+          %span.btn-wicon-icon.icons a
+      .mt10
+        %a.btn.btn-g.btn-wicon.btn-morado.btn-wicon-left{:href => "#"}
+          icono a la izquierda
+          %span.btn-wicon-icon.icons a
+  / .row
+  .row
+    %h4.grid12.mt40 Botones de Redes Sociales
+    .mt10.grid3
+      %a.btn.btn-wicon.btn-google.btn-wicon-left.anchor{:href => "https://plus.google.com/communities/102543297891868589254", :target => "_blank"}
+        Google
+        %span.btn-wicon-icon.icons .
+    .mt10.grid3
+      %a.btn.btn-wicon.btn-twitter.btn-wicon-left.anchor{:href => "http://www.twitter.com/escuelawebve", :target => "_blank"}
+        Twitter
+        %span.btn-wicon-icon.icons 4
+    .mt10.grid3
+      %a.btn.btn-wicon.btn-facebook.btn-wicon-left.anchor{:href => "http://www.facebook.com/escuelaweb", :target => "_blank"}
+        Facebook
+        %span.btn-wicon-icon.icons 7
+    .mt10.grid3
+      %a.btn.btn-wicon.btn-github.btn-wicon-left.anchor{:href => "https://www.github.com/escuelaweb", :target => "_blank"}
+        Github
+        %span.btn-wicon-icon.icons p
+  .row.mt40
+    .grid4
+      %h4 ¿Como usar los botones?
+      %p
+        Octagon cuenta con un sistema ed botones donde tenemos variaciones de colores, tamaños y inclusion de iconos dentro del boton.
+      %p
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Laboriosam, ex amet minus ullam asperiores! Dolorem minima quam officiis mollitia rerum! Repellendus, odio illo vitae explicabo illum ipsam itaque modi ea!
+    .grid8
+      = partial "examples/buttons"
+  / .row

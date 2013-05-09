@@ -1,0 +1,94 @@
+@import "functions";
+
+// Features Module
+.module-f {
+  margin-bottom: 20px;
+  //border-bottom-width: $border_thin;
+  //border-bottom-style: solid;
+  @include box-sizing(border-box);
+  //@include box-shadow(2px,0,0,0,$gris_sombra,0.4);
+  .module-f-icon {
+    float: left;
+    width: 25%;
+    text-align: center;
+    font-size: 40px;
+    margin-top: 15px;
+    color: $gris_oscuro;
+    @include text-shadow(0,-1px,0,$gris_sombra);
+  }
+  .module-f-text {
+    float: left;
+    width: 75%;
+    p {
+      margin-top: 0;
+    }
+  }
+  .module-f-title {
+    display: inline;
+    color: $rojo;
+    font-size: $font_base + 1;
+    margin: 0;
+    font-weight: bold;
+  }
+  &:nth-child(1n) {
+    //border-bottom-color: $morado;
+  }
+  &:nth-child(3n+2) {
+    //border-bottom-color: $verde;
+  }
+  &:nth-child(3n+3) {
+    @include box-shadow(0,0,0,0,#ffffff,0);
+    //border-bottom-color: $rojo;
+  }
+}
+
+// Module center
+.module-c {
+  text-align: center;
+  .module-c-title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    color: $azul;
+  }
+  .module-c-icon {
+    font-size: 44px;
+    line-height: 104px;
+    height: 100px;
+    width: 100px;
+    position: relative;
+    background-color: $morado;
+    margin: 0 auto;
+    //border: $white $border_medium solid;
+    // @include text-shadow(-1px -1px 0 darken($azul,20%));
+    @include border-radius(50px);
+  }
+  .module-c-content {
+    p {
+      margin-top: 0;
+    }
+  }
+}
+// Module with thumbnail
+
+.module-t {
+  margin-top: 20px;
+  margin-bottom: 20px;
+  @include clearfix;
+  .module-t-image {
+    width: 30%;
+    float: left;
+  }
+  .module-t-detail {
+    width: 70%;
+    float: left;
+    padding-left: 10px;
+  }
+  .module-t-title {
+  }
+  .module-t-excerpt {
+    .module-t-et {
+    }
+  }
+  &:hover {
+  }
+}

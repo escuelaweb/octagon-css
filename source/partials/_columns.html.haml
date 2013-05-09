@@ -1,0 +1,77 @@
+%section#sistema-de-columnas.grid12
+  %header
+    %h1.titulo-cinta.naranja
+      Sistema de Columnas
+  %div
+    %p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro, eum maiores nesciunt facilis assumenda? Consequatur, officia, placeat, magnam, eos minima tenetur animi adipisci excepturi quia ea odio necessitatibus dolorem aliquam! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Rerum, beatae, vero, id, labore atque saepe suscipit eius quisquam provident necessitatibus deserunt sapiente quis iure enim minima ipsa corporis modi dolores.
+  .row
+    .grid12.visible-grid
+      .row
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+        .grid1 .grid1
+    .grid12.visible-grid
+      .row
+        .grid2 .grid2
+        .grid2 .grid2
+        .grid2 .grid2
+        .grid2 .grid2
+        .grid2 .grid2
+        .grid2 .grid2
+    .grid12.visible-grid
+      .row
+        .grid4 4 Columnas (.grid4)
+        .grid4 4 Columnas (.grid4)
+        .grid4 4 Columnas (.grid4)
+    .grid12.visible-grid
+      .row
+        .grid3 3 Columnas (.grid3)
+        .grid3 3 Columnas (.grid3)
+        .grid3 3 Columnas (.grid3)
+        .grid3 3 Columnas (.grid3)
+    .grid12.visible-grid
+      .row
+        .grid4 4 Columnas (.grid4)
+        .grid8 8 Columnas (.grid8)
+    .grid12.visible-grid
+      .row
+        .grid9 9 Columnas (.grid9)
+        .grid3 3 Columnas (.grid3)
+    .grid12.visible-grid
+      .row
+        .grid12 12 Columnas (.grid12)
+    .grid12.visible-grid
+      .row
+        .grid6.offset3 .grid6.offset3
+        .grid3 .grid3
+  .row.mt30
+    .grid4
+      %h4 ¿Como usar el sistema de columnas?
+      %p
+        El sistema de columna de octogon esta basado en 12 columnas y un ancho de total de 940px en estado normal, es decir, sin aplicar estilos Responsive.
+      %p
+        Las clases para el manejo del grid son:
+      %ul.mt0.pt0
+        %li
+          %b> .container
+          \: que es la clase que centra el contenido y le coloca el ancho a 940px
+        %li
+          %b> .row
+          \: se encarga de iniciar la el sistema anidado de columnas
+        %li
+          %b> .grid[x]
+          \: define el ancho en columnas de un div, section, article, etc.
+        %li
+          %b> .offset[x]
+          \: coloca un margen a la izquierda de cierta cantidad de columnas.
+    .grid8
+      = partial "examples/columns"
