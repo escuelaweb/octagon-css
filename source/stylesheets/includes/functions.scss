@@ -4,14 +4,6 @@
   font-size:$base*$proportion*(6-$size)+1em;
 }
 
-@mixin column-calc($number) {
-  width: $column-width * $number + ($column_gutter * ($number - 1));
-}
-
-@mixin offset-calc($number) {
-  margin-left: $column-width * $number + ($column_gutter * $number) + 20px;
-}
-
 @mixin margin-creation($direction, $time) {
   margin-#{$direction}: 10px * $time;
 }
@@ -227,6 +219,14 @@
   border: $color $size/10 solid;
   @include box-shadow(0,0,$size/10,0,$shadow);
   @include border-radius($radius);
+}
+
+@mixin column-calc($number) {
+  width: $column-width * $number + ($column_gutter * ($number - 1));
+}
+
+@mixin offset-calc($number) {
+  margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
 }
 
 @mixin column-system-create($column_width, $column_number, $column_gutter) {
