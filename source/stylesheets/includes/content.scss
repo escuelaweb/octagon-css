@@ -155,6 +155,7 @@
         height: 60px;
         line-height: 64px;
         font-size: 28px;
+        background-color: $azul;
         @include text-shadow(-1px -1px 0 rgba($black, 0.4));
         @include border-radius(30px);
         @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($azul, 10%));
