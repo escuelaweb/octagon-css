@@ -91,6 +91,10 @@ form {
     width: 88%;
     padding: 5px;
     color: white;
+<<<<<<< HEAD
+    margin-top: -16px;
+=======
     margin-top: -4px;
+>>>>>>> escuelaweb-dev
   }
 }

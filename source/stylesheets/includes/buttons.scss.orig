@@ -8,8 +8,11 @@
   }
   &.anchor {
     display: block;
+<<<<<<< HEAD
+=======
     margin-left: 0;
     margin-right: 0;
+>>>>>>> escuelaweb-dev
   }
 }
 // Variaciones de color
@@ -51,6 +54,7 @@
     @include boton-hover($twitter_color);
   }
 }
+
 // Variaciones de Tamano 
 .btn {
   &.btn-p {
@@ -117,113 +121,6 @@
   }
 }
 
-// Botones con iconos
-
-.btn {
-  &.btn-wicon {
-    text-align: left;
-    padding-right: 3.4em;
-    .btn-wicon-icon {
-      font-size: 1.2em;
-      display: block;
-      line-height: 1.9em;
-      position: absolute;
-      right: 0.55em;
-      top: 0;
-    }
-    &:after {
-      content: "";
-      display: block;
-      height: 100%;
-      position: absolute;
-      right: 2.4em;
-      top: 0;
-      border-right: lighten($azul, 10%) $border-thin solid;
-      border-left: darken($azul, 10%) $border-thin solid;
-    }
-    &:hover:after {
-      border-right: lighten($azul, 0%) $border-thin solid;
-      border-left: darken($azul, 30%) $border-thin solid;
-    }
-  }
-  &.btn-wicon.btn-wicon-left {
-    padding-right: 2em;
-    padding-left: 3.4em;
-    .btn-wicon-icon {
-      right: auto;
-      left: 0.6em;
-    }
-    &:after { 
-      right: auto;
-      left: 2.4em;
-    }
-  }
-}
-// Variaciones de Tamano 
-.btn {
-  &.btn-p {
-    font-size: 0.8em;
-    &.btn-wicon { }
-  }
-  &.btn-m {
-    font-size: 1.2em;
-    padding-top: 0.6em;
-    padding-bottom: 0.6em;
-    &.btn-wicon {
-      .btn-wicon-icon { 
-        font-size: 1.1em;
-        right: 0.6em;
-        line-height: 2.1em;
-      }
-      &:after { 
-        right: 2.3em
-      }
-      &.btn-wicon-left {
-        .btn-wicon-icon {
-          left: 0.55em;
-        }
-        &:after { 
-          left: 2.2em
-        }
-      }
-    }
-  }
-  &.btn-g {
-    font-size: 1.3em;
-    padding-top: 0.9em;
-    padding-bottom: 0.9em;
-    padding-right: 1em;
-    &.btn-wicon {
-      .btn-wicon-icon { 
-        font-size: 1.3em;
-        right: 0.5em;
-        line-height: 2.1em;
-      }
-      &:after { 
-        right: 2.5em
-      }
-      &.btn-wicon-left {
-        .btn-wicon-icon {
-          left: 0.55em;
-        }
-        &:after { 
-          left: 2.6em
-        }
-      }
-    }
-  }
-  &.btn-h {
-    font-size: 1.4em;
-    padding: 1em 0.8em;
-    &.btn-wicon {
-      .btn-wicon-icon { 
-        font-size: 1.7em;
-        right: 0.25em;
-        line-height: 1.9em;
-      }
-    }
-  }
-}
 // Botones con iconos
 
 .btn {

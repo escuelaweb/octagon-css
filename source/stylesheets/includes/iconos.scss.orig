@@ -12,41 +12,60 @@
 		font-size: 14px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.3em;
+<<<<<<< HEAD
+			line-height: 2em;
+			width: 40px;
+			height: 40px;
+=======
+			line-height: 1.2em;
 			width: 1.2em;
 			height: 1.2em;
+>>>>>>> escuelaweb-dev
 		}
 	}
 	&.icons-medium {
 		font-size: 18px;
 		line-height: 1.2em;
 		&.icons-rounded {
+<<<<<<< HEAD
+			line-height: 2.2em;
+			width: 2.4em;
+			height: 2.4em;
+=======
 			line-height: 1.5em;
-			width: 1.4em;
-			height: 1.4em;
+			width: 1.5em;
+			height: 1.5em;
+>>>>>>> escuelaweb-dev
 		}
 	}
 	&.icons-big {
 		font-size: 22px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.9em;
-			width: 1.8em;
-			height: 1.8em;
+<<<<<<< HEAD
+			line-height: 52px;
+			width: 56px;
+			height: 56px;
+=======
+			line-height: 2.2em;
+			width: 2.2em;
+			height: 2.2em;
+>>>>>>> escuelaweb-dev
 		}
 	}
 	&.icons-huge {
 		font-size: 30px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 2.2em;
-			width: 2.0em;
-			height: 2.0em;
+			line-height: 2em;
 		}
 	}
 	&.icons-rounded {
+<<<<<<< HEAD
+=======
 		display: inline-block;
 		text-align: center;
+>>>>>>> escuelaweb-dev
 		background-color: $gris_claro;
 		height: 2.2em;
 		width: 2.2em;

@@ -9,7 +9,11 @@
 }
 
 @mixin offset-calc($number) {
+<<<<<<< HEAD
+  margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
+=======
   margin-left: $column-width * $number + ($column_gutter * $number) + 20px;
+>>>>>>> escuelaweb-dev
 }
 
 @mixin margin-creation($direction, $time) {
@@ -43,12 +47,15 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$finish}',GradientType=0 );
 }
 
+<<<<<<< HEAD
+=======
 @mixin background-size($params) {
   -webkit-background-size: $params;
   -moz-background-size: $params;
   background-size: $params;
 }
 
+>>>>>>> escuelaweb-dev
   // $x        Posicion en X
   // $y        Posicion en X
   // $blur     Distancia de difuminacion
@@ -228,6 +235,7 @@
   @include box-shadow(0,0,$size/10,0,$shadow);
   @include border-radius($radius);
 }
+<<<<<<< HEAD
 
 @mixin column-system-create($column_width, $column_number, $column_gutter) {
   .container {
@@ -260,3 +268,5 @@
     }
   }
 }
+=======
+>>>>>>> escuelaweb-dev

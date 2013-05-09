@@ -1,6 +1,10 @@
 @import "functions";
 
+<<<<<<< HEAD
+#content {
+=======
 #content, .main-content {
+>>>>>>> escuelaweb-dev
   position: relative;
   margin-top: 10px;
   background-color: white;
@@ -71,7 +75,10 @@
     color: $gris_oscuro;
     border-top: $border_thin $gris_claro solid;
     &.ribbon-wicon .ribbon-icon.icons {
+<<<<<<< HEAD
+=======
       background-color: $azul;
+>>>>>>> escuelaweb-dev
       color: white;
     }
   }
