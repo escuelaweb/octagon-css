@@ -12,22 +12,23 @@
 		font-size: 14px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.3em;
-			width: 1.2em;
-			height: 1.2em;
 		}
 	}
 	&.icons-medium {
 		font-size: 18px;
 		line-height: 1.2em;
 		&.icons-rounded {
-			line-height: 1.5em;
-			width: 1.4em;
-			height: 1.4em;
 		}
 	}
 	&.icons-big {
 		font-size: 22px;
+		line-height: 1.2em;
+		&.icons-rounded {
+			line-height: 2.1em;
+		}
+	}
+	&.icons-huge {
+		font-size: 30px;
 		line-height: 1.2em;
 		&.icons-rounded {
 			line-height: 1.9em;
@@ -35,22 +36,13 @@
 			height: 1.8em;
 		}
 	}
-	&.icons-huge {
-		font-size: 30px;
-		line-height: 1.2em;
-		&.icons-rounded {
-			line-height: 2.2em;
-			width: 2.0em;
-			height: 2.0em;
-		}
-	}
 	&.icons-rounded {
 		display: inline-block;
 		text-align: center;
 		background-color: $gris_claro;
-		height: 2.2em;
-		width: 2.2em;
-		line-height: 2em;
+		height: 2em;
+		width: 2em;
+		line-height: 2.1em;
 		color: $white;
 		margin-left: auto;
 		margin-right: auto;
