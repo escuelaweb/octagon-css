@@ -1,36 +1,13 @@
 @import "functions";
 
-.container {
-  width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
-  margin: 0 auto;
-  position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
-}
-
-.grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12,.grid13,.grid14,
-.grid15,.grid16,.grid17,.grid18,.grid19,.grid20,.grid21,.grid22,.grid23,.grid24 {
-  float: left;
-  margin-left: $column_gutter;
-  @include box-sizing(border-box);
-}
-
-@for $i from 1 through $column_number {
-  .grid#{$i} { @include column-calc($i); }
-  .offset#{$i} { @include offset-calc($i);}
-}
-
-.row {
-  margin-left: $column_gutter * -1;
-  @include clearfix;
-}
+@include column-system-create($large_display,$column_number, $column_gutter);
 
 .clear {
   clear: both;
 }
 
 .right {
-  
+  float: right;  
   text-align: right;
 }
 
@@ -59,22 +36,15 @@
   float: right;
 }
 
-// [class*="grid"] {
-//   &.right {
-//     float: right;
-//   }
-//   &.left {
-//     float: left;
-//   }
-// }
-
-.visible-grid {
-  padding: 10px 0;
+.visible-grid { 
   background-color: lighten($gris_claro,20%);
   margin-top: 10px;
   margin-bottom: 10px;
   [class*="grid"] {
-    padding: 10px 0;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-left: 1px solid $gris_claro;
+    border-right: 1px solid $gris_claro;
     text-align: center;
     background-color: lighten($gris_claro,10%);
   }

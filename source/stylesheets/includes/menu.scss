@@ -185,3 +185,13 @@ aside nav {
 		}
 	}
 }
+
+.menu.bar-menu {
+  background-color: $black;
+  a {
+    color: $white;
+    &:hover {
+      color: $azul;
+    }
+  }
+}

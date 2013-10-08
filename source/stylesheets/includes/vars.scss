@@ -41,7 +41,7 @@ $font_normal    : 400;
 $font_bold      : 700;
 
 // Definicion del Grid 
-$column_width : 60px;
+//$column_width : 60px;
 $column_number: 12;
 $column_gutter: 20px;
 // Menu 
@@ -64,8 +64,12 @@ $ancho_red_social: 245px;
 
 // Responsive
 
-$large-pc: "only screen and (min-width: 1440px)";
-$medium-pc: "only screen and (min-width: 1200px) and (max-width: 1439px)";
-$pc: "only screen and (min-width: 940px) and (max-width: 1199px)";
-$tablet-portrait: "only screen and (min-width: 720px) and (max-width: 939px)";
-$phone: "only screen and (max-width: 719px)";
+$large_display: 1440px;
+$medium_display: 1200px;
+$normal_display: 940px;
+$tablet_display: 720px;
+$phone_display: 320px;
+$media_large_pc: "only screen and (min-width: 1201px)";
+$media_pc: "only screen and (min-width: 941px) and (max-width: 1200px)";
+$media_tablet_portrait: "only screen and (min-width: 721px) and (max-width: 940px)";
+$media_phone: "only screen and (max-width: 720px)";

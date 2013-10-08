@@ -222,30 +222,36 @@
 }
 
 @mixin column-calc($number) {
-  width: $column-width * $number + ($column_gutter * ($number - 1));
+  width: percentage($number/ $column_number);
+  //width: $column-width * $number + ($column_gutter * ($number - 1));
 }
 
 @mixin offset-calc($number) {
-  margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
+  margin-left: percentage($number/$column_number);
+  //margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
 }
 
-@mixin column-system-create($column_width, $column_number, $column_gutter) {
+@mixin column-system-create($max_width, $column_number, $column_gutter, $prefix:"") {
   .container {
-    width: ($column_width * $column_number) + ($column_gutter * $column_number) - $column_gutter;
+    width: 90%;
+    max-width: $max_width;
     margin: 0 auto;
-    position: relative;
+    padding: 0 $column_gutter/2;
   }
-  .grid1,.grid2,.grid3,.grid4,.grid5,.grid6,.grid7,.grid8,.grid9,.grid10,.grid11,.grid12,.grid13,.grid14,
-  .grid15,.grid16,.grid17,.grid18,.grid19,.grid20,.grid21,.grid22,.grid23,.grid24 {
+  .grid#{$prefix}1,.grid#{$prefix}2,.grid#{$prefix}3,.grid#{$prefix}4,.grid#{$prefix}5,.grid#{$prefix}6,.grid#{$prefix}7,.grid#{$prefix}8,.grid#{$prefix}9,.grid#{$prefix}10,.grid#{$prefix}11,.grid#{$prefix}12,.grid#{$prefix}13,.grid#{$prefix}14,
+  .grid#{$prefix}15,.grid#{$prefix}16,.grid#{$prefix}17,.grid#{$prefix}18,.grid#{$prefix}19,.grid#{$prefix}20,.grid#{$prefix}21,.grid#{$prefix}22,.grid#{$prefix}23,.grid#{$prefix}24 {
     float: left;
-    margin-left: $column_gutter;
+    min-height: 1px;
+    padding: 0 ($column_gutter/2);
+    position: relative;
+    @include box-sizing(border-box);
   }
   @for $i from 1 through $column_number {
-    .grid#{$i} { @include column-calc($i); }
-    .offset#{$i} { @include offset-calc($i);}
+    .grid#{$prefix}#{$i} { @include column-calc($i); }
+    .offset#{$prefix}#{$i} { @include offset-calc($i);}
   }
   .row {
-    margin-left: $column_gutter * -1;
+    margin: 0 ($column_gutter/2 * -1);
     @include clearfix;
   }
 }
