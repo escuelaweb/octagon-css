@@ -1,13 +1,33 @@
 
 @import "./includes/functions";
 
-// Estilos para resoluciones mayores a 1200px
-@media #{$media_large_pc} {
-	// Vars definition
-	$max_width : $large_display;
-	$column_gutter: 30px;
-  @include column-system-create($max_width, $column_number, $column_gutter);
+// Estilos para resoluciones menores a 720px
+@media #{$media_phone} {
+  $max_width : $normal_display;
+  $column_gutter: 10px;
+  @include column-system-create($max_width, $column_number, $column_gutter); 
+  @include column-system-create($max_width, $column_number, $column_gutter, "xs"); 
+  @include column-system-create($max_width, $column_number, $column_gutter, "sm"); 
+  @include column-system-create($max_width, $column_number, $column_gutter, "md");
   @include column-system-create($max_width, $column_number, $column_gutter, "lg");
+  @include grid-system($large_display,$column_number, $column_gutter, "lg", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "md", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "sm", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "xs");
+}
+// Estilos para resoluciones mayores a 720px
+@media #{$media_tablet_portrait} {
+	// Vars definition
+	$max_width : $normal_display;
+	$column_gutter: 10px;
+	@include column-system-create($max_width , $column_number, $column_gutter);
+  @include column-system-create($max_width, $column_number, $column_gutter, "sm"); 
+  @include column-system-create($max_width, $column_number, $column_gutter, "md");
+  @include column-system-create($max_width, $column_number, $column_gutter, "lg");
+  @include grid-system($large_display,$column_number, $column_gutter, "lg", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "md", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "sm");
 }
 
 // Estilos para resoluciones mayores a 940px
@@ -16,22 +36,19 @@
 	$max_width : $medium_display;
 	$column_gutter: 20px;
   @include column-system-create($max_width, $column_number, $column_gutter);
-	@include column-system-create($max_width, $column_number, $column_gutter, "md");
+  @include column-system-create($max_width, $column_number, $column_gutter, "md");
+  @include column-system-create($max_width, $column_number, $column_gutter, "lg");
+  @include grid-system($large_display,$column_number, $column_gutter, "lg", "true");
+  @include grid-system($large_display,$column_number, $column_gutter, "md");
 }
 
-// Estilos para resoluciones mayores a 720px
-@media #{$media_tablet_portrait} {
+// Estilos para resoluciones mayores a 1200px
+@media #{$media_large_pc} {
 	// Vars definition
-	$column_width : $normal_display;
-	$column_gutter: 10px;
-	@include column-system-create($normal_display , $column_number, $column_gutter);
-  @include column-system-create($normal_display , $column_number, $column_gutter, "sm");
-	@include headlines-create($text_proportion, 0.6em);
-	.btn {
-		font-size: $font_base - 4px;
-		&.btn-h {
-			font-size: 1.1em;
-		}
-	}
+	$max_width : $large_display;
+	$column_gutter: 30px;
+  @include column-system-create($max_width, $column_number, $column_gutter);
+  @include column-system-create($max_width, $column_number, $column_gutter, "lg"); 
+  @include grid-system($large_display,$column_number, $column_gutter, "lg");
 }
 

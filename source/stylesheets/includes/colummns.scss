@@ -1,6 +1,7 @@
 @import "functions";
 
 @include column-system-create($large_display,$column_number, $column_gutter);
+@include grid-system($large_display,$column_number, $column_gutter);
 
 .clear {
   clear: both;
@@ -34,6 +35,14 @@
 
 .float-right {
   float: right;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
 }
 
 .visible-grid { 

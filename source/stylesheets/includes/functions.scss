@@ -175,14 +175,11 @@
   color: $color;
   margin-right: 10px;
   position: relative;
-  @include border-radius(5px);
+  @include border-radius(2px);
   //@include text-shadow(0,1px,0,#3c3c3c);
-  @include box-shadow(0,1px,1px,0,$shadow);
-  @include transition(all,400ms,ease);
+  @include box-shadow(0, 4px, 0px, 0, darken($bg, 20%));
+  @include transition(all, 400ms, ease);
   &:hover {
-    -moz-box-shadow:    none;
-    -webkit-box-shadow: none;
-    box-shadow: none;
     border: none;
     background: none;
     background-color: darken($bg,10%);
@@ -193,6 +190,9 @@
   background-color: $bg_color;
   &:hover {
     background-color: darken($bg_color,$bg-hover);
+  }
+  &:active {
+    @include box-shadow(0, 0px, 0px, 0, darken($bg_color, 20%));
   }
   &.btn-wicon {
     &:after {
@@ -221,38 +221,61 @@
   @include border-radius($radius);
 }
 
-@mixin column-calc($number) {
-  width: percentage($number/ $column_number);
+@mixin column-calc($number, $full:"false") {
+  @if $full=="false" {
+    width: percentage($number/ $column_number);
+  }
+  @else {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
   //width: $column-width * $number + ($column_gutter * ($number - 1));
 }
 
-@mixin offset-calc($number) {
-  margin-left: percentage($number/$column_number);
+@mixin offset-calc($number, $full:"false") {
+  @if $full=="false" {
+    margin-left: percentage($number/$column_number);
+  }
+  @else {
+    margin-left: 0;
+  }
   //margin-left: $column-width * $number + ($column_gutter * $number) + $column_gutter;
 }
 
 @mixin column-system-create($max_width, $column_number, $column_gutter, $prefix:"") {
-  .container {
-    width: 90%;
-    max-width: $max_width;
-    margin: 0 auto;
-    padding: 0 $column_gutter/2;
+  @if $prefix==""{
+    .container {
+      width: 90%;
+      max-width: $max_width;
+      margin: 0 auto;
+      padding: 0 $column_gutter/2;
+      position: relative;
+    }
+    .row {
+      margin: 0 ($column_gutter/2 * -1);
+      @include clearfix;
+    }
   }
-  .grid#{$prefix}1,.grid#{$prefix}2,.grid#{$prefix}3,.grid#{$prefix}4,.grid#{$prefix}5,.grid#{$prefix}6,.grid#{$prefix}7,.grid#{$prefix}8,.grid#{$prefix}9,.grid#{$prefix}10,.grid#{$prefix}11,.grid#{$prefix}12,.grid#{$prefix}13,.grid#{$prefix}14,
-  .grid#{$prefix}15,.grid#{$prefix}16,.grid#{$prefix}17,.grid#{$prefix}18,.grid#{$prefix}19,.grid#{$prefix}20,.grid#{$prefix}21,.grid#{$prefix}22,.grid#{$prefix}23,.grid#{$prefix}24 {
+  @include all-grid-create($max_width, $column_number, $column_gutter, $prefix);
+}
+@mixin all-grid-create($max_width, $column_number, $column_gutter, $prefix:"") {
+  .grid#{$prefix}1,.grid#{$prefix}2,.grid#{$prefix}3,.grid#{$prefix}4,
+  .grid#{$prefix}5,.grid#{$prefix}6,.grid#{$prefix}7,.grid#{$prefix}8,
+  .grid#{$prefix}9,.grid#{$prefix}10,.grid#{$prefix}11,.grid#{$prefix}12,
+  .grid#{$prefix}13,.grid#{$prefix}14,.grid#{$prefix}15,.grid#{$prefix}16,
+  .grid#{$prefix}17,.grid#{$prefix}18,.grid#{$prefix}19,.grid#{$prefix}20,
+  .grid#{$prefix}21,.grid#{$prefix}22,.grid#{$prefix}23,.grid#{$prefix}24 {
     float: left;
     min-height: 1px;
     padding: 0 ($column_gutter/2);
-    position: relative;
     @include box-sizing(border-box);
   }
+}
+@mixin grid-system($max_width, $column_number, $column_gutter, $prefix:"", $full:"false") {
   @for $i from 1 through $column_number {
-    .grid#{$prefix}#{$i} { @include column-calc($i); }
-    .offset#{$prefix}#{$i} { @include offset-calc($i);}
-  }
-  .row {
-    margin: 0 ($column_gutter/2 * -1);
-    @include clearfix;
+    .grid#{$prefix}#{$i} { @include column-calc($i, $full); }
+    .offset#{$prefix}#{$i} { @include offset-calc($i, $full);}
   }
 }
 
