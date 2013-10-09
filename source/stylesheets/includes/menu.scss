@@ -195,3 +195,52 @@ aside nav {
     }
   }
 }
+
+.menu.menu-responsive {
+	@media #{$media_phone} {
+		&.float-left, &.float-right {
+			@include vertical-menu($gris_oscuro);
+			position: fixed;
+			top: 45px;
+			z-index: 500;
+			height: 100%;
+		}
+		&.float-left {
+			left: -240px;
+			right: auto;
+			&.active {
+				left: 0px;
+			}
+		}
+		&.float-right {
+			left: auto;
+			right: -240px;
+			&.active {
+				right: 0px;
+			}
+		}
+	}
+}
+
+.menu-responsive-toggle {
+	display: none;
+	position: fixed;
+	border: none;
+	background: none;
+	height: $menu_height;
+	cursor: pointer;
+	background-color: $menu_oscuro;
+	&.tigger-left {
+		top: 0px;
+		left: 0px;
+		right: auto;
+	}
+	&.tigger-right {
+		top: 0px;
+		left: auto;
+		right: 0px;
+	}
+	@media #{$media_phone} {
+		display: block
+	}
+}

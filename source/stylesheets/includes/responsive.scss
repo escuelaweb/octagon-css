@@ -15,6 +15,11 @@
   @include grid-system($large_display,$column_number, $column_gutter, "sm", "true");
   @include grid-system($large_display,$column_number, $column_gutter, "", "true");
   @include grid-system($large_display,$column_number, $column_gutter, "xs");
+  .header {
+    .divisor{
+      display: none;
+    }
+  }
 }
 // Estilos para resoluciones mayores a 720px
 @media #{$media_tablet_portrait} {
