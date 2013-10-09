@@ -199,7 +199,7 @@ aside nav {
 .menu.menu-responsive {
 	@media #{$media_phone} {
 		&.float-left, &.float-right {
-			@include vertical-menu($gris_oscuro);
+			@include vertical-menu(lighten($gris_oscuro, 10%));
 			position: fixed;
 			top: 45px;
 			z-index: 500;
