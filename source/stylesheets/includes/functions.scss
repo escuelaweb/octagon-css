@@ -245,9 +245,9 @@
 }
 
 @mixin column-system-create($max_width, $column_number, $column_gutter, $prefix:"") {
-  @if $prefix==""{
+  @if $prefix=="" {
     .container {
-      width: 100%;
+      width: 96%;
       max-width: $max_width;
       margin: 0 auto;
       padding: 0 $column_gutter/2;
@@ -256,6 +256,11 @@
     }
     .row {
       @include clearfix;
+    }
+  }
+  @else {
+    .row {
+      margin: 0 ($column_gutter / 2 * -1);
     }
   }
   @include all-grid-create($max_width, $column_number, $column_gutter, $prefix);

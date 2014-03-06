@@ -11,6 +11,7 @@
 	// Vars definition
 	$max_width : $normal_display;
 	$column_gutter: 10px;
+  @include column-system-create($max_width, $column_number, $column_gutter);
   @include column-system-create($max_width, $column_number, $column_gutter, "sm"); 
   @include grid-system($max_width,$column_number, $column_gutter);
   @include grid-system($max_width,$column_number, $column_gutter, "sm");
@@ -31,6 +32,7 @@
 	// Vars definition
 	$max_width : $medium_display;
 	$column_gutter: 20px;
+  @include column-system-create($max_width, $column_number, $column_gutter);
   @include column-system-create($max_width, $column_number, $column_gutter, "md");
   @include grid-system($max_width,$column_number, $column_gutter);
   @include grid-system($max_width,$column_number, $column_gutter, "md");
@@ -51,6 +53,7 @@
 	// Vars definition
 	$max_width : $large_display;
 	$column_gutter: 30px;
+   @include column-system-create($max_width, $column_number, $column_gutter);
   @include column-system-create($max_width, $column_number, $column_gutter, "lg");
   @include grid-system($max_width,$column_number, $column_gutter); 
   @include grid-system($max_width,$column_number, $column_gutter, "lg");
