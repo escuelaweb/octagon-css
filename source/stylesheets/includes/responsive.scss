@@ -5,6 +5,7 @@
 @media #{$media_phone} {
   $max_width : $normal_display;
   $column_gutter: 10px;
+  @include headlines-create(0.1,0.7em);
 }
 // Estilos para resoluciones mayores a 720px
 @media #{$media_tablet_portrait} {
@@ -15,6 +16,7 @@
   @include column-system-create($max_width, $column_number, $column_gutter, "sm"); 
   @include grid-system($max_width,$column_number, $column_gutter);
   @include grid-system($max_width,$column_number, $column_gutter, "sm");
+  @include headlines-create(0.2);
   .header {
     .divisor{
       display: block;

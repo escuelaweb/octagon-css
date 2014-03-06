@@ -207,7 +207,7 @@
     }
     &.ribbon-wicon-big {
       &:after {
-        @include arrow("right", 0.9em, $white);
+        // @include arrow("right", 0.9em, $white);
       }
     }
     .ribbon-icon {
