@@ -1,7 +1,8 @@
 @import "functions";
 
-@include column-system-create($large_display,$column_number, $column_gutter);
-@include grid-system($large_display,$column_number, $column_gutter);
+@include column-system-create($normal_display,$column_number, $column_gutter);
+@include column-system-create($normal_display, $column_number, $column_gutter); 
+@include grid-system($normal_display,$column_number, $column_gutter, "xs");
 
 .clear {
   clear: both;

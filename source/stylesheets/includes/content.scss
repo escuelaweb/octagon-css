@@ -5,8 +5,8 @@
   margin-top: 10px;
   background-color: white;
   padding-bottom: 60px;
-  @include box-shadow(0,0,5px,0,$gris,0.5);
-  @include box-sizing(content-box);
+  // @include box-shadow(0,0,5px,0,$gris,0.5);
+  // @include box-sizing(content-box);
   &.contents.show {
 
   }

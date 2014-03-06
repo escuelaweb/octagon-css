@@ -224,7 +224,7 @@
 
 @mixin column-calc($number, $full:"false") {
   @if $full=="false" {
-    width: percentage($number/ $column_number);
+    width: percentage($number / $column_number);
   }
   @else {
     width: 100%;
@@ -236,7 +236,7 @@
 
 @mixin offset-calc($number, $full:"false") {
   @if $full=="false" {
-    margin-left: percentage($number/$column_number);
+    margin-left: percentage($number / $column_number);
   }
   @else {
     margin-left: 0;
@@ -247,14 +247,14 @@
 @mixin column-system-create($max_width, $column_number, $column_gutter, $prefix:"") {
   @if $prefix==""{
     .container {
-      width: 90%;
+      width: 100%;
       max-width: $max_width;
       margin: 0 auto;
       padding: 0 $column_gutter/2;
       position: relative;
+      @include box-sizing(border-box);
     }
     .row {
-      margin: 0 ($column_gutter/2 * -1);
       @include clearfix;
     }
   }

@@ -212,7 +212,10 @@
     }
     .ribbon-icon {
       left: auto;
-      right: -22px;
+      right: -18px;
+      @media #{$media_phone}{
+        right: -18px
+      }
       &.icons {
         left: auto;
         right: -8px;

@@ -41,7 +41,7 @@ A continuacion se observan ejemplos de uso de las clases que poseen los botones,
     <!-- Boton con icono del lado derecho -->
     <a href="#" class="btn btn-wicon">
       Boton con Icono a la derecha
-      <!-- icono que integra el framwork -->
+      <!-- icono que integra el framework -->
       <span class="btn-wicon-icon icons">&#x5b;</span>
     </a>
 
