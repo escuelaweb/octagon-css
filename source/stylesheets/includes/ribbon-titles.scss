@@ -15,23 +15,25 @@
   @include box-shadow(0, 4px, 0, 0, $azul, 1);
   &:before, .arrow-cinta-left {
     @include arrow('left', 15px, $azul);
+    border-bottom: none;
     content: "";
     display: block;
-    border-bottom: 0px solid transparent;
+
     position: absolute;
     top: -15px;
     left: 0;
-    z-index: -1;
+
   }
   &:after, .arrow-cinta-right {
     @include arrow('right', 15px, $azul);
+    border-bottom: none;
     content: "";
     display: block;
-    border-bottom: 0px solid transparent;
+
     position: absolute;
     top: -15px;
     right: 0;
-    z-index: -1;
+
   }
   &.ribbon-small {
     padding: 5px 25px;
@@ -57,9 +59,11 @@
     @include box-shadow(0, 4px, 0, 0, $color, 1);
     &:before, .arrow-cinta-left {
       @include arrow('left', 15px, $color);
+      border-bottom: none;
     }
     &:after, .arrow-cinta-right { 
       @include arrow('right', 15px, $color);
+      border-bottom: none;
     }
     &.ribbon-wicon .ribbon-icon.icons {
       background-color: $color;
@@ -74,6 +78,7 @@
     }
     &:after, .arrow-cinta-right { 
       @include arrow('right', 15px, $color);
+      border-bottom: none;
     }
     &.ribbon-wicon .ribbon-icon.icons {
       background-color: $color;
@@ -85,9 +90,11 @@
     @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
       @include arrow('left', 15px, $color);
+      border-bottom: none;
     }
     &:after, .arrow-cinta-right { 
       @include arrow('right', 15px, $color);
+      border-bottom: none;
     }
     &.ribbon-wicon .ribbon-icon.icons {
       background-color: $color;
