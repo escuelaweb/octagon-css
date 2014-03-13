@@ -1,5 +1,36 @@
 @import "vars";
 
+@mixin ribbon-exa-create($size,$proportion: 0.73 ,$base: 1px, $top_proportion: -0.1, $left_proportion: -1, $top: -0.17)
+{
+  .ribbon-title.ribbon-left.ribbon-wicon-big .ribbon-icon, .titulo-cinta.ribbon-left.ribbon-wicon-big .ribbon-icon, .titulo_cinta.ribbon-left.ribbon-wicon-big .ribbon-icon {
+     right: 4px;
+    }
+  .ribbon-title.ribbon-wicon.ribbon-wicon-big .ribbon-icon, .titulo-cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon, .titulo_cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon {
+    max-width: $size*$base;
+    top: $size*$base*$top;
+  }
+  .ribbon-title.ribbon-wicon .ribbon-icon, .titulo-cinta.ribbon-wicon .ribbon-icon, .titulo_cinta.ribbon-wicon .ribbon-icon {
+    max-width: $size*$base*$proportion;
+    top: $size*$base*$proportion*$top_proportion;
+    left: $size*$base*$proportion*$left_proportion;
+    }
+}
+
+@mixin ribbon-circle-create($size,$proportion:0.67,$base: 1px,$text_proportion: 0.42,$top_proportion: -0.1) {
+  .ribbon-title.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons, .titulo-cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons, .titulo_cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons {
+  width: $size*$base;
+  height: $size*$base;
+  line-height: $size*$base;
+}
+  .ribbon-title.ribbon-wicon .ribbon-icon.icons, .titulo-cinta.ribbon-wicon .ribbon-icon.icons, .titulo_cinta.ribbon-wicon .ribbon-icon.icons {
+    $wh : ($size*$proportion)*$base;
+    top: $wh*$top_proportion;
+    width: $wh;
+    height: $wh;
+    line-height: $wh;
+    font-size: $wh*$text_proportion;
+  }
+}
 @mixin text-proportion($size, $proportion:$text_proportion, $base: 1em) {
   font-size:$base*$proportion*(6-$size)+1em;
 }
@@ -282,6 +313,13 @@
   @for $i from 1 through $column_number {
     .grid#{$prefix}#{$i} { @include column-calc($i, $full); }
     .offset#{$prefix}#{$i} { @include offset-calc($i, $full);}
+  }
+}
+
+@mixin grid-system-mobile($column_number, $column_gutter) {
+  @for $i from 1 through $column_number {
+    .grid#{$i} { width:100% }
+    .offset#{$i} { width:100%  }
   }
 }
 

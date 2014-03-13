@@ -3,8 +3,25 @@
 
 // Estilos para resoluciones menores a 720px
 @media #{$media_phone} {
-  $max_width : $normal_display;
+  $max_width : $phone_display;
   $column_gutter: 10px;
+  @include headlines-create(0.1,0.1em);
+  @include ribbon-circle-create(60);
+  @include ribbon-exa-create(60);
+  .btn{
+    margin-bottom: 1em;
+  }
+  .ribbon-title.ribbon-right:before, .titulo-cinta.ribbon-right:before, .titulo_cinta.ribbon-right:before{
+    border-bottom: 1.4em solid transparent;
+    border-top: 1.4em solid transparent;
+    border-left: 1.4em solid #fcfcfc;
+  }
+  .ribbon-title.ribbon-left:after, .titulo-cinta.ribbon-left:after, .titulo_cinta.ribbon-left:after {
+    border-top: 1.4em solid transparent;
+    border-bottom: 1.4em solid transparent;
+    border-right: 1.4em solid #fcfcfc;
+}
+
 }
 // Estilos para resoluciones mayores a 720px
 @media #{$media_tablet_portrait} {
@@ -15,6 +32,7 @@
   @include column-system-create($max_width, $column_number, $column_gutter, "sm"); 
   @include grid-system($max_width,$column_number, $column_gutter);
   @include grid-system($max_width,$column_number, $column_gutter, "sm");
+  @include headlines-create(0.2);
   .header {
     .divisor{
       display: block;
@@ -67,5 +85,8 @@
      margin-left: 0;
    }
  }
+   .btn{
+    margin-bottom: 1em;
+  }
 }
 
