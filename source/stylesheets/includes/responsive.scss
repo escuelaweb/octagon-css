@@ -53,7 +53,7 @@
 	// Vars definition
 	$max_width : $large_display;
 	$column_gutter: 30px;
-   @include column-system-create($max_width, $column_number, $column_gutter);
+  @include column-system-create($max_width, $column_number, $column_gutter);
   @include column-system-create($max_width, $column_number, $column_gutter, "lg");
   @include grid-system($max_width,$column_number, $column_gutter); 
   @include grid-system($max_width,$column_number, $column_gutter, "lg");
