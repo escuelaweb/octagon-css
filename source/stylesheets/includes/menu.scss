@@ -113,7 +113,7 @@
 }
 
 .divisor {
-	display: block;
+	display: none;
 	float: left;
 	height: $menu_height;
 	border-right: lighten($gris_oscuro,80%) solid 1px;
@@ -183,5 +183,64 @@ aside nav {
 			border-bottom: 1px solid darken($azul, 70%);
 			border-top: 1px solid lighten($azul, 10%);
 		}
+	}
+}
+
+.menu.bar-menu {
+  background-color: $black;
+  a {
+    color: $white;
+    &:hover {
+      color: $azul;
+    }
+  }
+}
+
+.menu.menu-responsive {
+	@media #{$media_phone} {
+		&.float-left, &.float-right {
+			@include vertical-menu(lighten($gris_oscuro, 10%));
+			position: fixed;
+			top: 45px;
+			z-index: 500;
+			height: 100%;
+		}
+		&.float-left {
+			left: -240px;
+			right: auto;
+			&.active {
+				left: 0px;
+			}
+		}
+		&.float-right {
+			left: auto;
+			right: -240px;
+			&.active {
+				right: 0px;
+			}
+		}
+	}
+}
+
+.menu-responsive-toggle {
+	display: none;
+	position: fixed;
+	border: none;
+	background: none;
+	height: $menu_height;
+	cursor: pointer;
+	background-color: $menu_oscuro;
+	&.tigger-left {
+		top: 0px;
+		left: 0px;
+		right: auto;
+	}
+	&.tigger-right {
+		top: 0px;
+		left: auto;
+		right: 0px;
+	}
+	@media #{$media_phone} {
+		display: block
 	}
 }

@@ -7,7 +7,9 @@
             = image_tag("logo2.png", :height =>"28", :alt => "Logo Escuela de Diseño Web")
       .grid9
         .divisor
-        %ul.menu.scroller.float-left
+        %button.menu-responsive-toggle.tigger-left.icons{ "data-target"=> "#main-menu-left" } &#x58;
+        %button.menu-responsive-toggle.tigger-right.icons{ "data-target"=> "#main-menu-right" } &#x58;
+        %ul#main-menu-left.menu.scroller.menu-responsive.float-left
           %li
             %a.dropdown-toggle{:href => "#"} Modulos
             %ul.submenu
@@ -35,7 +37,7 @@
                 %a{:href => "#"} subenlace
               %li
                 %a{:href => "#"} subenlace
-        %ul.menu.scroller.float-right
+        %ul#main-menu-right.menu.scroller.menu-responsive.float-right
           %li
             %a{:href => "#"} Enlaces 1
           %li

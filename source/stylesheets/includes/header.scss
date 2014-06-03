@@ -12,6 +12,7 @@
   @include box-shadow(0px,0px,1px,0px,darken($menu_oscuro,50%));
   #logo {
     margin-top: 6px;
+    margin-left: 20px;
   }
   #main_menu {
     .sitename {
