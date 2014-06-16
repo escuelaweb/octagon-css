@@ -1,0 +1,904 @@
+@media only screen and (max-width: 720px) {
+  /* line 328, functions.scss */
+  h1 {
+    font-size: 1.05em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h2 {
+    font-size: 1.04em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h3 {
+    font-size: 1.03em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h4 {
+    font-size: 1.02em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h5 {
+    font-size: 1.01em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h6 {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 20, functions.scss */
+  .ribbon-title.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons, .titulo-cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons, .titulo_cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon.icons {
+    width: 60px;
+    height: 60px;
+    line-height: 60px; }
+
+  /* line 25, functions.scss */
+  .ribbon-title.ribbon-wicon .ribbon-icon.icons, .titulo-cinta.ribbon-wicon .ribbon-icon.icons, .titulo_cinta.ribbon-wicon .ribbon-icon.icons {
+    top: -4.02px;
+    width: 40.2px;
+    height: 40.2px;
+    line-height: 40.2px;
+    font-size: 16.884px; }
+
+  /* line 5, functions.scss */
+  .ribbon-title.ribbon-left.ribbon-wicon-big .ribbon-icon, .titulo-cinta.ribbon-left.ribbon-wicon-big .ribbon-icon, .titulo_cinta.ribbon-left.ribbon-wicon-big .ribbon-icon {
+    right: 4px; }
+
+  /* line 8, functions.scss */
+  .ribbon-title.ribbon-wicon.ribbon-wicon-big .ribbon-icon, .titulo-cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon, .titulo_cinta.ribbon-wicon.ribbon-wicon-big .ribbon-icon {
+    max-width: 60px;
+    top: -10.2px; }
+
+  /* line 12, functions.scss */
+  .ribbon-title.ribbon-wicon .ribbon-icon, .titulo-cinta.ribbon-wicon .ribbon-icon, .titulo_cinta.ribbon-wicon .ribbon-icon {
+    max-width: 43.8px;
+    top: -4.38px;
+    left: -43.8px; }
+
+  /* line 11, responsive.scss */
+  .btn {
+    margin-bottom: 1em; }
+
+  /* line 14, responsive.scss */
+  .ribbon-title.ribbon-right:before, .titulo-cinta.ribbon-right:before, .titulo_cinta.ribbon-right:before {
+    border-bottom: 1.4em solid transparent;
+    border-top: 1.4em solid transparent;
+    border-left: 1.4em solid #fcfcfc; }
+
+  /* line 19, responsive.scss */
+  .ribbon-title.ribbon-left:after, .titulo-cinta.ribbon-left:after, .titulo_cinta.ribbon-left:after {
+    border-top: 1.4em solid transparent;
+    border-bottom: 1.4em solid transparent;
+    border-right: 1.4em solid #fcfcfc; } }
+@media only screen and (min-width: 721px) {
+  /* line 280, functions.scss */
+  .container {
+    width: 96%;
+    max-width: 940px;
+    margin: 0 auto;
+    padding: 0 5px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 288, functions.scss */
+  .row {
+    *zoom: 1; }
+    /* line 49, functions.scss */
+    .row:before, .row:after {
+      display: table;
+      content: ""; }
+    /* line 53, functions.scss */
+    .row:after {
+      clear: both; }
+
+  /* line 305, functions.scss */
+  .grid1, .grid2, .grid3, .grid4,
+  .grid5, .grid6, .grid7, .grid8,
+  .grid9, .grid10, .grid11, .grid12,
+  .grid13, .grid14, .grid15, .grid16,
+  .grid17, .grid18, .grid19, .grid20,
+  .grid21, .grid22, .grid23, .grid24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 293, functions.scss */
+  .row {
+    margin: 0 -5px; }
+
+  /* line 305, functions.scss */
+  .gridsm1, .gridsm2, .gridsm3, .gridsm4,
+  .gridsm5, .gridsm6, .gridsm7, .gridsm8,
+  .gridsm9, .gridsm10, .gridsm11, .gridsm12,
+  .gridsm13, .gridsm14, .gridsm15, .gridsm16,
+  .gridsm17, .gridsm18, .gridsm19, .gridsm20,
+  .gridsm21, .gridsm22, .gridsm23, .gridsm24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 5px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 314, functions.scss */
+  .grid1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offset1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .grid2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offset2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .grid3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offset3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .grid4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offset4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .grid5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offset5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .grid6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offset6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .grid7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offset7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .grid8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offset8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .grid9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offset9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .grid10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offset10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .grid11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offset11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .grid12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offset12 {
+    margin-left: 100%; }
+
+  /* line 314, functions.scss */
+  .gridsm1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetsm1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .gridsm2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetsm2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .gridsm3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offsetsm3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .gridsm4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetsm4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .gridsm5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetsm5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .gridsm6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offsetsm6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .gridsm7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetsm7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .gridsm8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetsm8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .gridsm9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offsetsm9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .gridsm10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetsm10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .gridsm11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetsm11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .gridsm12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offsetsm12 {
+    margin-left: 100%; }
+
+  /* line 328, functions.scss */
+  h1 {
+    font-size: 2em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h2 {
+    font-size: 1.8em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h3 {
+    font-size: 1.6em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h4 {
+    font-size: 1.4em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h5 {
+    font-size: 1.2em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 328, functions.scss */
+  h6 {
+    font-size: 1em;
+    font-weight: 400;
+    font-family: "Dosis", sans-serif;
+    margin-bottom: 20px; }
+
+  /* line 37, responsive.scss */
+  .header .divisor {
+    display: block; }
+
+  /* line 42, responsive.scss */
+  .fixed.header #logo {
+    margin-left: 0; } }
+@media only screen and (min-width: 941px) {
+  /* line 280, functions.scss */
+  .container {
+    width: 96%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 10px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 288, functions.scss */
+  .row {
+    *zoom: 1; }
+    /* line 49, functions.scss */
+    .row:before, .row:after {
+      display: table;
+      content: ""; }
+    /* line 53, functions.scss */
+    .row:after {
+      clear: both; }
+
+  /* line 305, functions.scss */
+  .grid1, .grid2, .grid3, .grid4,
+  .grid5, .grid6, .grid7, .grid8,
+  .grid9, .grid10, .grid11, .grid12,
+  .grid13, .grid14, .grid15, .grid16,
+  .grid17, .grid18, .grid19, .grid20,
+  .grid21, .grid22, .grid23, .grid24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 293, functions.scss */
+  .row {
+    margin: 0 -10px; }
+
+  /* line 305, functions.scss */
+  .gridmd1, .gridmd2, .gridmd3, .gridmd4,
+  .gridmd5, .gridmd6, .gridmd7, .gridmd8,
+  .gridmd9, .gridmd10, .gridmd11, .gridmd12,
+  .gridmd13, .gridmd14, .gridmd15, .gridmd16,
+  .gridmd17, .gridmd18, .gridmd19, .gridmd20,
+  .gridmd21, .gridmd22, .gridmd23, .gridmd24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 314, functions.scss */
+  .grid1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offset1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .grid2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offset2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .grid3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offset3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .grid4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offset4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .grid5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offset5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .grid6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offset6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .grid7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offset7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .grid8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offset8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .grid9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offset9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .grid10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offset10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .grid11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offset11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .grid12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offset12 {
+    margin-left: 100%; }
+
+  /* line 314, functions.scss */
+  .gridmd1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetmd1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .gridmd2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetmd2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .gridmd3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offsetmd3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .gridmd4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetmd4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .gridmd5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetmd5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .gridmd6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offsetmd6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .gridmd7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetmd7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .gridmd8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetmd8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .gridmd9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offsetmd9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .gridmd10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetmd10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .gridmd11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetmd11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .gridmd12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offsetmd12 {
+    margin-left: 100%; }
+
+  /* line 58, responsive.scss */
+  .header .divisor {
+    display: block; }
+
+  /* line 63, responsive.scss */
+  .fixed.header #logo {
+    margin-left: 0; } }
+@media only screen and (min-width: 1201px) {
+  /* line 280, functions.scss */
+  .container {
+    width: 96%;
+    max-width: 1440px;
+    margin: 0 auto;
+    padding: 0 15px;
+    position: relative;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 288, functions.scss */
+  .row {
+    *zoom: 1; }
+    /* line 49, functions.scss */
+    .row:before, .row:after {
+      display: table;
+      content: ""; }
+    /* line 53, functions.scss */
+    .row:after {
+      clear: both; }
+
+  /* line 305, functions.scss */
+  .grid1, .grid2, .grid3, .grid4,
+  .grid5, .grid6, .grid7, .grid8,
+  .grid9, .grid10, .grid11, .grid12,
+  .grid13, .grid14, .grid15, .grid16,
+  .grid17, .grid18, .grid19, .grid20,
+  .grid21, .grid22, .grid23, .grid24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 293, functions.scss */
+  .row {
+    margin: 0 -15px; }
+
+  /* line 305, functions.scss */
+  .gridlg1, .gridlg2, .gridlg3, .gridlg4,
+  .gridlg5, .gridlg6, .gridlg7, .gridlg8,
+  .gridlg9, .gridlg10, .gridlg11, .gridlg12,
+  .gridlg13, .gridlg14, .gridlg15, .gridlg16,
+  .gridlg17, .gridlg18, .gridlg19, .gridlg20,
+  .gridlg21, .gridlg22, .gridlg23, .gridlg24 {
+    float: left;
+    min-height: 1px;
+    padding: 0 15px;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box; }
+
+  /* line 314, functions.scss */
+  .grid1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offset1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .grid2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offset2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .grid3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offset3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .grid4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offset4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .grid5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offset5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .grid6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offset6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .grid7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offset7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .grid8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offset8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .grid9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offset9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .grid10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offset10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .grid11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offset11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .grid12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offset12 {
+    margin-left: 100%; }
+
+  /* line 314, functions.scss */
+  .gridlg1 {
+    width: 8.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetlg1 {
+    margin-left: 8.33333%; }
+
+  /* line 314, functions.scss */
+  .gridlg2 {
+    width: 16.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetlg2 {
+    margin-left: 16.66667%; }
+
+  /* line 314, functions.scss */
+  .gridlg3 {
+    width: 25%; }
+
+  /* line 315, functions.scss */
+  .offsetlg3 {
+    margin-left: 25%; }
+
+  /* line 314, functions.scss */
+  .gridlg4 {
+    width: 33.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetlg4 {
+    margin-left: 33.33333%; }
+
+  /* line 314, functions.scss */
+  .gridlg5 {
+    width: 41.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetlg5 {
+    margin-left: 41.66667%; }
+
+  /* line 314, functions.scss */
+  .gridlg6 {
+    width: 50%; }
+
+  /* line 315, functions.scss */
+  .offsetlg6 {
+    margin-left: 50%; }
+
+  /* line 314, functions.scss */
+  .gridlg7 {
+    width: 58.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetlg7 {
+    margin-left: 58.33333%; }
+
+  /* line 314, functions.scss */
+  .gridlg8 {
+    width: 66.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetlg8 {
+    margin-left: 66.66667%; }
+
+  /* line 314, functions.scss */
+  .gridlg9 {
+    width: 75%; }
+
+  /* line 315, functions.scss */
+  .offsetlg9 {
+    margin-left: 75%; }
+
+  /* line 314, functions.scss */
+  .gridlg10 {
+    width: 83.33333%; }
+
+  /* line 315, functions.scss */
+  .offsetlg10 {
+    margin-left: 83.33333%; }
+
+  /* line 314, functions.scss */
+  .gridlg11 {
+    width: 91.66667%; }
+
+  /* line 315, functions.scss */
+  .offsetlg11 {
+    margin-left: 91.66667%; }
+
+  /* line 314, functions.scss */
+  .gridlg12 {
+    width: 100%; }
+
+  /* line 315, functions.scss */
+  .offsetlg12 {
+    margin-left: 100%; }
+
+  /* line 79, responsive.scss */
+  .header .divisor {
+    display: block; }
+
+  /* line 84, responsive.scss */
+  .fixed.header #logo {
+    margin-left: 0; }
+
+  /* line 88, responsive.scss */
+  .btn {
+    margin-bottom: 1em; } }
