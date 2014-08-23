@@ -31,7 +31,7 @@
     font-size: $wh*$text_proportion;
   }
 }
-@mixin text-proportion($size, $proportion:$text_proportion, $base: 1em) {
+@mixin text-proportion($size, $proportion:$text_proportion, $base: 1.5em) {
   font-size:$base*$proportion*(6-$size)+1em;
 }
 
@@ -80,12 +80,12 @@
   // $alpha:1  Alfa del 0-1
 
 @mixin box-shadow($x, $y:"false", $blur:"false", $spread:"false", $color:"false", $alpha:1, $inset:"") {
-  @if $y=="false" and $blur=="false" and $spread=="false" and $color=="false" 
+  @if $y=="false" and $blur=="false" and $spread=="false" and $color=="false"
   {
     -moz-box-shadow:      $x;
     -webkit-box-shadow:   $x;
     box-shadow:           $x;
-  } 
+  }
   @else {
     -moz-box-shadow:      $x $y $blur $spread rgba($color, $alpha) #{$inset};
     -webkit-box-shadow:   $x $y $blur $spread rgba($color, $alpha) #{$inset};
@@ -100,7 +100,7 @@
 }
 
 @mixin text-shadow($x, $y:"false", $blur:"false", $color:"false") {
-  @if $y=="false" and $blur=="false" and $color=="false" 
+  @if $y=="false" and $blur=="false" and $color=="false"
   {
     text-shadow: $x;
   }
@@ -126,7 +126,7 @@
     transition:         $property $duration $function;
   }
 }
-// Recibe numero del 0 - 1 
+// Recibe numero del 0 - 1
 @mixin opacity($value) {
   filter:  alpha(opacity=$value*100);
   opacity: $value;
@@ -146,32 +146,32 @@
     -ms-border-radius: $topL;
     -o-border-radius: $topL;
     border-radius: $topL;
-  } 
+  }
   @else if $topL != "false" and $bottomR == "false" and $bottomL =="false" {
     -webkit-border-radius: $topL $topL $topR $topR;
     -moz-border-radius: $topL $topL $topR $topR;
     -ms-border-radius: $topL $topL $topR $topR;
-     border-radius: $topL $topL $topR $topR;  
-  } 
+     border-radius: $topL $topL $topR $topR;
+  }
   @else if $topL != "false" and $bottomR != "false" and $bottomL =="false" {
     -webkit-border-radius: $topL  $topR  $bottomR $topR;
     -moz-border-radius: $topL $topR $bottomR $topR;
     -ms-border-radius: $topL $topR $bottomR $topR;
     -o-border-radius: $topL $topR $bottomR $topR;
-    border-radius: $topL $topR $bottomR $topR;  
-  } 
+    border-radius: $topL $topR $bottomR $topR;
+  }
   @else {
     -webkit-border-radius: $topL  $topR  $bottomR $bottomL;
     -moz-border-radius: $topL $topR $bottomR $bottomL;
     -ms-border-radius: $topL $topR $bottomR $bottomL;
     -o-border-radius: $topL $topR $bottomR $bottomL;
-    border-radius: $topL $topR $bottomR $bottomL; 
+    border-radius: $topL $topR $bottomR $bottomL;
  }
 }
 
 @mixin arrow($direction,$size,$color) {
   display: inline-block;
-  width: 0; 
+  width: 0;
   height: 0;
   min-width:0;
   @if $direction == 'top' {
@@ -188,7 +188,7 @@
     border-left:    $size solid $color;
   } @else {
     border-top:     $size solid transparent;
-    border-bottom:  $size solid transparent; 
+    border-bottom:  $size solid transparent;
     border-right:   $size solid $color;
   }
 }
@@ -244,8 +244,8 @@
   height:     $size;
   line-height: $size;
   width:      $size;
-  color: $color; 
-  font-size: $size/2;
+  color: $color;
+  font-size: $size/2.4;
   margin-left: auto;
   margin-right: auto;
   border: $color $size/10 solid;
@@ -278,12 +278,13 @@
 @mixin column-system-create($max_width, $column_number, $column_gutter, $prefix:"") {
   @if $prefix=="" {
     .container {
-      width: 96%;
+      width: 90%;
       max-width: $max_width;
       margin: 0 auto;
       padding: 0 $column_gutter/2;
       position: relative;
       @include box-sizing(border-box);
+      @include clearfix;
     }
     .row {
       @include clearfix;
@@ -305,7 +306,8 @@
   .grid#{$prefix}21,.grid#{$prefix}22,.grid#{$prefix}23,.grid#{$prefix}24 {
     float: left;
     min-height: 1px;
-    padding: 0 ($column_gutter/2);
+    padding-left: ($column_gutter/2);
+    padding-right: ($column_gutter/2);
     @include box-sizing(border-box);
   }
 }
@@ -325,8 +327,8 @@
 
 @mixin headlines-create($proportion:$text_proportion, $base: 1em) {
   @for $i from 1 through 6 {
-    h#{$i} { 
-      @include text-proportion($i, $proportion, $base);
+    h#{$i} {
+      @include text-proportion($i, $proportion);
       font-weight: $font_normal;
       font-family: $open_sans;
       margin-bottom: 20px;

@@ -266,3 +266,13 @@
     }
   }
 }
+
+.btn-group {
+  display: inline-block;
+  .btn {
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
+    @include border-radius(0);
+  }
+}

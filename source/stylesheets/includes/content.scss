@@ -22,4 +22,8 @@
   padding-top: 0px;
 }
 
-
+@media #{$media_pc} {
+  #main-menu-left {
+    margin-left: 1em;
+  }
+}
