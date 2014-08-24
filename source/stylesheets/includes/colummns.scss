@@ -1,8 +1,6 @@
 @import "functions";
 
 @include column-system-create($normal_display,$column_number, $column_gutter);
-@include column-system-create($normal_display, $column_number, $column_gutter); 
-@include grid-system($normal_display,$column_number, $column_gutter, "xs");
 @include grid-system-mobile($column_number, $column_gutter);
 
 

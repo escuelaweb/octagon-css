@@ -1,0 +1,13 @@
+@import "functions";
+
+.status, .status-tag {
+  display: inline-block;
+  padding: 0.2em 0.5em;
+  background-color: $gris-claro;
+  color: white; 
+  &.error { background-color: $error; }
+  &.warning { background-color: $warning }
+  &.success { background-color: $success }
+  &.info { background-color: $info }
+  &.primary, &.ok { background-color: $primary }
+}

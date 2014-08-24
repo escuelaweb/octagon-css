@@ -24,9 +24,9 @@
       <div class="row">
         <div class="grid9">
           <div class="row">
-            <div class="grid3">Lorem ipsum dolor</div>
-            <div class="grid3">Lorem ipsum dolor</div>
-            <div class="grid3">Lorem ipsum dolor</div>
+            <div class="grid4">Lorem ipsum dolor</div>
+            <div class="grid4">Lorem ipsum dolor</div>
+            <div class="grid4">Lorem ipsum dolor</div>
           </div>
         </div>
         <div class="grid3">

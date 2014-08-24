@@ -17,14 +17,17 @@
 
 		}
 		&:last-child {
-			
+
+		}
+		&.user-mobile{
+			display:inline-block;
 		}
 	}
 	.dropdown-toggle:after {
 		content: "";
 		position: relative;
 		top: -3px;
-		margin-left: 10px;	
+		margin-left: 10px;
 		@include arrow('down', 4px, rgba(black,0.8));
 	}
 	a {
@@ -53,7 +56,7 @@
 		left: 0;
 		border:1px solid rgba($azul,0.5);
 		margin-top: 4px;
-		width: 200px;
+		width: 260px;
 		background-color: black;
 		padding: 5px 0;
 		background-color: rgba(black,0.8);
@@ -77,7 +80,8 @@
 				color: white;
 				display: block;
 				text-decoration: none;
-
+				overflow: hidden;
+				text-overflow: ellipsis;
 				@include box-shadow(0,0px,0px,0px,white);
 				&:hover {
 					background-color: #666;
@@ -96,7 +100,7 @@
 			}
 		}
 	}
-	&.right {
+	&.right, &.float-right {
 		.submenu {
 			left: auto;
 			right: 0;
@@ -104,25 +108,25 @@
 				border:none;
 				border-right:4px solid $azul;
 			}
-			.submenu-arrow {
+			&:after, .submenu-arrow {
 				left: auto;
 				right: 10px;
 			}
 		}
 	}
 }
-
-.divisor {
-	display: none;
-	float: left;
-	height: $menu_height;
-	border-right: lighten($gris_oscuro,80%) solid 1px;
-	border-left: $gris_sombra solid 1px;
-	&.float-right {
-		float: right;
+@media #{$media_pc} {
+	.divisor {
+		display: block;
+		float: left;
+		height: $menu_height;
+		border-right: lighten($gris_oscuro,80%) solid 1px;
+		border-left: $gris_sombra solid 1px;
+		&.float-right {
+			float: right;
+		}
 	}
 }
-
 aside .menu {
 	li {
 		float: none;
@@ -201,7 +205,36 @@ aside nav {
 		&.float-left, &.float-right {
 			@include vertical-menu(lighten($gris_oscuro, 10%));
 			position: fixed;
-			top: 45px;
+			top: $menu_height + 1px;
+			z-index: 500;
+			height: 100%;
+		}
+		&.float-left {
+			left: -240px;
+			right: auto;
+			&.active {
+				left: 0px;
+			}
+		}
+		&.float-right {
+			left: auto;
+			right: -240px;
+			&.active {
+				right: 0px;
+				@media only screen and (max-width: 640px) {
+					&.mobile-left{
+						right: auto;
+						left: 0px;
+					}
+				}
+			}
+		}
+	}
+	@media #{$media_tablet_portrait} {
+		&.float-left, &.float-right {
+			@include vertical-menu(lighten($gris_oscuro, 10%));
+			position: fixed;
+			top: 55px;
 			z-index: 500;
 			height: 100%;
 		}
@@ -229,18 +262,33 @@ aside nav {
 	background: none;
 	height: $menu_height;
 	cursor: pointer;
-	background-color: $menu_oscuro;
+	background-color: transparent;
 	&.tigger-left {
 		top: 0px;
 		left: 0px;
 		right: auto;
+		@media only screen and (max-width: 640px){
+			&.button-left{
+				display:none;
+			}
+		}
 	}
 	&.tigger-right {
 		top: 0px;
 		left: auto;
 		right: 0px;
+		@media only screen and (max-width: 640px){
+			&.button-right{
+			top: 0px;
+			left: 0px;
+			right: auto;
+			}
+		}
 	}
 	@media #{$media_phone} {
-		display: block
+		display: block;
+	}
+	@media #{$media_tablet_portrait} {
+		display: block;
 	}
 }

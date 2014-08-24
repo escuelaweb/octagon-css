@@ -3,14 +3,14 @@
 // the class titulo-cinta y titulo_cinta son para compatibilidad hacia atras
 
 .ribbon-title,
-.titulo-cinta, 
+.titulo-cinta,
 .titulo_cinta {
   width: 100%;
   background-color: $gris;
   color: white;
-  padding: 10px 2.7%;
+  padding: 10px 1.25em;
   position: relative;
-  left: -2.7%;
+  left: -1.24em;
   font-weight: 300;
   @include box-shadow(0, 4px, 0, 0, $azul, 1);
   &:before, .arrow-cinta-left {
@@ -44,7 +44,7 @@
 // hacer refactory de esto y meter el codigo repetido en una funcion
 
 .ribbon-title,
-.titulo-cinta, 
+.titulo-cinta,
 .titulo_cinta {
   &.light {
     background-color: darken($gris_boton, 5%);
@@ -61,7 +61,7 @@
       @include arrow('left', 15px, $color);
       border-bottom: none;
     }
-    &:after, .arrow-cinta-right { 
+    &:after, .arrow-cinta-right {
       @include arrow('right', 15px, $color);
       border-bottom: none;
     }
@@ -75,8 +75,9 @@
     @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
       @include arrow('left', 15px, $color);
+      border-bottom: none;
     }
-    &:after, .arrow-cinta-right { 
+    &:after, .arrow-cinta-right {
       @include arrow('right', 15px, $color);
       border-bottom: none;
     }
@@ -92,7 +93,7 @@
       @include arrow('left', 15px, $color);
       border-bottom: none;
     }
-    &:after, .arrow-cinta-right { 
+    &:after, .arrow-cinta-right {
       @include arrow('right', 15px, $color);
       border-bottom: none;
     }
@@ -101,14 +102,25 @@
       @include box-shadow(0 0 0px 4px $white #{","} 0 0 0px 8px darken($color, 10%));
     }
   }
+  &.white {
+    border-top: 1px solid $azul;
+    background-color: white;
+    color: $gris;
+    @include box-shadow(1px,4px,0,0,$azul,1);
+    &.ribbon-wicon .ribbon-icon.icons {
+      color: white;
+    }
+  }
   &.rojo {
     $color: lighten($rojo, 15%);
     @include box-shadow(0,4px,0,0,$color,1);
     &:before, .arrow-cinta-left {
       @include arrow('left', 15px, $color);
+      border-bottom: none;
     }
-    &:after, .arrow-cinta-right { 
+    &:after, .arrow-cinta-right {
       @include arrow('right', 15px, $color);
+      border-bottom: none;
     }
     &.ribbon-wicon .ribbon-icon.icons {
       background-color: $color;
@@ -118,8 +130,16 @@
 }
 
 // Titulos con cintas
+@for $i from 1 through 6 {
+h#{$i}.ribbon-title {
+    @include text-proportion($i,0.2);
+    font-weight: $font_normal;
+    font-family: $open_sans;
+    margin-bottom: 20px;
+  }
+}
 .ribbon-title,
-.titulo-cinta, 
+.titulo-cinta,
 .titulo_cinta {
   &.ribbon-wicon {
     margin-top: 30px;
@@ -178,10 +198,10 @@
   &.ribbon-right {
     width: 100%;
     padding-left: 0;
-    padding-right: 0;    
+    padding-right: 0;
     left: auto;
     right: -20px;
-    text-indent: 30px;
+    text-indent: 1.5em;
     &:before {
       border: none;
       left: 0px;
@@ -190,7 +210,7 @@
       @include arrow("right", 1.1em, $white);
     }
     .ribbon-text {
-      margin-left: 30px;
+      margin-right: 30px;
     }
     &.ribbon-wicon-big {
       &:before {

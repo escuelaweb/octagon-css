@@ -18,11 +18,12 @@ html {
 /* Headlines Font-size definition */
 /* ---------------------------------------------------------------- */
 @for $i from 1 through 6 {
-  h#{$i} { 
+  h#{$i} {
   	@include text-proportion($i);
   	font-weight: $font_normal;
   	font-family: $open_sans;
   	margin-bottom: 20px;
+    line-height: 1.1em;
   }
 }
 
@@ -81,7 +82,7 @@ ol {
 }
 
 p {
-	margin:		 10px 0; 
+	margin:		 10px 0;
 	line-height: 1.5em;
 }
 
@@ -180,7 +181,6 @@ a.btn, .btn {
 	width: 0;
 	top: 50%;
 	right: 0;
-	$alto_redes: ($alto_red_social*4)+(5px*4);
 	height: $alto_redes;
 	margin-top: -($alto_redes/2) - 20px;
 	font-size: 1.2em;
@@ -205,7 +205,7 @@ a.btn, .btn {
 			@include border-radius($alto_red_social/2);
 			text-decoration: none;
 			&:hover {
-				right: 240px;
+				right: $ancho_red_social;
 				text-decoration: none;
 			}
 			.icons {
