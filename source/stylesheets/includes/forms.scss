@@ -29,6 +29,26 @@
 }
 
 form {
+  .input-group {
+    position: relative;
+    overflow: hidden;
+    input {
+      padding-right: 4em;
+      @include box-sizing(border-box);
+    }
+    .input-group-addon {
+      display: inline-block;
+      /* position: relative; */
+      margin-left: -3.7em;
+      margin-top: 0.3em;
+      background-color: lighten($gris, 60%);
+      padding: 0.7em 0;
+      text-align: center;
+      width: 3.2em;
+      border-left: 1px solid $azul;
+      @include border-radius(0 4px 4px 0);
+    }
+  }
   .block {
     display: block;
   }

@@ -66,6 +66,14 @@
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#{$start}', endColorstr='#{$finish}',GradientType=0 );
 }
 
+@mixin transform($params) {
+  -moz-transform: $params;
+  -webkit-transform: $params;
+  -o-transform: $params;
+  -ms-transform: $params;
+  transform: $params;
+}
+
 @mixin background-size($params) {
   -webkit-background-size: $params;
   -moz-background-size: $params;

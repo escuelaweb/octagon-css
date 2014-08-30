@@ -31,6 +31,9 @@
   .show-xs {
     display: block !important;
   }
+  .fixed.header #logo {
+    margin-left: 10px !important;
+  }
 }
 // Estilos para resoluciones mayores a 720px
 @media #{$media_tablet_portrait} {
@@ -63,6 +66,9 @@
   }
   .show-sm {
     display: block !important;
+  }
+  .fixed.header #logo {
+    margin-left: 20px !important;
   }
 }
 
