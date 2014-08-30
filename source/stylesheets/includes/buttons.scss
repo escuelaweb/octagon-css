@@ -266,3 +266,22 @@
     }
   }
 }
+.btn-group {
+  display: inline-block;
+  .btn {
+    display: table-cell;
+    width: 1%;
+    vertical-align: middle;
+    @include border-radius(0);
+  }
+}
+.btn-blank{
+  background: inherit;
+  color: #ccc;
+  box-shadow: none;
+  &:hover{
+    background: inherit;
+    color: #000;
+    box-shadow: none;
+  }
+}

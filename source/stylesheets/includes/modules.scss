@@ -61,6 +61,21 @@
     //border: $white $border_medium solid;
     // @include text-shadow(-1px -1px 0 darken($azul,20%));
     @include border-radius(50px);
+    &.rojo, &.error {
+      background-color: $error;
+    }
+    &.warning {
+      background-color: $warning;
+    }
+    &.info {
+      background-color: $info;
+    }
+    &.success {
+      background-color: $success;
+    }
+    &.primary {
+      background-color: $primary;
+    }
   }
   .module-c-content {
     p {
